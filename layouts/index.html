@@ -35,8 +35,8 @@
 	<p>{{ .Site.Params.tagline }}</p>
 	{{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
 	<div id="benefits">
-		{{ range where .Site.Pages "Section" "benefits" }}
-		{{ if in .Path ".md" }}
+		{{ range (where .Site.Pages "Section" "benefits") }}
+		{{ range .Pages }}
 			<div>
 				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
 				{{ .Content }}
@@ -44,8 +44,8 @@
 		{{ end }}
 	{{ end }}
 	</div>
-	<div>
-    {{ with .Site.GetPage "/footer" }}
+    <div>
+    {{ with .Site.GetPage "/mission" }}
       {{ .Content }}
     {{ end }}
 	</div>
