@@ -1,0 +1,22 @@
+baseURL = "https://cilindir.ca"
+languageCode = "en-ca"
+title = "Cilindir"
+theme = "hugo-theme-lean-launch-page"
+author = "Michael Luciuk"
+canonifyurls = true
+paginate = 3
+
+googleAnalytics = ""
+
+[params]
+tagline = "From Any Place to Every Face"
+# mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
+icon = "cloudevents.png"
+
+# twitter = "https://twitter.com/MyNewProduct"
+# facebook = "https://facebook.com/MyNewProduct"
+# instagram = "https://instragram.com/MyNewProduct"
+# googleplus = "https://plus.google.com/+MyNewProduct"
+github = "https://github.com/Cilindir"
+
+images = ["favicon.png"]
