@@ -4,9 +4,10 @@ type: "page"
 layout: "team.html"
 ---
 
-Andrew
+Andrew Doucette Cofounder and CEO
 
 
-Michael
+Michael Luciuk Cofounder and CTO
 
+<img src="/headshots/michael.jpg" alt="Michael Luciuk" style="width: 350px; height: auto;">
 

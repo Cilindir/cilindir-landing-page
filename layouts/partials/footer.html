@@ -1,12 +1,19 @@
 <footer class="footer">
 
 <div class="footer-logo">
-    <img src="/cilindir-secondary.svg" alt="Cilindir: From Any Place to Every Face" style="width: 100px; height: auto;">
+    <img src="/branding/cilindir-secondary.svg" alt="Cilindir: From Any Place to Every Face" style="height: 150px; width: auto">
 </div>
 
 
 <div class="copywrite-notice">
     <p>&copy; {{ now.Year }} Cilindir</p>
 </div>
+
+<ul class="social-icons">
+    {{ if isset .Site.Params "facebook" }}<li><a href="{{ .Site.Params.facebook }}" title="Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a></li>{{ end }}
+    {{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}" title="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>{{ end }}
+    {{ if isset .Site.Params "linkedin" }}<li><a href="{{ .Site.Params.linkedin }}" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>{{ end }}
+    {{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>{{ end }}
+</ul>
 
 </footer>

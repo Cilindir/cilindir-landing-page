@@ -19,7 +19,7 @@ body{
 	height: 100%;
 	text-align: center;
 	font-size: 1.3rem;
-	font-family: "Open Sans";
+	font-family: "Titillium Web";
 }
 	.logo{
 		height: 50px;
@@ -100,6 +100,7 @@ body{
 
     /* Navigation Bar Styles */
     .navbar {
+        font-family: "Titillium Web";
         background-color: #A9A9A9;
         padding: 5px 5px;
         height: 60px;
@@ -132,7 +133,7 @@ body{
         position: fixed;
         bottom: 0;
         left: 0;
-        height: 60px;
+        height: 100px;
         width: 100%;
         background-color: #A9A9A9;
         color: #fff;
@@ -142,7 +143,6 @@ body{
     }
 
     .footer-logo {
-        max-width: 350px; /* Limit maximum width of the logo */
         height: auto; /* Maintain aspect ratio */
     }
 
@@ -161,14 +161,17 @@ body{
 		margin-top: 10%;
 		margin-bottom: 0;
 		color: #06385d;
-		font-family: "Nunito";
+		font-family: "Titillium Web";
+		font-style: normal;
+        font-weight: 400;
 		font-size: 3.4rem;
 		letter-spacing: 2px;
 		line-height: 1.0;
 	}
-		span.logo{
-			font-family: "Nunito";
-		}
+
+    span.logo{
+        font-family: "Titillium Web";
+    }
 
 	img{
 		margin-bottom: 30px;
@@ -181,6 +184,9 @@ body{
 		padding: 2rem 1rem;
 		text-align: center;
 		color: #555555;
+		font-family: "Titillium Web";
+		font-style: normal;
+        font-weight: 400;
 		font-weight: bold;
 	}
 	
@@ -271,4 +277,12 @@ body{
 		#benefits div{
 			width: 100%;
 		}
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/titillium-web-v17-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

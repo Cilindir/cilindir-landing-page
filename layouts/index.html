@@ -10,24 +10,17 @@
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/brands.min.css">
 	{{ template "_internal/google_analytics.html" . }}
 	{{ template "_internal/opengraph.html" . }}
-	<link rel="icon" type="image/svg" href="cilindir-favicon-light-mode.svg" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/svg" href="cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-light-mode.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
 	<!-- Include Header Partial -->
     {{ partial "header.html" . }}
 
-    <img src="/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+    <img src="/branding/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
 
-	<ul class="social-icons">
-		{{ if isset .Site.Params "facebook" }}<li><a href="{{ .Site.Params.facebook }}" title="Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}" title="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "linkedin" }}<li><a href="{{ .Site.Params.linkedin }}" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>{{ end }}
-	</ul>
 	{{ block "main" . }}
 	{{ end }}
-
 
 	<div class="flip-card-container">
 		<!-- Engage -->
@@ -72,10 +65,6 @@
 			</div>
 		{{ end }}
 	</div>
-
-	<!-- Mailchimp signup form (if enabled) -->
-    {{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
-    <p></p>
 
     <!-- Include Footer Partial -->
     {{ partial "footer.html" . }}
