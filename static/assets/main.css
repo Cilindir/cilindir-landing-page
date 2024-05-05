@@ -92,7 +92,7 @@ body{
     }
 
     /* Change background color of navbar links on hover */
-    .navbar a:hover {
+    .nav-links a:hover {
         background-color: #EEF0F2;
         color: #15244C;
     }
