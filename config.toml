@@ -17,8 +17,19 @@ googleAnalytics = ""
 #  instagram = "https://instragram.com/MyNewProduct"
   github = "https://github.com/Cilindir"
 
-  images = ["cilindir.svg", "cilindir-submark.svg", "cilindir-favicon-light-mode.svg", "cilindir-favicon-dark-mode.svg"]
+  images = [
+    "cilindir.svg",
+    "cilindir-secondary",
+    "cilindir-submark.svg",
+    "cilindir-favicon-light-mode.svg",
+    "cilindir-favicon-dark-mode.svg"
+  ]
 
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+
+[permalinks]
+  about = "/about/"
+  services = "/team/"
+  contact = "/contact/"

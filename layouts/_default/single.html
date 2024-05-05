@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="/vendor/fontawesome-6/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/vendor/fontawesome-6/css/solid.min.css">
+	<link rel="stylesheet" href="/vendor/fontawesome-6/css/brands.min.css">
+	{{ template "_internal/google_analytics.html" . }}
+	{{ template "_internal/opengraph.html" . }}
+	<link rel="icon" type="image/svg" href="cilindir-favicon-light-mode.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+	<!-- Include Header Partial -->
+    {{ partial "header.html" . }}
+
+	<article>
+        <h1>{{ .Title }}</h1>
+        <div>
+            {{ .Content }}
+        </div>
+    </article>
+
+    <!-- Include Footer Partial -->
+    {{ partial "footer.html" . }}
+</body>
+</html>

@@ -14,7 +14,8 @@
     <link rel="icon" type="image/svg" href="cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-    <img class="logo" src="/cilindir-submark.svg" alt="Cilindir" />
+	<!-- Include Header Partial -->
+    {{ partial "header.html" . }}
 
     <img src="/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
 
@@ -27,28 +28,57 @@
 	{{ block "main" . }}
 	{{ end }}
 
-	<div>
-    {{ with .Site.GetPage "/mission" }}
-      {{ .Content }}
-    {{ end }}
-	</div>
-	<div id="benefits">
-		{{ range (where .Site.Pages "Section" "benefits") }}
-		{{ range .Pages }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
+
+	<div class="flip-card-container">
+		<!-- Engage -->
+		{{ with .Site.GetPage "/benefits/engage" }}
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<h2>{{ .Title }}</h2>
+					</div>
+					<div class="flip-card-back">
+						<p>{{ .Content }}</p>
+					</div>
+				</div>
 			</div>
 		{{ end }}
-	{{ end }}
+
+		<!-- Explore -->
+		{{ with .Site.GetPage "/benefits/explore" }}
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<h2>{{ .Title }}</h2>
+					</div>
+					<div class="flip-card-back">
+						<p>{{ .Plain }}</p>
+					</div>
+				</div>
+			</div>
+		{{ end }}
+
+		<!-- Innovate -->
+		{{ with .Site.GetPage "/benefits/innovate" }}
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<h2>{{ .Title }}</h2>
+					</div>
+					<div class="flip-card-back">
+						<p>{{ .Plain }}</p>
+					</div>
+				</div>
+			</div>
+		{{ end }}
 	</div>
 
 	<!-- Mailchimp signup form (if enabled) -->
     {{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
+    <p></p>
 
-    <!-- Copyright notice -->
-    <footer>
-        <p>&copy; Cilindir 2024</p>
-    </footer>
+    <!-- Include Footer Partial -->
+    {{ partial "footer.html" . }}
+
 </body>
 </html>
