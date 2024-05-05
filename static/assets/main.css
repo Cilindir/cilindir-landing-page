@@ -14,10 +14,12 @@ body{
 body{
 	box-sizing: border-box;
 	background-color: #EEF0F2;
-	height: 100%;
+	height: 100vh;
 	text-align: center;
 	font-size: 1.3rem;
 	font-family: "Titillium Web";
+	display: flex;
+    flex-direction: column;
 }
 
     .split-container {
@@ -75,7 +77,7 @@ body{
         font-family: "Titillium Web";
         background-color: #15244C;
         padding: 20px 20px;
-        height: 85px;
+        height: 75px;
     }
 
     /* Navbar links */
@@ -86,6 +88,7 @@ body{
         text-align: center; /* Center-align text */
         padding: 14px 16px; /* Padding around each link */
         text-decoration: none; /* Remove underline from links */
+        vertical-align: middle;
     }
 
     /* Change background color of navbar links on hover */
@@ -100,6 +103,9 @@ body{
     }
 
     .footer {
+        margin-top: auto;
+        width: 100%;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: stretch;
@@ -110,12 +116,22 @@ body{
 
     .footer-logo {
         flex: 1;
+        text-align: left
+        white-space: nowrap;
+        margin: 1em 0;
+    }
+
+    .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
     }
 
     .footer-logo img {
         width: 200px; /* Adjust the width as needed */
+        vertical-align: middle;
         height: auto;
-        float: right
+        float: left;
     }
 
     .footer-content {
@@ -155,6 +171,26 @@ body{
 		text-align: center;
 		color: #15244C;
 	}
+
+	.cofounder-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px; /* Adjust margin as needed */
+    }
+
+    .cofounder {
+        text-align: center;
+        width: 45%; /* Adjust width of each cofounder column */
+        padding: 20px;
+        border: 1px solid #ddd; /* Add border for visual separation */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+    }
+
+    .cofounder-image {
+        width: 250px; /* Adjust image width */
+        border-radius: 25%; /* Rounded image */
+        margin-bottom: 15px;
+    }
 	
 	form{
 		margin: 0 auto;

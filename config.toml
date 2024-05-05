@@ -10,10 +10,9 @@ googleAnalytics = ""
 
 [params]
   tagline = "From Any Place to Every Face."
-  mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
 
 #  facebook = "https://facebook.com/MyNewProduct"
-#  linkedin = "https://www.linkedin.com/company/MyNewProduct"
+  linkedin = "https://www.linkedin.com/company/MyNewProduct"
 #  instagram = "https://instragram.com/MyNewProduct"
   github = "https://github.com/Cilindir"
 
@@ -28,8 +27,3 @@ googleAnalytics = ""
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
-
-[permalinks]
-  about = "/about/"
-  services = "/team/"
-  contact = "/contact/"
