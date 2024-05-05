@@ -14,7 +14,7 @@ body{
 body{
 	box-sizing: border-box;
 	border-top: 3px solid #444444;
-	background-color: #EBEBEE;
+	background-color: #EEF0F2;
 	padding: 20px 20px;
 	height: 100%;
 	text-align: center;
@@ -50,7 +50,7 @@ body{
 		margin-bottom: 30px;
 		width: 530px;
 		text-align: center;
-		color: #8e132a;
+		color: #15244C;
 	}
 
 	p{
@@ -80,7 +80,7 @@ body{
 
 			form input[type="submit"]{
 				background-color: #FFD700;
-				background-color: #8e132a;
+				background-color: #15244C;
 				width: 20%;
 				color: white;
 				font-weight: bold;

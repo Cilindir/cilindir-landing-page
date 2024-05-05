@@ -12,14 +12,12 @@ googleAnalytics = ""
   tagline = "From Any Place to Every Face."
   mailchimpURL = "//my-account.mailchimp.com/my-subscriber-url"
 
-#  twitter = "https://twitter.com/MyNewProduct"
 #  facebook = "https://facebook.com/MyNewProduct"
 #  linkedin = "https://www.linkedin.com/company/MyNewProduct"
 #  instagram = "https://instragram.com/MyNewProduct"
-#  googleplus = "https://plus.google.com/+MyNewProduct"
   github = "https://github.com/Cilindir"
 
-  images = ["favicon.png"]
+  images = ["cilindir.svg", "cilindir-submark.svg", "cilindir-favicon-light-mode.svg", "cilindir-favicon-dark-mode.svg"]
 
 [markup]
   [markup.goldmark.renderer]
