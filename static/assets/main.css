@@ -37,18 +37,20 @@ body{
 
     /* Navigation Bar Styles */
     .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-family: "Titillium Web";
         background-color: #15244C;
         padding: 5px 5px;
         height: 60px;
-        overflow: hidden;
     }
 
     /* Navbar links */
     .navbar a {
-        float: left; /* Float links to the left */
+        float: right; /* Float links to the left */
         display: block; /* Display links as block elements */
-        color: white; /* Text color */
+        color: #EEF0F2; /* Text color */
         text-align: center; /* Center-align text */
         padding: 14px 16px; /* Padding around each link */
         text-decoration: none; /* Remove underline from links */
