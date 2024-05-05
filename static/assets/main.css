@@ -13,14 +13,46 @@ body{
 
 body{
 	box-sizing: border-box;
-	border-top: 3px solid #444444;
 	background-color: #EEF0F2;
-	padding: 20px 20px;
 	height: 100%;
 	text-align: center;
 	font-size: 1.3rem;
 	font-family: "Titillium Web";
 }
+
+    .split-container {
+        display: flex;
+        height: 100vh; /* Full viewport height */
+        background-color: #15244C;
+    }
+
+    .text-container {
+        flex: 1; /* Occupy half of the screen */
+        padding: 50px; /* Add padding for text content */
+        color: #eef0f2;
+    }
+
+    .text-container h1 {
+        font-size: 58px;
+    }
+
+    .text-container p {
+        font-size: 36px;
+        line-height: 1.6;
+    }
+
+    .image-container {
+        flex: 1; /* Occupy half of the screen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        max-width: 80%; /* Adjust the size of the image */
+        height: auto;
+    }
+
 	.logo{
 		height: 50px;
 		padding: 0 10px; /* Optional: Add padding around the logo */
@@ -42,8 +74,8 @@ body{
         align-items: center;
         font-family: "Titillium Web";
         background-color: #15244C;
-        padding: 5px 5px;
-        height: 60px;
+        padding: 20px 20px;
+        height: 85px;
     }
 
     /* Navbar links */
@@ -59,7 +91,7 @@ body{
     /* Change background color of navbar links on hover */
     .navbar a:hover {
         background-color: #EEF0F2;
-        color: black;
+        color: #15244C;
     }
 
     .content {
@@ -97,6 +129,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #5D5F5E;
     }
 
     .footer-social {
@@ -112,18 +145,6 @@ body{
 		padding: 0;
 	}
 
-	h1{
-		margin-top: 10%;
-		margin-bottom: 0;
-		color: #06385d;
-		font-family: "Titillium Web";
-		font-style: normal;
-        font-weight: 400;
-		font-size: 3.4rem;
-		letter-spacing: 2px;
-		line-height: 1.0;
-	}
-
     span.logo{
         font-family: "Titillium Web";
     }
@@ -133,16 +154,6 @@ body{
 		width: 530px;
 		text-align: center;
 		color: #15244C;
-	}
-
-	p{
-		padding: 2rem 1rem;
-		text-align: center;
-		color: #555555;
-		font-family: "Titillium Web";
-		font-style: normal;
-        font-weight: 400;
-		font-weight: bold;
 	}
 	
 	form{

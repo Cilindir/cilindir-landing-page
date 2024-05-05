@@ -17,18 +17,36 @@
 	<!-- Include Header Partial -->
     {{ partial "header.html" . }}
 
-    <img src="/branding/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+	<div class="split-container">
+		<div class="text-container">
+			<h1>Welcome to Cilindir</h1>
+			<p>
+				Cilindir is your ultimate solution for connecting with people from any place to every face. Our innovative
+				platform brings individuals together in a seamless and engaging manner.
+			</p>
+		</div>
 
-	<div id="benefits">
-		{{ range (where .Site.Pages "Section" "benefits") }}
-		{{ range .Pages }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
-			</div>
-		{{ end }}
-	{{ end }}
+		<div class="image-container">
+			<img src="/branding/cilindir-submark-dark.svg" alt="Cilindir: From Any Place to Every Face" class="image">
+		</div>
 	</div>
+
+	<div class="mission-container">
+        <h2>Mission</h2>
+        <p>
+            Cilindir is on a mission to redefine how people:.
+        </p>
+		<div id="benefits">
+			{{ range (where .Site.Pages "Section" "benefits") }}
+			{{ range .Pages }}
+				<div>
+					<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
+					{{ .Content }}
+				</div>
+			{{ end }}
+		{{ end }}
+		</div>
+    </div>
 
     <!-- Include Footer Partial -->
     {{ partial "footer.html" . }}
