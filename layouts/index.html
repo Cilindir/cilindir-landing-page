@@ -4,26 +4,25 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="/assets/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/fontawesome.min.css">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/solid.min.css">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/brands.min.css">
 	{{ template "_internal/google_analytics.html" . }}
 	{{ template "_internal/opengraph.html" . }}
-	<link rel="icon" type="image/svg" href="cilindir-favicon-light-mode.svg" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/svg" href="cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-    <img class="logo" src="/cilindir-submark.svg" alt="Cilindir" />
+    <img class="logo" src="/branding/cilindir-submark.svg" alt="Cilindir" />
 
-    <img src="/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+    <img src="/branding/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
 
 	<ul class="social-icons">
-		{{ if isset .Site.Params "facebook" }}<li><a href="{{ .Site.Params.facebook }}" title="Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}" title="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>{{ end }}
 		{{ if isset .Site.Params "linkedin" }}<li><a href="{{ .Site.Params.linkedin }}" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>{{ end }}
 		{{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>{{ end }}
 	</ul>
+
 	{{ block "main" . }}
 	{{ end }}
 
@@ -32,6 +31,7 @@
       {{ .Content }}
     {{ end }}
 	</div>
+
 	<div id="benefits">
 		{{ range (where .Site.Pages "Section" "benefits") }}
 		{{ range .Pages }}
@@ -43,12 +43,10 @@
 	{{ end }}
 	</div>
 
-	<!-- Mailchimp signup form (if enabled) -->
-    {{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
-
     <!-- Copyright notice -->
     <footer>
         <p>&copy; Cilindir 2024</p>
     </footer>
+
 </body>
 </html>
