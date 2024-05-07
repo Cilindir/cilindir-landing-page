@@ -14,14 +14,8 @@
     <link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-    <img class="logo" src="/branding/cilindir-submark.svg" alt="Cilindir" />
 
-    <img src="/branding/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
-
-	<ul class="social-icons">
-		{{ if isset .Site.Params "linkedin" }}<li><a href="{{ .Site.Params.linkedin }}" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>{{ end }}
-	</ul>
+    <img src="/branding/cilindir-submark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
 
 	{{ block "main" . }}
 	{{ end }}
@@ -43,10 +37,7 @@
 	{{ end }}
 	</div>
 
-    <!-- Copyright notice -->
-    <footer>
-        <p>&copy; Cilindir 2024</p>
-    </footer>
+    {{ partial "footer.html" . }}
 
 </body>
 </html>
