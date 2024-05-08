@@ -15,31 +15,27 @@
 </head>
 <body>
 
-
 	<ul class="social-icons">
-		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>
-		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>
+		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
+		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
 	</ul>
 
-	{{ block "main" . }}
-	{{ end }}
-
+	<!-- Welcome -->
 	<div class="welcome-container">
 		<div class="welcome-message">
 			<h1>Welcome to Cilindir</h1>
-			<p>Welcome message.</p>
+			<p>Cilindir is a Canadian technology startup seeking to redefine how we engage, explore, and innovate <br>through the development of an immersive, accessible, and safe platform for environment simulation. <br>
+            <br>
+            Our vision is for a more connected world, where everyone is empowered to experience anything.</p>
 		</div>
 		<div class="submark-logo-container">
-			<img src="/branding/cilindir-submark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+			<img src="/branding/cilindir-submark-dark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 60%; height: auto;">
 		</div>
 	</div>
 
-	<div>
-    {{ with .Site.GetPage "/mission" }}
-      {{ .Content }}
-    {{ end }}
-	</div>
+	<div class="spacer"></div>
 
+	<!-- Benefits Section -->
 	<div class="benefits-container">
 		<div class="benefit">
 			<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
