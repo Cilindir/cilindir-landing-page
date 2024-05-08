@@ -14,7 +14,6 @@ body{
 body{
 	box-sizing: border-box;
 	background-color: #EEF0F2;
-	padding: 20px 20px;
 	height: 100%;
 	text-align: center;
 	font-size: 1.3rem;
@@ -51,11 +50,40 @@ body{
 		color: #15244C;
 	}
 
-	p{
-		padding: 2rem 1rem;
+	.benefit i {
+        padding-top: 20px; /* Adjust the padding as needed */
+    }
+
+	p {
+	    padding-bottom: 20px;
 		text-align: center;
 		font-weight: bold;
+		max-width: 78%;
+		margin-left: auto;
+        margin-right: auto;
 	}
+
+	.welcome-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+        background-color: #15244C;
+    }
+
+	.welcome-message {
+        text-align: center;
+        width: 45%;
+        padding: 20px;
+        color: #EEF0F2;
+    }
+
+    .submark-logo-container {
+        text-align: center;
+        width: 45%;
+        padding: 20px;
+        color: #5D5F5E;
+    }
 
 	.benefits-container {
         display: flex;
@@ -65,7 +93,7 @@ body{
 
     .benefit {
         text-align: center;
-        width: 28%;
+        width: 25%;
         padding: 20px;
         border: 1px solid #ddd; /* Add border for visual separation */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
@@ -73,37 +101,21 @@ body{
         color: #5D5F5E;
     }
 
-	.footer-container {
-	    margin-top: auto;
-        width: 100%;
-        height: 100px;
-
-    }
-
-    .footer-logo {
-        width:32%;
-        float:left;
-        display: inline-block;
-        height: 90px;
-    }
-
-    .footer-logo img {
-        width:70%;
-        float:left
+    .spacer {
+        height: 40px; /* Adjust the height for desired spacing */
     }
 
     .footer-copyright {
-        width: 32%;
-        float: left;
+        margin-top: auto;
+        width: 100%;
+        height: 45px;
         display: inline-block;
-        height: 90px;
     }
 
-    .footer-socials {
-        width: 32%;
-        float: left;
-        display: inline-block;
-        height: 90px;
+    .footer-copyright p {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20px;
     }
 
 	ul{

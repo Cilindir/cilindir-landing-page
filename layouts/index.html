@@ -15,10 +15,24 @@
 </head>
 <body>
 
-    <img src="/branding/cilindir-submark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+
+	<ul class="social-icons">
+		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>
+		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>
+	</ul>
 
 	{{ block "main" . }}
 	{{ end }}
+
+	<div class="welcome-container">
+		<div class="welcome-message">
+			<h1>Welcome to Cilindir</h1>
+			<p>Welcome message.</p>
+		</div>
+		<div class="submark-logo-container">
+			<img src="/branding/cilindir-submark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
+		</div>
+	</div>
 
 	<div>
     {{ with .Site.GetPage "/mission" }}
@@ -30,7 +44,7 @@
 		<div class="benefit">
 			<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
 			<h2>Engage</h2>
-			<p>Connect with loved ones, collaborate with<br>colleagues, and network with stakeholders, as if<br>you were together in person.</p>
+			<p>Connect with loved ones, collaborate with colleagues, and network with stakeholders, as if you were together in person.</p>
 		</div>
 		<div class="benefit">
 			<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
@@ -40,13 +54,16 @@
 		<div class="benefit">
 			<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
 			<h2>Innovate</h2>
-			<p>Accelerate research and development<br>through rapid experimentation and enhanced<br>learning and collaboration.</p>
+			<p>Accelerate research and development through rapid experimentation and enhanced learning and collaboration.</p>
 		</div>
 	</div>
 
-	<p></p>
+	<div class="spacer"></div>
 
-    {{ partial "footer.html" . }}
+    <!-- Copyright Notice -->
+    <div class="footer-copyright">
+        <p>&copy; {{ now.Year }} Cilindir</p>
+    </div>
 
 </body>
 </html>
