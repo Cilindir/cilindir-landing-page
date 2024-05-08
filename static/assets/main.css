@@ -27,16 +27,10 @@ body{
 		height: 50px;
 	}
 
-	h1{
-		margin-top: 10%;
-		margin-bottom: 0;
-		font-size: 3.4rem;
-		letter-spacing: 2px;
-		line-height: 1.0;
-	}
-		span.logo{
-			font-family: "Nunito";
-		}
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 	img{
 		margin-bottom: 30px;
@@ -49,15 +43,6 @@ body{
         padding-top: 20px; /* Adjust the padding as needed */
     }
 
-	p {
-	    padding-bottom: 20px;
-		text-align: center;
-		font-weight: bold;
-		max-width: 78%;
-		margin-left: auto;
-        margin-right: auto;
-	}
-
 	.welcome-container {
         display: flex;
         justify-content: space-around;
@@ -66,10 +51,23 @@ body{
     }
 
 	.welcome-message {
-        text-align: center;
-        width: 45%;
+        width: 55%;
         padding: 20px;
+        padding-left: 100px;
         color: #EEF0F2;
+    }
+
+    .welcome-message h1 {
+        font-size: 4.5rem;
+        margin-top: 85px;
+        margin-bottom: 50px;
+    }
+
+    .welcome-message p {
+        font-size: 2rem;
+        max-width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .submark-logo-container {
@@ -96,6 +94,11 @@ body{
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: #EEF0F2;
         color: #5D5F5E;
+    }
+
+    .benefit {
+        max-width: 78%;
+        font-weight: bold;
     }
 
     .spacer {
