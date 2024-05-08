@@ -4,51 +4,102 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="/assets/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/fontawesome.min.css">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/solid.min.css">
 	<link rel="stylesheet" href="/vendor/fontawesome-6/css/brands.min.css">
 	{{ template "_internal/google_analytics.html" . }}
 	{{ template "_internal/opengraph.html" . }}
-	<link rel="icon" type="image/svg" href="cilindir-favicon-light-mode.svg" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/svg" href="cilindir-favicon-dark-mode.svg" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-light.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark.svg" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-    <img class="logo" src="/cilindir-submark.svg" alt="Cilindir" />
-
-    <img src="/cilindir.svg" alt="Cilindir: From Any Place to Every Face" style="width: 350px; height: auto;">
 
 	<ul class="social-icons">
-		{{ if isset .Site.Params "facebook" }}<li><a href="{{ .Site.Params.facebook }}" title="Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "instagram" }}<li><a href="{{ .Site.Params.instagram }}" title="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "linkedin" }}<li><a href="{{ .Site.Params.linkedin }}" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin"></i></a></li>{{ end }}
-		{{ if isset .Site.Params "github" }}<li><a href="{{ .Site.Params.github }}" title="GitHub"><i aria-hidden="true" class="fab fa-github"></i></a></li>{{ end }}
+		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
+		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
 	</ul>
-	{{ block "main" . }}
-	{{ end }}
 
-	<div>
-    {{ with .Site.GetPage "/mission" }}
-      {{ .Content }}
-    {{ end }}
-	</div>
-	<div id="benefits">
-		{{ range (where .Site.Pages "Section" "benefits") }}
-		{{ range .Pages }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
-			</div>
-		{{ end }}
-	{{ end }}
+	<!-- Welcome -->
+	<div class="welcome-container">
+		<div class="welcome-message">
+			<h1>Redefining how people engage, explore, and innovate.</h1>
+			<p>Cilindir is a Canadian technology startup seeking to redefine how we engage, explore, and innovate through the development of an immersive, accessible, and safe platform for environment simulation.</p>
+            <p>Our vision is for a more connected world, where everyone is empowered to experience anything.</p>
+			<p>Scroll down to learn more.</p>
+		</div>
+		<div class="submark-logo-container">
+			<img src="/branding/cilindir-submark-dark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 75%; height: auto;">
+		</div>
 	</div>
 
-	<!-- Mailchimp signup form (if enabled) -->
-    {{ if isset .Site.Params "mailchimpurl" }}{{ partial "mailchimp-signup" . }}{{ end }}
+	<!-- Benefits Section -->
+	<div class="section-header">
+		<h1>From Every Place to Any Face</h1>
+	</div>
+	<div class="benefits-container">
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
+			<h2>Engage</h2>
+			<p>Connect with loved ones, collaborate with colleagues, and network with stakeholders, as if you were together in person.</p>
+		</div>
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
+			<h2>Engage</h2>
+			<p>Immerse yourself in captivating worlds and epic tales.</p>
+		</div>
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
+			<h2>Innovate</h2>
+			<p>Accelerate research and development through rapid experimentation and enhanced learning and collaboration.</p>
+		</div>
+	</div>
 
-    <!-- Copyright notice -->
-    <footer>
-        <p>&copy; Cilindir 2024</p>
-    </footer>
+	<!-- Founders Section -->
+	<div class="section-header">
+		<h1>Meet the Founders</h1>
+	</div>
+	<div class="founder-container">
+		<div class="founder-left">
+			<img src="/headshots/andrew.jpg" alt="Andrew Doucette" class="founder-image">
+			<h2>Andrew Doucette, BComm</h2>
+			<h4>Cofounder and CEO</h4>
+			<p>
+				Andrew holds a Bachelor of Commerce in Logistics and Supply Chain Management from the University of
+				Saskatchewan. Coming from a family of entrepreneurs, he has a proven track record of successfully
+				managing and growing startups within the food and beverage sector. Andrew leads Cilindir's strategic
+				direction, business development, and growth initiatives, overseeing all aspects of the company's
+				day-to-day operations.
+			</p>
+		</div>
+		<div class="founder-right">
+			<img src="/headshots/michael.jpg" alt="Michael Luciuk" class="founder-image">
+			<h2>Michael Luciuk, MSc</h2>
+			<h4>Cofounder and CTO</h4>
+			<p>
+				Michael holds a Master of Science in Applied Computing from the University of Toronto, as well as
+				bachelor's degrees in Engineering Physics and Computer Science from the University of Saskatchewan.
+				With over three years of scientific development experience across large multinational companies,
+				research institutions, and early-stage tech startups, Michael is well-positioned to lead the full-stack
+				development of the Cilindir platform.
+			</p>
+		</div>
+	</div>
+
+	<div class="section-header">
+		<h1>Contact</h1>
+	</div>
+
+	<div class="contact-form">
+		<p>Contact form coming soon!</p>
+	</div>
+
+	<div class="spacer"></div>
+
+    <!-- Copyright Notice -->
+    <div class="footer-copyright">
+        <p>&copy; {{ now.Year }} Cilindir</p>
+    </div>
+
 </body>
 </html>
