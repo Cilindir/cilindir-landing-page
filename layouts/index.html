@@ -26,16 +26,25 @@
     {{ end }}
 	</div>
 
-	<div id="benefits">
-		{{ range (where .Site.Pages "Section" "benefits") }}
-		{{ range .Pages }}
-			<div>
-				<h2><i class="fas {{ .Params.icon }}"></i>{{ .Title }}</h2>
-				{{ .Content }}
-			</div>
-		{{ end }}
-	{{ end }}
+	<div class="benefits-container">
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
+			<h2>Engage</h2>
+			<p>Connect with loved ones, collaborate with<br>colleagues, and network with stakeholders, as if<br>you were together in person.</p>
+		</div>
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
+			<h2>Engage</h2>
+			<p>Immerse yourself in captivating worlds and epic tales.</p>
+		</div>
+		<div class="benefit">
+			<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
+			<h2>Innovate</h2>
+			<p>Accelerate research and development<br>through rapid experimentation and enhanced<br>learning and collaboration.</p>
+		</div>
 	</div>
+
+	<p></p>
 
     {{ partial "footer.html" . }}
 
