@@ -115,7 +115,7 @@ body{
         text-align: center;
         width: 24%;
         padding: 20px;
-        margin-left: 200px;
+        margin-left: 300px;
         border: 1px solid #ddd; /* Add border for visual separation */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
     }
@@ -140,7 +140,7 @@ body{
         text-align: center;
         width: 24%;
         padding: 20px;
-        margin-right: 200px;
+        margin-right: 300px;
         border: 1px solid #ddd; /* Add border for visual separation */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
     }
