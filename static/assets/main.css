@@ -32,10 +32,9 @@ body{
         margin-right: auto;
     }
 
-	img{
+	img {
 		margin-bottom: 30px;
 		width: 530px;
-		text-align: center;
 		color: #15244C;
 	}
 
@@ -72,11 +71,9 @@ body{
 
     .submark-logo-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         width: 45%;
         padding: 50px;
+        align-items: center;
         color: #5D5F5E;
     }
 
@@ -157,6 +154,15 @@ body{
     .contact-form {
         background-color: #EEF0F2;
         padding-bottom: 50px;
+    }
+
+    .contact-form p {
+       padding-bottom: 40px;
+    }
+
+    .contact-form a {
+        color: #15244C;
+        font-weight: bold;
     }
 
     .spacer {
