@@ -183,6 +183,11 @@ body{
         line-height: 20px;
     }
 
+    .copyright-symbol {
+        font-size: 28px;
+        vertical-align: middle;
+    }
+
     ul.social-icons{
 		float: right;
 		margin: 0;
