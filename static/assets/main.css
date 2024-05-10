@@ -60,14 +60,14 @@ body{
     .welcome-message h1 {
         font-size: 3.5rem;
         margin-top: 45px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .welcome-message p {
         font-size: 2rem;
         max-width: 80%;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .submark-logo-container {
@@ -234,6 +234,18 @@ body{
 			p.benefit:first-child{
 			}
 
+    #learn-more-btn {
+        padding: 10px 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        background-color: #EEF0F2;
+        color: #15244C;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-family: "Titillium Web";
+    }
 
 
 @media (max-width: 950px){

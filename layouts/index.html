@@ -26,7 +26,7 @@
 			<h1>Redefining how people engage, explore, and innovate.</h1>
 			<p>Cilindir is a Canadian technology startup seeking to redefine how we engage, explore, and innovate through the development of an immersive, accessible, and safe platform for environment simulation.</p>
             <p>Our vision is for a more connected world, where everyone is empowered to experience anything.</p>
-			<p>Scroll down to learn more.</p>
+			<button id="learn-more-btn">Learn More</button>
 		</div>
 		<div class="submark-logo-container">
 			<img src="/branding/cilindir-submark-dark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 67%; height: auto;">
@@ -34,26 +34,28 @@
 	</div>
 
 	<!-- Benefits Section -->
-	<div class="section-header">
-		<h1>From Every Place to Any Face</h1>
-	</div>
-	<div class="benefits-container">
-		<div class="benefit">
-			<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
-			<h2>Engage</h2>
-			<p>Connect with loved ones, collaborate with colleagues, and network with stakeholders, as if you were together in person.</p>
+	<section id="target-section">
+		<div class="section-header">
+			<h1>From Every Place to Any Face</h1>
 		</div>
-		<div class="benefit">
-			<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
-			<h2>Explore</h2>
-			<p>Immerse yourself in captivating worlds, experience vibrant events, and witness pivotal moments in history.</p>
+		<div class="benefits-container">
+			<div class="benefit">
+				<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
+				<h2>Engage</h2>
+				<p>Connect with loved ones, collaborate with colleagues, and network with stakeholders, as if you were together in person.</p>
+			</div>
+			<div class="benefit">
+				<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
+				<h2>Explore</h2>
+				<p>Immerse yourself in captivating worlds, experience vibrant events, and witness pivotal moments in history.</p>
+			</div>
+			<div class="benefit">
+				<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
+				<h2>Innovate</h2>
+				<p>Accelerate research and development through rapid experimentation and enhanced learning and collaboration.</p>
+			</div>
 		</div>
-		<div class="benefit">
-			<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
-			<h2>Innovate</h2>
-			<p>Accelerate research and development through rapid experimentation and enhanced learning and collaboration.</p>
-		</div>
-	</div>
+	</section>
 
 	<!-- Founders Section -->
 	<div class="section-header">
@@ -99,6 +101,19 @@
     <div class="footer-copyright">
         <p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir</p>
     </div>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var learnMoreButton = document.getElementById('learn-more-btn');
+		var targetSection = document.getElementById('target-section');
+
+		if (learnMoreButton && targetSection) {
+			learnMoreButton.addEventListener('click', function() {
+				targetSection.scrollIntoView({ behavior: 'smooth' });
+			});
+		}
+	});
+	</script>
 
 </body>
 </html>
