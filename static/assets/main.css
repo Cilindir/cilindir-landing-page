@@ -58,9 +58,13 @@ body{
     }
 
     .welcome-message h1 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         margin-top: 45px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+    }
+
+    .welcome-message .emphasized {
+        font-weight: bold;
     }
 
     .welcome-message p {
@@ -87,13 +91,13 @@ body{
         padding-top: 20px;
     }
 
-	.benefits-container {
+	.mission-container {
         display: flex;
         justify-content: space-around;
         background-color: #EEF0F2;
     }
 
-    .benefit {
+    .mission {
         text-align: center;
         width: 25%;
         padding: 20px;
@@ -103,8 +107,44 @@ body{
         color: #5D5F5E;
     }
 
-    .benefit p {
+    .mission p {
         max-width: 80%;
+    }
+
+    .tile-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+        grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
+        gap: 50px; /* Adjust the space between tiles */
+        width: 100%; /* Full width of the container */
+        /*  max-width: 900px; /* Optional: Maximum width for the grid */
+        margin: auto; /* Center the grid */
+        background-color: #EEF0F2;
+    }
+
+    .tile {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center;
+        justify-content: center;
+        background-color: #EEF0F2; /* Background color for tiles */
+        border: 1px solid #ddd; /* Border for tiles */
+        padding: 20px; /* Padding inside tiles */
+        text-align: center; /* Center text */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+    }
+
+    .app-name {
+        font-size: 2rem; /* Font size for application name */
+        font-weight: bold; /* Bold for the application name */
+        margin-bottom: 5px; /* Space between application name and description */
+    }
+
+    .app-description {
+        font-size: 1.5rem; /* Font size for description */
+        font-style: italic; /* Italicize the description */
+        text-align: center; /* Center the description text */
     }
 
     .founder-container {

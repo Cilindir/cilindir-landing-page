@@ -15,6 +15,7 @@
 </head>
 <body>
 
+	<img src="/branding/cilindir-logo-long-dark.jpg" alt="Cilindir" class="founder-image">
 	<ul class="social-icons">
 		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
 		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
@@ -23,9 +24,10 @@
 	<!-- Welcome -->
 	<div class="welcome-container">
 		<div class="welcome-message">
-			<h1>Redefining how people engage, explore, and innovate.</h1>
-			<p>Cilindir is a Canadian technology startup seeking to redefine how we engage, explore, and innovate through the development of an immersive, accessible, and safe platform for environment simulation.</p>
-            <p>Our vision is for a more connected world, where everyone is empowered to experience anything.</p>
+			<h1>Introducing Cilindir</h1>
+			<p>The first <span class="emphasized">full body</span> and <span class="emphasized">wearables free</span> platform for VR.</p>
+			<p>95% of people say face-to-face meetings are key to successfully building and maintaining relationships. However, in-person meetings are not always practical, especially when interacting with AI agents.</p>
+            <p>Cilindir's networked VR pods bridge this gap, allowing users to interact remotely with both people and AI agents as if they were together in the same room.</p>
 			<button id="learn-more-btn">Learn More</button>
 		</div>
 		<div class="submark-logo-container">
@@ -33,29 +35,69 @@
 		</div>
 	</div>
 
+	<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<input type="email" placeholder="Enter email to signup" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+		<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+	</form>
+
+	<!-- Mission Section -->
+	<div class="section-header">
+		<h1>Facilitating human integration into shared virtual spaces.</h1>
+	</div>
+	<div class="mission-container">
+		<div class="mission">
+			<p>Improving remote human-to-human communication is essential for fostering collaboration and engagement in remote work, enhancing remote learning and training, and unlocking next-generation entertainment experiences. Moreover, it is essential for preserving meaningful, human connections as society transitions towards collective virtual spaces like the Metaverse.</p>
+		</div>
+		<div class="mission">
+			<p>More natural and human-like interactions are crucial for enhancing communication and building trust with AI systems, making these technologies more accessible and effective in various contexts.</p>
+		</div>
+	</div>
+
 	<!-- Benefits Section -->
-	<section id="target-section">
-		<div class="section-header">
-			<h1>From Every Place to Any Face</h1>
+
+	<!-- Applications Section -->
+	<div class="section-header">
+		<h1>Applications</h1>
+	</div>
+	<div class="tile-grid">
+		<!-- Repeat this block for each tile -->
+		<div class="tile">
+			<div class="app-name">Entertainment</div>
+        	<div class="app-description">Immersive virtual experiences, games, and live events</div>
 		</div>
-		<div class="benefits-container">
-			<div class="benefit">
-				<i aria-hidden="true" class="fas fa-users fa-4x" title="Engage"></i>
-				<h2>Engage</h2>
-				<p>Connect with loved ones, collaborate with colleagues, and network with stakeholders, as if you were together in person.</p>
-			</div>
-			<div class="benefit">
-				<i aria-hidden="true" class="fas fa-rocket fa-4x" title="Explore"></i>
-				<h2>Explore</h2>
-				<p>Immerse yourself in captivating worlds, experience vibrant events, and witness pivotal moments from history.</p>
-			</div>
-			<div class="benefit">
-				<i aria-hidden="true" class="fas fa-cog fa-4x" title="Innovate"></i>
-				<h2>Innovate</h2>
-				<p>Accelerate research and development through rapid experimentation and enhanced learning and collaboration.</p>
-			</div>
+		<div class="tile">
+			<div class="app-name">Retail</div>
+        	<div class="app-description">Virtual shopping and AI-powered customer service</div>
 		</div>
-	</section>
+		<div class="tile">
+			<div class="app-name">Education</div>
+        	<div class="app-description">Realistic face-to-face learning environments</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Creative Arts</div>
+        	<div class="app-description">Empowered artists and immersive installations</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Business</div>
+        	<div class="app-description">Lifelike remote collaboration and networking</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Sightseeing</div>
+        	<div class="app-description">Immersive virtual tours and experiences</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Professional Services</div>
+        	<div class="app-description">Virtual interactions with consultants, lawyers, etc.</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Personal Connections</div>
+        	<div class="app-description">Lifelike virtual interactions with friends and family</div>
+		</div>
+		<div class="tile">
+			<div class="app-name">Simulation & Training</div>
+        	<div class="app-description">Hyper-realistic simulations and training experiences</div>
+		</div>
+	</div>
 
 	<!-- Founders Section -->
 	<div class="section-header">
@@ -93,13 +135,13 @@
 	</div>
 
 	<div class="contact-form">
-		<p>For business, investment, or career inquiries, please reach out to us on <a href="https://www.linkedin.com/company/cilindir/people/">LinkedIn</a>,<br>or send us a message using the contact form below.</p>
+		<p>For business, investment, or career inquiries, please reach out to us on <a href="https://www.linkedin.com/company/cilindir/people/">LinkedIn</a><br>or send us a message using the contact form below.</p>
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScK87Mw1huTP0OIWe7F0RignemYG9GQXSiFfESqaXPauvMYwQ/viewform?embedded=true" width="640" height="642" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	</div>
 
     <!-- Copyright Notice -->
     <div class="footer-copyright">
-        <p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir</p>
+        <p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir Inc.</p>
     </div>
 
 	<script>
