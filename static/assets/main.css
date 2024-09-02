@@ -147,6 +147,32 @@ body{
         text-align: center; /* Center the description text */
     }
 
+    .benefit {
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        text-align: center; /* Centers text within text container */
+        padding: 20px; /* Padding inside the benefit section */
+        margin: 0 auto; /* Center the benefit section horizontally */
+        background-color: #EEF0F2;
+    }
+
+    .benefit-text, .benefit-image {
+        flex: 1;
+        padding: 20px; /* Padding inside each section */
+    }
+
+    .benefit-image img {
+        width: 100%; /* Adjust the width as needed */
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        .benefit {
+            flex-direction: column; /* Stack text and image vertically on smaller screens */
+        }
+    }
+
     .founder-container {
         display: flex;
         justify-content: space-around;
