@@ -138,13 +138,22 @@ body{
         max-width: 80%;
     }
 
+    .tile-container {
+        width: 100%; /* Full width of the container */
+        background-color: #EEF0F2; /* Background color for the full width */
+        display: flex; /* Flex to center the content */
+        justify-content: center; /* Center the grid horizontally */
+        padding: 20px 0; /* Add some vertical padding to the container */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
     .tile-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
         grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
         gap: 50px; /* Adjust the space between tiles */
         width: 100%; /* Full width of the container */
-        /*  max-width: 900px; /* Optional: Maximum width for the grid */
+        max-width: 1000px; /* Optional: Maximum width for the grid */
         margin: auto; /* Center the grid */
         background-color: #EEF0F2;
     }
@@ -174,6 +183,14 @@ body{
         text-align: center; /* Center the description text */
     }
 
+    @media (max-width: 768px) {
+        .tile-grid {
+            grid-template-columns: 1fr; /* Change to a single column layout */
+            grid-template-rows: auto; /* Adjust row height to content */
+            gap: 20px; /* Adjust the gap for smaller screens */
+        }
+    }
+
     .benefit {
         display: flex;
         justify-content: center; /* Centers items horizontally */
@@ -198,7 +215,8 @@ body{
         margin-left: 300px;
     }
 
-    .benefit-text p, .benefit-text-reverse p {
+    .benefit-text p,
+    .benefit-text-reverse p {
         max-width: 400px; /* Set a max-width for the paragraph text */
         margin: 0 auto; /* Center the paragraph within the container */
     }
@@ -233,21 +251,23 @@ body{
             padding: 10px; /* Adjust padding for smaller screens */
         }
 
-        .benefit-text {
-            margin-right: 0px;
-        }
-
+        .benefit-text,
         .benefit-text-reverse {
-            margin-left: 0px;
+            order: 2; /* Text comes second */
+            margin: 0 auto; /* Remove side margins for small screens */
         }
 
-        .benefit-image {
-            margin-left: 0px;
-        }
-
+       .benefit-image,
         .benefit-image-reverse {
-            margin-right: 0px;
+            order: 1; /* Image comes first */
+            margin: 0 auto; /* Remove side margins for small screens */
         }
+
+        .benefit-image img,
+        .benefit-image-reverse img {
+            width: 100%; /* Make images responsive */
+        }
+    }
 
     .founder-container {
         display: flex;
@@ -295,13 +315,50 @@ body{
         margin: 15px;
     }
 
-    .contact-form {
-        background-color: #EEF0F2;
-        padding-bottom: 50px;
+    @media (max-width: 768px) {
+        .founder-container {
+            flex-direction: column; /* Stack founders vertically */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+
+        .founder-left {
+            margin: 0 auto; /* Remove side margins for small screens */
+        }
+
+       .founder-right {
+            margin: 0 auto; /* Remove side margins for small screens */
+        }
     }
 
-    .contact-form p {
-       padding-bottom: 40px;
+    .contact-form {
+        background-color: #EEF0F2;
+        padding-bottom: 30px;
+    }
+
+     .contact-form p {
+        max-width: 700px;
+    }
+
+    .iframe-container {
+        position: relative; /* To position the iframe within the container */
+        height: 500px; /* Set height to 0 initially */
+        overflow: hidden; /* Hide any overflowing content */
+        max-width: 100%; /* Make sure it doesn't overflow */
+    }
+
+    .iframe-container iframe {
+        position: absolute; /* Position the iframe absolutely within the container */
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width for responsiveness */
+        height: 100%; /* Full height for responsiveness */
+        border: 0; /* Remove border */
+    }
+
+    @media (max-width: 768px) {
+        .contact-form {
+            padding: 10px; /* Reduce padding on smaller screens */
+        }
     }
 
     .contact-form a {
