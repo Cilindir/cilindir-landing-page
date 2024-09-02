@@ -42,6 +42,33 @@ body{
         padding-top: 20px; /* Adjust the padding as needed */
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px; /* Set the maximum width for the form */
+        margin: 0 auto; /* Center the form horizontally */
+    }
+
+    input {
+        margin-bottom: 10px; /* Adjust spacing between fields */
+        padding: 10px; /* Optional: Adjust padding for better appearance */
+    }
+
+    .signup-btn {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: #EEF0F2;
+        color: #15244C;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        font-family: "Titillium Web";
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
 	.welcome-container {
         display: flex;
         justify-content: space-around;
@@ -60,7 +87,7 @@ body{
     .welcome-message h1 {
         font-size: 4.5rem;
         margin-top: 45px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
     }
 
     .welcome-message .emphasized {
@@ -70,8 +97,8 @@ body{
     .welcome-message p {
         font-size: 2rem;
         max-width: 80%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .submark-logo-container {
@@ -157,21 +184,70 @@ body{
         background-color: #EEF0F2;
     }
 
-    .benefit-text, .benefit-image {
+    .benefit-text {
         flex: 1;
         padding: 20px; /* Padding inside each section */
+        max-width: 500 px;
+        margin-right: 300px;
     }
 
-    .benefit-image img {
-        width: 100%; /* Adjust the width as needed */
+    .benefit-text-reverse {
+        flex: 1;
+        padding: 20px; /* Padding inside each section */
+        max-width: 500 px;
+        margin-left: 300px;
+    }
+
+    .benefit-text p, .benefit-text-reverse p {
+        max-width: 400px; /* Set a max-width for the paragraph text */
+        margin: 0 auto; /* Center the paragraph within the container */
+    }
+
+    .benefit-image {
+        flex: 1;
+        display: flex; /* Make sure the image container is a flex container */
+        align-items: center; /* Center image vertically within the container */
+        justify-content: center; /* Center image horizontally within the container */
+        padding: 20px; /* Padding inside each section */
+        margin-left: 300px;
+    }
+
+    .benefit-image-reverse {
+        flex: 1;
+        display: flex; /* Make sure the image container is a flex container */
+        align-items: center; /* Center image vertically within the container */
+        justify-content: center; /* Center image horizontally within the container */
+        padding: 20px; /* Padding inside each section */
+        margin-right: 300px;
+    }
+
+    .benefit-image img, .benefit-image-reverse img {
+        width: 500px; /* Adjust the width as needed */
         height: auto;
+        margin: 0;
     }
 
     @media (max-width: 768px) {
         .benefit {
-            flex-direction: column; /* Stack text and image vertically on smaller screens */
+            flex-direction: column; /* Stack text and image vertically */
+            padding: 10px; /* Adjust padding for smaller screens */
         }
-    }
+
+        .benefit-text {
+            margin-right: 0px;
+        }
+
+        .benefit-text-reverse {
+            margin-left: 0px;
+        }
+
+        .benefit-image {
+            margin-left: 0px;
+        }
+
+        .benefit-image-reverse {
+            margin-right: 0px;
+        }
 
     .founder-container {
         display: flex;
@@ -256,6 +332,17 @@ body{
         vertical-align: middle;
     }
 
+    .logo {
+        position: absolute;
+        top: 20px; /* Adjust based on your design */
+        left: 20px; /* Adjust based on your design */
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto; /* Maintain aspect ratio */
+    }
+
     ul.social-icons{
 		float: right;
 		margin: 0;
@@ -276,64 +363,3 @@ body{
 				text-decoration: none;
 				font-size: 1.4rem;
 			}
-
-	#benefits{
-		display: flex;
-		margin: 50px auto 0;
-		width: 65%;
-	}
-		#benefits div{
-			width: 33%;
-		}
-
-		#benefits h2{
-			color: #5D5F5E;
-			font-size: 1.3rem;
-		}
-			#benefits i{
-				margin-right: 20px;
-			}
-
-		#benefits p{
-			padding-top: 10px;
-		}
-			p.benefit:first-child{
-			}
-
-    #learn-more-btn {
-        padding: 10px 20px;
-        font-size: 1.8rem;
-        font-weight: bold;
-        background-color: #EEF0F2;
-        color: #15244C;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 15px;
-        font-family: "Titillium Web";
-    }
-
-
-@media (max-width: 950px){
-	#benefits{
-		width: 80%;
-	}
-}
-
-@media (max-width: 700px){
-	h1{
-		font-size: 3.0rem;
-	}
-
-	form{
-		width: 90%;
-	}
-
-	#benefits{
-		display: block;
-		width: 90%;
-	}
-		#benefits div{
-			width: 100%;
-		}
-}

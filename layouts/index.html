@@ -15,11 +15,15 @@
 </head>
 <body>
 
-	<img src="/branding/cilindir-logo-long-dark.jpg" alt="Cilindir" class="founder-image">
-	<ul class="social-icons">
-		<li><a href="https://www.linkedin.com/company/cilindir/" title="Linkedin"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
-		<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
-	</ul>
+	<div class="header">
+		<ul class="social-icons">
+			<li><a href="https://www.linkedin.com/company/cilindir/" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
+			<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
+		</ul>
+		<div class="logo">
+			<img src="/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
+		</div>
+	</div>
 
 	<!-- Welcome -->
 	<div class="welcome-container">
@@ -27,18 +31,18 @@
 			<h1>Introducing Cilindir</h1>
 			<p>The first <span class="emphasized">full body</span> and <span class="emphasized">wearables free</span> platform for VR.</p>
 			<p>95% of people say face-to-face meetings are key to successfully building and maintaining relationships. However, in-person meetings are not always practical, especially when interacting with AI agents.</p>
-            <p>Cilindir's networked VR pods bridge this gap, allowing users to interact remotely with both people and AI agents as if they were together in the same room.</p>
-			<button id="learn-more-btn">Learn More</button>
+            <p>Cilindir's VR pods bridge this gap, allowing users to interact remotely with both people and AI agents as if they were together in the same room.</p>
+			<p>Be the first to know!</p>
+			<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input type="text" placeholder="Your Name" value="" name="NAME" class="required" id="mce-NAME">
+				<input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				<input type="submit" value="Join the Waitlist" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
+			</form>
 		</div>
 		<div class="submark-logo-container">
 			<img src="/branding/cilindir-submark-dark.svg" alt="Cilindir: From Any Place to Every Face" style="width: 67%; height: auto;">
 		</div>
 	</div>
-
-	<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-		<input type="email" placeholder="Enter email to signup" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-		<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
-	</form>
 
 	<!-- Mission Section -->
 	<div class="section-header">
@@ -54,9 +58,12 @@
 	</div>
 
 	<!-- Benefits Section -->
+	<div class="section-header">
+		<h1>Technology</h1>
+	</div>
 	<div class="benefit">
 		<div class="benefit-image">
-            <img src="/benefits/pexels-three-friends-in-park.png" alt="360° Immersion" style="width: 50%; height: auto;">
+            <img src="/benefits/pexels-three-friends-in-park.png" alt="360° Immersion">
         </div>
         <div class="benefit-text">
             <h2>360° Immersion</h2>
@@ -65,18 +72,18 @@
     </div>
 
 	<div class="benefit">
-		<div class="benefit-text">
+		<div class="benefit-text-reverse">
             <h2>Full Body Capture</h2>
             <p>Traditional platforms use cartoonish avatars. Cilindir uses a network of cameras to capture the user’s entire body, capturing lifelike detail and full body language.</p>
         </div>
-		<div class="benefit-image">
-            <img src="/benefits/pexels-three-friends-in-park.png" alt="Full body capture" style="width: 50%; height: auto;">
+		<div class="benefit-image-reverse">
+            <img src="/benefits/pexels-three-friends-in-park.png" alt="Full body capture">
         </div>
     </div>
 
 	<div class="benefit">
 		<div class="benefit-image">
-            <img src="/benefits/pexels-three-friends-in-park.png" alt="No wearables" style="width: 50%; height: auto;">
+            <img src="/benefits/pexels-three-friends-in-park.png" alt="No wearables">
         </div>
         <div class="benefit-text">
             <h2>No Wearables</h2>
@@ -85,18 +92,18 @@
     </div>
 
 	<div class="benefit">
-		<div class="benefit-text">
+		<div class="benefit-text-reverse">
             <h2>Cross-Platform Integration</h2>
             <p>Whether you're joining from a Cilindir or a traditional computer setup, you can seamlessly participate in the same virtual meetings/spaces together with other remote users.</p>
         </div>
-		<div class="benefit-image">
-            <img src="/benefits/pexels-three-friends-in-park.png" alt="Cross-Platform Integration" style="width: 50%; height: auto;">
+		<div class="benefit-image-reverse">
+            <img src="/benefits/pexels-three-friends-in-park.png" alt="Cross-Platform Integration">
         </div>
     </div>
 
 	<div class="benefit">
 		<div class="benefit-image">
-            <img src="/benefits/pexels-three-friends-in-park.png" alt="Paving the Way for Hyper-Immersion" style="width: 50%; height: auto;">
+            <img src="/benefits/pexels-three-friends-in-park.png" alt="Paving the Way for Hyper-Immersion">
         </div>
         <div class="benefit-text">
             <h2>Charting the Path to Hyper-Immersion</h2>
