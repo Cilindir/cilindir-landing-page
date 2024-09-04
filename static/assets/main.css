@@ -427,3 +427,20 @@ body{
 				text-decoration: none;
 				font-size: 1.4rem;
 			}
+
+    .hr-div {
+        background-color: #EEF0F2;
+        padding-top: 35px;    /* Adjust the top padding as needed */
+        padding-right: 15%;  /* Adjust the right padding as needed */
+        padding-left: 15%;   /* Adjust the left padding as needed */
+        padding-bottom: 5px;    /* Remove the bottom padding */
+        text-align: center;       /* Center the hr element */
+        margin: 0px 0px;
+    }
+
+    .hr {
+        border: none;             /* Remove default border */
+        border-top: 2px solid #A9A9A9; /* Define the line using the border property */
+        display: block;
+        margin: 0px 0px;          /* Center the line horizontally */
+    }
