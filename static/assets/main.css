@@ -21,6 +21,13 @@ body{
 	color: #5D5F5E;
 	background-color: #15244C;
 }
+
+    input[type="text"], input[type="email"] {
+        font-family: "Titillium Web";
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
 	.logo{
 		float: left;
 		width: 50px;
@@ -50,7 +57,7 @@ body{
     }
 
     input {
-        margin-bottom: 10px; /* Adjust spacing between fields */
+        margin-bottom: 15px; /* Adjust spacing between fields */
         padding: 10px; /* Optional: Adjust padding for better appearance */
     }
 
@@ -101,13 +108,28 @@ body{
         margin-bottom: 20px;
     }
 
-    .submark-logo-container {
+    .cilindir-picture-container {
         display: flex;
         width: 45%;
         padding: 50px;
         padding-left: 65px;
         align-items: center;
         color: #5D5F5E;
+    }
+
+    @media (max-width: 768px) {
+        .welcome-container {
+            flex-direction: column; /* Stack columns vertically on mobile */
+            align-items: center; /* Center align items */
+        }
+
+        .welcome-message {
+            order: 1; /* Stack this first */
+        }
+
+        .cilindir-picture-container {
+            order: 2; /* Stack this second */
+        }
     }
 
     .section-header {
@@ -443,4 +465,12 @@ body{
         border-top: 2px solid #A9A9A9; /* Define the line using the border property */
         display: block;
         margin: 0px 0px;          /* Center the line horizontally */
+    }
+
+    .spacer-1 {
+        padding: 10px;      /* Adds space inside the element */
+    }
+
+    .spacer-2 {
+        padding: 2px;      /* Adds space inside the element */
     }
