@@ -80,15 +80,14 @@ body{
         display: flex;
         justify-content: space-around;
         margin-top: 40px;
-        margin-bottom: 60px;
         width: 100%;
     }
 
 	.welcome-message {
         width: 55%;
-        padding: 20px;
         padding-left: 80px;
         padding-right: 0px;
+        padding-bottom: 0px;
         color: #EEF0F2;
     }
 
@@ -112,16 +111,19 @@ body{
     .cilindir-picture-container {
         display: flex;
         width: 45%;
-        padding: 20px;
-        padding-right: 80px;
+        padding-right: 120px;
         padding-left: 0px;
+        padding-bottom: 0px;
         align-items: center;
         color: #5D5F5E;
     }
 
-    .cilindir-picture-container img {
-        width: 90%
-        height: auto;
+    .scroll-to-learn-more h2 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #EEF0F2;
+        font-weight: normal;
+        font-size: 1.5rem;
     }
 
     @media (max-width: 768px) {
