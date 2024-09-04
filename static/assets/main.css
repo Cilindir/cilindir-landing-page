@@ -169,24 +169,38 @@ body{
         padding-top: 20px;
     }
 
-	.mission-container {
-        display: flex;
-        justify-content: space-around;
+    .mission-container {
+        margin: auto; /* Center the container */
+        padding: 20px; /* Add padding around the container */
+        padding-bottom: 5px;
         background-color: #EEF0F2;
-    }
-
-    .mission {
-        text-align: center;
-        width: 25%;
-        padding: 20px;
-        border: 1px solid #ddd;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        background-color: #EEF0F2;
-        color: #5D5F5E;
     }
 
     .mission p {
-        max-width: 80%;
+        width: 95%;
+        font-size: 1.7rem; /* Adjust the font size as needed */
+        line-height: 1.6; /* Improve readability with line spacing */
+        margin-bottom: 20px; /* Add space below the paragraph */
+        color: #5D5F5E;
+    }
+
+    /* Style for the ordered list */
+    .mission-list {
+        display: inline-block;
+        padding-left: 20px; /* Add space for list bullets */
+        width: 75%;
+        text-align: left;
+        list-style-type: decimal;
+    }
+
+    .mission-list li {
+        display: inline-block;
+        /* font-size: 1.5rem; /* Adjust the font size as needed */
+        line-height: 1.6; /* Improve readability with line spacing */
+        margin-bottom: 10px; /* Add space between list items */
+        color: #5D5F5E; /* Set text color for list items */
+        display: list-item;
+        list-style-type: decimal;
     }
 
     .tile-container {
@@ -390,11 +404,11 @@ body{
 
     .contact-form {
         background-color: #EEF0F2;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
      .contact-form p {
-        max-width: 700px;
+        max-width: 800px;
     }
 
     .iframe-container {
