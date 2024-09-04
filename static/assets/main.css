@@ -33,7 +33,7 @@ body{
     }
 
 	img {
-	    margin-top: 5px;
+	    margin-top: 0px;
 		margin-bottom: 30px;
 		color: #15244C;
 	}
@@ -403,7 +403,7 @@ body{
     }
 
     .logo img {
-        width: 150px;
+        width: 250px;
         height: auto; /* Maintain aspect ratio */
     }
 
