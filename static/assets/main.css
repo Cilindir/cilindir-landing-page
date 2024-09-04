@@ -25,7 +25,7 @@ body{
     input[type="text"], input[type="email"] {
         font-family: "Titillium Web";
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
 	.logo{
@@ -87,7 +87,8 @@ body{
 	.welcome-message {
         width: 55%;
         padding: 20px;
-        padding-left: 100px;
+        padding-left: 80px;
+        padding-right: 0px;
         color: #EEF0F2;
     }
 
@@ -111,10 +112,16 @@ body{
     .cilindir-picture-container {
         display: flex;
         width: 45%;
-        padding: 50px;
-        padding-left: 65px;
+        padding: 20px;
+        padding-right: 80px;
+        padding-left: 0px;
         align-items: center;
         color: #5D5F5E;
+    }
+
+    .cilindir-picture-container img {
+        width: 90%
+        height: auto;
     }
 
     @media (max-width: 768px) {
@@ -125,10 +132,30 @@ body{
 
         .welcome-message {
             order: 1; /* Stack this first */
+            padding: 10px;
+            width: 80%;
         }
 
         .cilindir-picture-container {
             order: 2; /* Stack this second */
+            padding: 10px;
+            width: 95%;
+        }
+
+        .welcome-message h1 {
+            font-size: 3.5rem;
+        }
+
+        .welcome-message p {
+            font-size: 1.5rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            font-size: 1rem;
+        }
+
+        .signup-btn {
+            font-size: 1.2rem;
         }
     }
 
@@ -468,9 +495,9 @@ body{
     }
 
     .spacer-1 {
-        padding: 10px;      /* Adds space inside the element */
+        padding: 15px;      /* Adds space inside the element */
     }
 
     .spacer-2 {
-        padding: 2px;      /* Adds space inside the element */
+        padding: 5px;      /* Adds space inside the element */
     }
