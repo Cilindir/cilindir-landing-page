@@ -294,7 +294,8 @@ body{
     .app-name {
         font-size: 1.8rem; /* Font size for application name */
         font-weight: bold; /* Bold for the application name */
-        margin-bottom: 5px; /* Space between application name and description */
+        margin: 5px; /* Space between application name and description */
+        margin-top: 10px;
     }
 
     .app-description {
