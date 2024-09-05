@@ -292,13 +292,13 @@ body{
     }
 
     .app-name {
-        font-size: 2rem; /* Font size for application name */
+        font-size: 1.8rem; /* Font size for application name */
         font-weight: bold; /* Bold for the application name */
         margin-bottom: 5px; /* Space between application name and description */
     }
 
     .app-description {
-        font-size: 1.5rem; /* Font size for description */
+        font-size: 1.3rem; /* Font size for description */
         font-style: italic; /* Italicize the description */
         text-align: center; /* Center the description text */
     }
@@ -309,6 +309,14 @@ body{
             grid-template-rows: auto; /* Adjust row height to content */
             gap: 20px; /* Adjust the gap for smaller screens */
             width: 85%;
+        }
+
+        .app-name {
+            font-size: 1.6rem; /* Font size for application name */
+        }
+
+        .app-description {
+            font-size: 1.2rem; /* Font size for description */
         }
     }
 
@@ -446,6 +454,11 @@ body{
         margin: 15px;
     }
 
+    .founder-left p,
+    .founder-right p {
+       width: 90%
+    }
+
     @media (max-width: 768px) {
         .founder-container {
             flex-direction: column; /* Stack founders vertically */
@@ -464,6 +477,22 @@ body{
 
        .founder-left {
            margin-bottom: 30px; /* Add vertical spacing below the left founder */
+       }
+
+       .founder-left h2,
+       .founder-right h2 {
+            font-size: 1.6rem;
+       }
+
+       .founder-left h4,
+       .founder-right h4 {
+            font-size: 1.2rem;
+       }
+
+       .founder-left p,
+       .founder-right p {
+           font-size: 1rem;
+           width: 90%
        }
     }
 
