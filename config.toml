@@ -16,8 +16,7 @@ googleAnalytics = ""
     "cilindir-favicon-light.svg",
     "cilindir-favicon-dark.svg",
     "cilindir-logo-long-dark.svg",
-    "white-cloth-81-no-bg-cropped.svg"
-  ]
+    "white-cloth-81-no-bg-cropped.svg"]
 
 [markup]
   [markup.goldmark.renderer]
