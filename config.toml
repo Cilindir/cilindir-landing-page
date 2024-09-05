@@ -1,4 +1,4 @@
-baseURL = "https://www.cilindir.ca/"
+baseURL = "https://cilindir.ca/"
 languageCode = "en-ca"
 title = "Cilindir"
 theme = "hugo-theme-lean-launch-page"
@@ -10,12 +10,14 @@ googleAnalytics = ""
 
 [params]
   tagline = "From Any Place to Every Face."
+  mailchimpURL = "https://cilindir.us10.list-manage.com/subscribe/post?u=221a649a4ff715fc8c2c8cee1&amp;id=051d52933a&amp;f_id=00d67be1f0"
 
   images = [
-    "cilindir-submark.svg",
-    "cilindir-secondary-light.svg",
     "cilindir-favicon-light.svg",
-    "cilindir-favicon-dark.svg"]
+    "cilindir-favicon-dark.svg",
+    "cilindir-logo-long-dark.svg",
+    "white-cloth-81-no-bg-cropped.svg"
+  ]
 
 [markup]
   [markup.goldmark.renderer]
