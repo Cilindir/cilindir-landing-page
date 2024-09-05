@@ -34,6 +34,24 @@ body{
 		height: 50px;
 	}
 
+	.logo {
+        position: absolute;
+        top: 20px; /* Adjust based on your design */
+        left: 20px; /* Adjust based on your design */
+    }
+
+    .logo img {
+        width: 250px;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+	@media (max-width: 768px) {
+        .logo img {
+            width: 150px;
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+
     p {
         margin-left: auto;
         margin-right: auto;
@@ -145,7 +163,7 @@ body{
         }
 
         .welcome-message h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
         }
 
         .welcome-message p {
@@ -158,6 +176,10 @@ body{
 
         .signup-btn {
             font-size: 1.2rem;
+        }
+
+        .scroll-to-learn-more h2 {
+            display: none;
         }
     }
 
@@ -409,27 +431,13 @@ body{
 
      .contact-form p {
         max-width: 800px;
-    }
-
-    .iframe-container {
-        position: relative; /* To position the iframe within the container */
-        height: 500px; /* Set height to 0 initially */
-        overflow: hidden; /* Hide any overflowing content */
-        max-width: 100%; /* Make sure it doesn't overflow */
-    }
-
-    .iframe-container iframe {
-        position: absolute; /* Position the iframe absolutely within the container */
-        top: 0;
-        left: 0;
-        width: 100%; /* Full width for responsiveness */
-        height: 100%; /* Full height for responsiveness */
-        border: 0; /* Remove border */
-    }
+     }
 
     @media (max-width: 768px) {
         .contact-form {
             padding: 10px; /* Reduce padding on smaller screens */
+            padding-left: 25px;
+            padding-right: 25px;
         }
     }
 
@@ -461,17 +469,6 @@ body{
         vertical-align: middle;
     }
 
-    .logo {
-        position: absolute;
-        top: 20px; /* Adjust based on your design */
-        left: 20px; /* Adjust based on your design */
-    }
-
-    .logo img {
-        width: 250px;
-        height: auto; /* Maintain aspect ratio */
-    }
-
     ul.social-icons{
 		float: right;
 		margin: 0;
@@ -487,11 +484,31 @@ body{
 			margin: 0 11px;
 			list-style-type: circle;
 		}
-			a{
+			a {
 				color: #EEF0F2;
 				text-decoration: none;
 				font-size: 1.4rem;
 			}
+
+    @media (max-width: 768px) {
+        ul {
+            list-style-type: circle;
+        }
+            li{
+                display: inline-block;
+                margin: 0 11px;
+                list-style-type: circle;
+            }
+                a {
+                    color: #EEF0F2;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+
+        ul.social-icons {
+            padding: 15px;
+        }
+    }
 
     .hr-div {
         background-color: #EEF0F2;
@@ -516,4 +533,19 @@ body{
 
     .spacer-2 {
         padding: 5px;      /* Adds space inside the element */
+    }
+
+    @media (max-width: 768px) {
+        .spacer-1 {
+            display: none;
+        }
+
+        .spacer-2 {
+            display: none;
+        }
+
+        .welcome-message h1 {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
     }

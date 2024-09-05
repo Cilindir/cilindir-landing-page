@@ -50,7 +50,7 @@
 
 	<!-- Mission Section -->
 	<div class="section-header">
-		<h1>Our Mission and Vision</h1>
+		<h1>Mission and Vision</h1>
 	</div>
 	<div class="mission-container">
 		<div class="mission">
@@ -220,19 +220,6 @@
     <div class="footer-copyright">
         <p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir Inc.</p>
     </div>
-
-	<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		var learnMoreButton = document.getElementById('learn-more-btn');
-		var targetSection = document.getElementById('target-section');
-
-		if (learnMoreButton && targetSection) {
-			learnMoreButton.addEventListener('click', function() {
-				targetSection.scrollIntoView({ behavior: 'smooth' });
-			});
-		}
-	});
-	</script>
 
 </body>
 </html>
