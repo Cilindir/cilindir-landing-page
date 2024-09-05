@@ -378,6 +378,16 @@ body{
             margin: 0 auto; /* Remove side margins for small screens */
         }
 
+        .benefit-text h2,
+        .benefit-text-reverse h2 {
+            font-size: 1.6rem;
+        }
+
+        .benefit-text p,
+        .benefit-text-reverse p {
+            font-size: 1.2rem;
+        }
+
        .benefit-image,
         .benefit-image-reverse {
             order: 1; /* Image comes first */
