@@ -191,6 +191,15 @@ body{
         padding-top: 20px;
     }
 
+    @media (max-width: 768px) {
+        .section-header {
+            font-size: 1.4rem;
+            padding-left: 15px;
+            padding-left: 15px;
+        }
+    }
+
+
     .mission-container {
         margin: auto; /* Center the container */
         padding: 20px; /* Add padding around the container */
@@ -204,6 +213,30 @@ body{
         line-height: 1.6; /* Improve readability with line spacing */
         margin-bottom: 20px; /* Add space below the paragraph */
         color: #5D5F5E;
+    }
+
+    @media (max-width: 768px) {
+        .mission-container {
+            padding: 0px; /* Add padding around the container */
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            background-color: #EEF0F2;
+        }
+
+        .mission p {
+            font-size: 1.2rem; /* Adjust the font size as needed */
+            line-height: 1.2; /* Improve readability with line spacing */
+        }
+
+        .mission-list li {
+            font-size: 1rem; /* Adjust the font size as needed */
+            line-height: 1.2; /* Improve readability with line spacing */
+            margin-bottom: 5px; /* Add space between list items */
+            color: #5D5F5E; /* Set text color for list items */
+            display: list-item;
+            list-style-type: decimal;
+        }
     }
 
     /* Style for the ordered list */
