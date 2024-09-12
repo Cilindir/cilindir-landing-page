@@ -352,6 +352,8 @@ body{
         margin-right: 300px;
     }
 
+
+
     .benefit-text-reverse {
         flex: 1;
         padding: 20px; /* Padding inside each section */
@@ -359,9 +361,14 @@ body{
         margin-left: 300px;
     }
 
+    .benefit-text h2,
+    .benefit-text-reverse h2 {
+        margin-top: 0px;
+    }
+
     .benefit-text p,
     .benefit-text-reverse p {
-        max-width: 400px; /* Set a max-width for the paragraph text */
+        max-width: 440px; /* Set a max-width for the paragraph text */
         margin: 0 auto; /* Center the paragraph within the container */
     }
 
