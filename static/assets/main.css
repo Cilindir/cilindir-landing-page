@@ -238,6 +238,7 @@ body{
         display: list-item;
         list-style-type: decimal;
         text-align: justify;
+        padding-right: 20px;
     }
 
     @media (max-width: 768px) {
@@ -255,7 +256,7 @@ body{
         }
 
          .mission-list {
-            width: 90%;
+            width: 95%;
             margin-top: 5px;
             margin-bottom: 15px;
         }
@@ -267,7 +268,8 @@ body{
             color: #5D5F5E; /* Set text color for list items */
             display: list-item;
             list-style-type: decimal;
-            text-align: justify;
+            text-align: left;
+            padding-right: 20px;
         }
 
     }
