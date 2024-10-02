@@ -521,6 +521,64 @@ body{
        }
     }
 
+    .partner-container {
+      display: flex;
+      justify-content: space-around;
+      background-color: #EEF0F2;
+    }
+
+    .partner-logo-left {
+      text-align: center;
+      margin-left: 450px;
+    }
+
+    .partner-logo-right {
+      text-align: center;
+      margin-right: 450px;
+    }
+
+    .partner-if {
+      width: 300px;
+      height: auto;
+      margin: 0px;
+    }
+
+    .partner-nvidia {
+      width: 312px;
+      height: auto;
+      margin: 0px;
+    }
+
+    @media (max-width: 768px) {
+        .partner-container {
+            flex-direction: column; /* Stack founders vertically */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+
+        .partner-logo-left {
+            margin: 0 auto; /* Remove side margins for small screens */
+            width: 80%;
+        }
+
+       .partner-logo-right {
+         margin: 0 auto; /* Remove side margins for small screens */
+         width: 80%;
+         padding-top: 25px;
+       }
+
+       .partner-if {
+          width: 250px;
+          height: auto;
+          margin: 0px;
+        }
+
+        .partner-nvidia {
+          width: 256px;
+          height: auto;
+          margin: 0px;
+        }
+    }
+
     .contact-form {
         background-color: #EEF0F2;
         padding-bottom: 20px;
@@ -571,6 +629,12 @@ body{
     .copyright-symbol {
         font-size: 28px;
         vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+        .footer-copyright {
+            padding-top: 15px;
+        }
     }
 
     ul.social-icons{
