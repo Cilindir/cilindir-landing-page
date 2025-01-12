@@ -15,237 +15,251 @@
 </head>
 <body>
 
-	<div class="header">
+	<header id="header">
+		<div class="logo">
+			<img src="/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
+		</div>
 		<ul class="social-icons">
 			<li><a href="https://www.linkedin.com/company/cilindir/" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
 			<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
 		</ul>
-		<div class="logo">
-			<img src="/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
+	</header>
+
+	<div class="page-content">
+
+		<!-- Welcome -->
+		<div class="welcome-container">
+			<div class="welcome-message">
+				<div class="spacer-1"></div>
+				<h1>Introducing Cilindir:</h1>
+				<h2>The next evolution in communication technology</h2>
+				<p>Cilindir builds virtual reality (VR) pods. Cilindir pods provide a natural, wearables-free gateway to the virtual world. Each Cilindir is designed to comfortably accommodate one person.</p>
+				<p>Once inside, an integrated network of cameras continuously monitors the user, powering a realistic 3D avatar. These avatars enable lifelike interactions in shared virtual spaces.  When two or more remote users connect through Cilindir, they can see, hear, and interact with each other as if they were together in the same room!</p>
+				<p>What's more—Cilindir allows users to interact face-to-face with Artificial Intelligence (AI), as if it were a real person. Thanks to full-body capture, AIs can respond naturally to a Cilindir user’s movements and actions.</p>
+				
+				<div class="sign-up-form">
+					<p>Be the first to know!</p>
+					<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="input-container">
+							<input type="text" placeholder="Your Name" value="" name="FNAME" class="required fname" id="mce-FNAME">
+							<input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+						<div class="submit-button-container">
+							<input type="submit" value="Join the Waitlist" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="cilindir-picture-container">
+				<img src="/branding/white-cloth-81-no-bg-cropped.svg" alt="Cilindir: From Any Place to Every Face" style="max-width: 775px; height: auto;">
+			</div>
+
 		</div>
-	</div>
 
-	<!-- Welcome -->
-	<div class="welcome-container">
-		<div class="welcome-message">
-			<div class="spacer-1"></div>
-			<h1>Introducing Cilindir</h1>
-			<p>The first <span class="emphasized">full body</span> and <span class="emphasized">wearables free</span> platform for VR.</p>
-			<p>Connect with other remote users and conversational AI agents as if you were together in the same room.</p>
-			<div class="spacer-2"></div>
-			<p>Be the first to know!</p>
-			<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<input type="text" placeholder="Your Name" value="" name="FNAME" class="required fname" id="mce-FNAME">
-				<input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-				<input type="submit" value="Join the Waitlist" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
-			</form>
+		<div class="scroll-to-learn-more">
+			<h2>Scroll down to learn more</h2>
 		</div>
-		<div class="cilindir-picture-container">
-			<img src="/branding/white-cloth-81-no-bg-cropped.svg" alt="Cilindir: From Any Place to Every Face" style="max-width: 775px; height: auto;">
+
+		<!-- Mission Section -->
+		<div class="section-header">
+			<h1>Mission and Vision</h1>
 		</div>
-	</div>
-	<div class="scroll-to-learn-more">
-		<h2>Scroll down to learn more</h2>
-	</div>
-
-	<!-- Mission Section -->
-	<div class="section-header">
-		<h1>Mission and Vision</h1>
-	</div>
-	<div class="mission-container">
-		<div class="mission">
-			<p>Our mission at Cilindir is to facilitate human integration into shared virtual spaces. We believe this is important for two reasons:</p>
-		</div>
-		<ol class="mission-list">
-			<li>Improving remote human-to-human communication is essential for fostering collaboration and engagement in remote work, enhancing remote learning and training, and unlocking next-generation entertainment experiences. Moreover, it is essential for preserving meaningful, human connections as society transitions towards collective virtual spaces like the Metaverse.</li>
-			<li>More natural and human-like interactions are crucial for enhancing communication and building trust with AI systems, making these technologies more accessible and effective in various contexts.</li>
-		</ol>
-		<div class="mission">
-			<p>Our Vision is for a more connected world; in which everyone is empowered to experience the extraordinary.</p>
-		</div>
-	</div>
-
-	<div class="hr-div">
-		<hr>
-	</div>
-
-	<!-- Benefits Section -->
-	<div class="section-header">
-		<h1>Technology</h1>
-	</div>
-	<div class="benefit">
-		<div class="benefit-image">
-            <img src="/technology_images/girl-on-boat.png" alt="360° Immersion">
-        </div>
-        <div class="benefit-text">
-            <h2>360° Immersion</h2>
-            <p>Cilindir offers a fully immersive 3D environment, complete with surround-screen and spatial audio, enabling more natural and expressive interactions.</p>
-        </div>
-    </div>
-
-	<div class="benefit">
-		<div class="benefit-text-reverse">
-            <h2>Full Body Capture</h2>
-            <p>Traditional platforms use cartoonish avatars. Cilindir uses a network of cameras to capture the user’s entire body, capturing lifelike detail and full body language.</p>
-        </div>
-		<div class="benefit-image-reverse">
-            <img src="/technology_images/friends-in-park.png" alt="Full body capture">
-        </div>
-    </div>
-
-	<div class="benefit">
-		<div class="benefit-image">
-            <img src="/technology_images/two-people-drinking-coffee.png" alt="No wearables">
-        </div>
-        <div class="benefit-text">
-            <h2>No Wearables</h2>
-            <p>Cilindir offers a completely wearables-free experience, eliminating discomfort and fatigue associated with the prolonged use of headsets and hand controllers.</p>
-        </div>
-    </div>
-
-	<div class="benefit">
-		<div class="benefit-text-reverse">
-            <h2>Cross-Platform Integration</h2>
-            <p>Whether you're joining from a Cilindir or a traditional computer setup, you can seamlessly participate in the same virtual meetings/spaces together with other remote users.</p>
-        </div>
-		<div class="benefit-image-reverse">
-            <img src="/technology_images/parents-at-laptop.png" alt="Cross-Platform Integration">
-        </div>
-    </div>
-
-	<div class="benefit">
-		<div class="benefit-image">
-            <img src="/technology_images/holographic-display.png" alt="Paving the Way for Hyper-Immersion">
-        </div>
-        <div class="benefit-text">
-            <h2>Charting the Path to Hyper-Immersion</h2>
-            <p>The Cilindir pods provide a controlled environment, paving the way for advanced features like climate control and holography. These are capabilities that wearables can't provide due to inherent environmental constraints.</p>
-        </div>
-    </div>
-
-	<div class="hr-div">
-		<hr>
-	</div>
-
-	<!-- Applications Section -->
-	<div class="section-header">
-		<h1>Applications</h1>
-	</div>
-	<div class="tile-container">
-		<div class="tile-grid">
-			<!-- Repeat this block for each tile -->
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-clapperboard fa-3x" title="Entertainment"></i>
-				<div class="app-name">Entertainment</div>
-				<div class="app-description">Immersive virtual experiences, games, and live events</div>
+		<div class="mission-container">
+			<div class="mission">
+				<p>Our mission at Cilindir is to facilitate human integration into shared virtual spaces. We believe this is important for two reasons:</p>
 			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-shirt fa-3x" title="Retail"></i>
-				<div class="app-name">Retail</div>
-				<div class="app-description">Virtual shopping and AI-powered customer service</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-graduation-cap fa-3x" title="Education"></i>
-				<div class="app-name">Education</div>
-				<div class="app-description">Realistic face-to-face learning environments</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-palette fa-3x" title="Creative Arts"></i>
-				<div class="app-name">Creative Arts</div>
-				<div class="app-description">Empowered artists and immersive installations</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-briefcase fa-3x" title="Business"></i>
-				<div class="app-name">Business</div>
-				<div class="app-description">Lifelike remote collaboration and networking</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-mountain-city fa-3x" title="Sightseeing"></i>
-				<div class="app-name">Sightseeing</div>
-				<div class="app-description">Immersive virtual tours and experiences</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-user-tie fa-3x" title="Professional Services"></i>
-				<div class="app-name">Professional Services</div>
-				<div class="app-description">Virtual interactions with consultants, lawyers, etc.</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-users fa-3x" title="Personal Connections"></i>
-				<div class="app-name">Personal Connections</div>
-				<div class="app-description">Lifelike virtual interactions with friends and family</div>
-			</div>
-			<div class="tile">
-				<i aria-hidden="true" class="fas fa-helmet-safety fa-3x" title="Simulation & Training"></i>
-				<div class="app-name">Simulation & Training</div>
-				<div class="app-description">Hyper-realistic simulations and training experiences</div>
+			<ol class="mission-list">
+				<li>Improving remote human-to-human communication is essential for fostering collaboration and engagement in remote work, enhancing remote learning and training, and unlocking next-generation entertainment experiences. Moreover, it is essential for preserving meaningful, human connections as society transitions towards collective virtual spaces like the Metaverse.</li>
+				<li>More natural and human-like interactions are crucial for enhancing communication and building trust with AI systems, making these technologies more accessible and effective in various contexts.</li>
+			</ol>
+			<div class="mission">
+				<p>Our Vision is for a more connected world; in which everyone is empowered to experience the extraordinary.</p>
 			</div>
 		</div>
-	</div>
 
-	<div class="hr-div">
-		<hr>
-	</div>
-
-	<!-- Founders Section -->
-	<div class="section-header">
-		<h1>Meet the Founders</h1>
-	</div>
-	<div class="founder-container">
-		<div class="founder-left">
-			<img src="/founder_headshots/andrew.png" alt="Andrew Doucette" class="founder-image">
-			<h2>Andrew Doucette, BComm</h2>
-			<h4>Cofounder and CEO</h4>
-			<p>
-				Andrew holds a Bachelor of Commerce in Logistics and Supply Chain Management from the University of
-				Saskatchewan. Coming from a family of entrepreneurs, he has a proven track record of successfully
-				managing and growing startups within the food and beverage sector. Andrew leads Cilindir's strategic
-				direction, business development, and growth initiatives, overseeing all aspects of the company's
-				day-to-day operations.
-			</p>
+		<div class="hr-div">
+			<hr>
 		</div>
-		<div class="founder-right">
-			<img src="/founder_headshots/michael.png" alt="Michael Luciuk" class="founder-image">
-			<h2>Michael Luciuk, MSc</h2>
-			<h4>Cofounder and CTO</h4>
-			<p>
-				Michael holds a Master of Science in Applied Computing from the University of Toronto, as well as
-				bachelor's degrees in engineering physics and computer science from the University of Saskatchewan.
-				With over three years of scientific development experience across large multinational companies,
-				research institutions, and early-stage tech startups, Michael is well-positioned to lead the full-stack
-				development of the Cilindir platform.
-			</p>
+
+		<!-- Benefits Section -->
+		<div class="section-header">
+			<h1>Technology</h1>
 		</div>
-	</div>
-
-	<div class="hr-div">
-		<hr>
-	</div>
-
-	<!-- Supported By Section -->
-	<div class="section-header">
-		<h1>Supported by</h1>
-	</div>
-	<div class="partner-container">
-		<div class="partner-logo-left">
-			<img src="/partner_logos/iF-Logo_colour-1-300x118.png" alt="NVIDIA Inception Program" class="partner-if">
+		<div class="benefit">
+			<div class="benefit-image">
+				<img src="/technology_images/girl-on-boat.png" alt="360° Immersion">
+			</div>
+			<div class="benefit-text">
+				<h2>360° Immersion</h2>
+				<p>Cilindir offers a fully immersive 3D environment, complete with surround-screen and spatial audio, enabling more natural and expressive interactions.</p>
+			</div>
 		</div>
-		<div class="partner-logo-right">
-			<img src="/partner_logos/nvidia-inception-program-badge-rgb-for-screen.png" alt="NVIDIA Inception Program" class="partner-nvidia">
+
+		<div class="benefit">
+			<div class="benefit-text-reverse">
+				<h2>Full Body Capture</h2>
+				<p>Traditional platforms use cartoonish avatars. Cilindir uses a network of cameras to capture the user’s entire body, capturing lifelike detail and full body language.</p>
+			</div>
+			<div class="benefit-image-reverse">
+				<img src="/technology_images/friends-in-park.png" alt="Full body capture">
+			</div>
 		</div>
-	</div>
 
-	<div class="hr-div">
-		<hr>
-	</div>
+		<div class="benefit">
+			<div class="benefit-image">
+				<img src="/technology_images/two-people-drinking-coffee.png" alt="No wearables">
+			</div>
+			<div class="benefit-text">
+				<h2>No Wearables</h2>
+				<p>Cilindir offers a completely wearables-free experience, eliminating discomfort and fatigue associated with the prolonged use of headsets and hand controllers.</p>
+			</div>
+		</div>
 
-	<div class="contact-form">
-		<p>For business, investment, or career inquiries, please reach out to us on <a href="https://www.linkedin.com/company/cilindir/people/">LinkedIn</a>.</p>
-	</div>
+		<div class="benefit">
+			<div class="benefit-text-reverse">
+				<h2>Cross-Platform Integration</h2>
+				<p>Whether you're joining from a Cilindir or a traditional computer setup, you can seamlessly participate in the same virtual meetings/spaces together with other remote users.</p>
+			</div>
+			<div class="benefit-image-reverse">
+				<img src="/technology_images/parents-at-laptop.png" alt="Cross-Platform Integration">
+			</div>
+		</div>
 
-    <!-- Copyright Notice -->
-    <div class="footer-copyright">
-        <p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir Inc.</p>
-    </div>
+		<div class="benefit">
+			<div class="benefit-image">
+				<img src="/technology_images/holographic-display.png" alt="Paving the Way for Hyper-Immersion">
+			</div>
+			<div class="benefit-text">
+				<h2>Charting the Path to Hyper-Immersion</h2>
+				<p>The Cilindir pods provide a controlled environment, paving the way for advanced features like climate control and holography. These are capabilities that wearables can't provide due to inherent environmental constraints.</p>
+			</div>
+		</div>
+
+		<div class="hr-div">
+			<hr>
+		</div>
+
+		<!-- Applications Section -->
+		<div class="section-header">
+			<h1>Applications</h1>
+		</div>
+		<div class="tile-container">
+			<div class="tile-grid">
+				<!-- Repeat this block for each tile -->
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-clapperboard fa-3x" title="Entertainment"></i>
+					<div class="app-name">Entertainment</div>
+					<div class="app-description">Immersive virtual experiences, games, and live events</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-shirt fa-3x" title="Retail"></i>
+					<div class="app-name">Retail</div>
+					<div class="app-description">Virtual shopping and AI-powered customer service</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-graduation-cap fa-3x" title="Education"></i>
+					<div class="app-name">Education</div>
+					<div class="app-description">Realistic face-to-face learning environments</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-palette fa-3x" title="Creative Arts"></i>
+					<div class="app-name">Creative Arts</div>
+					<div class="app-description">Empowered artists and immersive installations</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-briefcase fa-3x" title="Business"></i>
+					<div class="app-name">Business</div>
+					<div class="app-description">Lifelike remote collaboration and networking</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-mountain-city fa-3x" title="Sightseeing"></i>
+					<div class="app-name">Sightseeing</div>
+					<div class="app-description">Immersive virtual tours and experiences</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-user-tie fa-3x" title="Professional Services"></i>
+					<div class="app-name">Professional Services</div>
+					<div class="app-description">Virtual interactions with consultants, lawyers, etc.</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-users fa-3x" title="Personal Connections"></i>
+					<div class="app-name">Personal Connections</div>
+					<div class="app-description">Lifelike virtual interactions with friends and family</div>
+				</div>
+				<div class="tile">
+					<i aria-hidden="true" class="fas fa-helmet-safety fa-3x" title="Simulation & Training"></i>
+					<div class="app-name">Simulation & Training</div>
+					<div class="app-description">Hyper-realistic simulations and training experiences</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hr-div">
+			<hr>
+		</div>
+
+		<!-- Founders Section -->
+		<div class="section-header">
+			<h1>Meet the Founders</h1>
+		</div>
+		<div class="founder-container">
+			<div class="founder-left">
+				<img src="/founder_headshots/andrew.png" alt="Andrew Doucette" class="founder-image">
+				<h2>Andrew Doucette, BComm</h2>
+				<h4>Cofounder and CEO</h4>
+				<p>
+					Andrew holds a Bachelor of Commerce in Logistics and Supply Chain Management from the University of
+					Saskatchewan. Coming from a family of entrepreneurs, he has a proven track record of successfully
+					managing and growing startups within the food and beverage sector. Andrew leads Cilindir's strategic
+					direction, business development, and growth initiatives, overseeing all aspects of the company's
+					day-to-day operations.
+				</p>
+			</div>
+			<div class="founder-right">
+				<img src="/founder_headshots/michael.png" alt="Michael Luciuk" class="founder-image">
+				<h2>Michael Luciuk, MSc</h2>
+				<h4>Cofounder and CTO</h4>
+				<p>
+					Michael holds a Master of Science in Applied Computing from the University of Toronto, as well as
+					bachelor's degrees in engineering physics and computer science from the University of Saskatchewan.
+					With over three years of scientific development experience across large multinational companies,
+					research institutions, and early-stage tech startups, Michael is well-positioned to lead the full-stack
+					development of the Cilindir platform.
+				</p>
+			</div>
+		</div>
+
+		<div class="hr-div">
+			<hr>
+		</div>
+
+		<!-- Supported By Section -->
+		<div class="section-header">
+			<h1>Supported by</h1>
+		</div>
+		<div class="partner-container">
+			<div class="partner-logo-left">
+				<img src="/partner_logos/iF-Logo_colour-1-300x118.png" alt="NVIDIA Inception Program" class="partner-if">
+			</div>
+			<div class="partner-logo-right">
+				<img src="/partner_logos/nvidia-inception-program-badge-rgb-for-screen.png" alt="NVIDIA Inception Program" class="partner-nvidia">
+			</div>
+		</div>
+
+		<div class="hr-div">
+			<hr>
+		</div>
+
+		<div class="contact-form">
+			<p>For business, investment, or career inquiries, please reach out to us on <a href="https://www.linkedin.com/company/cilindir/people/">LinkedIn</a>.</p>
+		</div>
+
+		<!-- Copyright Notice -->
+		<div class="footer-copyright">
+			<p><span class="copyright-symbol">&copy;</span> {{ now.Year }} Cilindir Inc.</p>
+		</div>
+
+	</div>
 
 </body>
 </html>
