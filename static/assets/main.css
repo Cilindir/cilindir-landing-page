@@ -244,83 +244,39 @@ body{
         }
     }
 
-
-    .mission-container {
-        margin: auto; /* Center the container */
-        padding: 20px; /* Add padding around the container */
-        padding-bottom: 5px;
-        background-color: #EEF0F2;
+    .company-overview-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        align-items: flex-start;
     }
 
-    .mission p {
-        width: 95%;
-        font-size: 1.7rem; /* Adjust the font size as needed */
-        line-height: 1.6; /* Improve readability with line spacing */
-        margin-bottom: 20px; /* Add space below the paragraph */
-        color: #5D5F5E;
+    .company-overview-container .fa-4x {
+        padding: 15px;
     }
 
-    /* Style for the ordered list */
-    .mission-list {
-        display: inline-block;
-        padding-left: 20px; /* Add space for list bullets */
-        width: 70%;
-        text-align: left;
-        list-style-type: decimal;
+    .company-overview-container h2 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
-    .mission-list li {
-        display: inline-block;
-        /* font-size: 1.5rem; /* Adjust the font size as needed */
-        line-height: 1.6; /* Improve readability with line spacing */
-        margin-bottom: 10px; /* Add space between list items */
-        color: #5D5F5E; /* Set text color for list items */
-        display: list-item;
-        list-style-type: decimal;
-        text-align: justify;
-        padding-right: 20px;
-    }
-
-    @media (max-width: 768px) {
-        .mission-container {
-            padding: 0px; /* Add padding around the container */
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 5px;
-            background-color: #EEF0F2;
-        }
-
-        .mission p {
-            font-size: 1.2rem; /* Adjust the font size as needed */
-            line-height: 1.2; /* Improve readability with line spacing */
-        }
-
-         .mission-list {
-            width: 95%;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
-
-        .mission-list li {
-            font-size: 0.9rem; /* Adjust the font size as needed */
-            line-height: 1.2; /* Improve readability with line spacing */
-            margin-bottom: 5px; /* Add space between list items */
-            color: #5D5F5E; /* Set text color for list items */
-            display: list-item;
-            list-style-type: decimal;
-            text-align: left;
-            padding-right: 20px;
-        }
-
+    .company-overview-container .tile-contents {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 90%
     }
 
     .tile-container {
-        width: 100%; /* Full width of the container */
-        background-color: #EEF0F2; /* Background color for the full width */
-        display: flex; /* Flex to center the content */
-        justify-content: center; /* Center the grid horizontally */
-        padding: 20px 0; /* Add some vertical padding to the container */
-        box-sizing: border-box; /* Include padding in width */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        box-sizing: border-box;
     }
 
     .tile-grid {
@@ -339,25 +295,25 @@ body{
         flex-direction: column; /* Stack children vertically */
         align-items: center;
         justify-content: center;
-        background-color: #EEF0F2; /* Background color for tiles */
-        border: 1px solid #ddd; /* Border for tiles */
-        padding: 20px; /* Padding inside tiles */
-        text-align: center; /* Center text */
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+        background-color: #EEF0F2;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .app-name {
-        font-size: 1.8rem; /* Font size for application name */
-        font-weight: bold; /* Bold for the application name */
-        margin: 5px; /* Space between application name and description */
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 5px;
         margin-top: 10px;
     }
 
     .app-description {
-        font-size: 1.3rem; /* Font size for description */
-        font-style: italic; /* Italicize the description */
-        text-align: center; /* Center the description text */
+        font-size: 1.3rem;
+        font-style: italic;
+        text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -475,27 +431,43 @@ body{
     .founder-container {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 50px;
+    }
+
+    .founder-container p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .founder-container p:last-child {
+        margin-bottom: 8px;
+    }
+
+    .founder-summary {
+        align-items: center;
     }
 
     .founder-summary h2 {
         margin: 0;
+        font-size: 2.2rem;
     }
 
     .founder-summary h3 {
         margin: 0;
+        font-size: 1.75rem;
     }
 
     .founder-image {
-        width: 350px; /* Adjust image width */
+        width: 380px; /* Adjust image width */
         margin: 15px;
     }
 
     .founder-description {
-        text-align: left;
-        width: 40%;
+        text-align: justify;
+        width: 44%;
     }
-    
+
     .founder-description a {
         text-decoration: none;
         color: inherit; /* This makes the link color match the surrounding text */
@@ -518,7 +490,7 @@ body{
     .partner-if {
       width: 300px;
       height: auto;
-      margin: 0px;
+      margin-top: 7px;
     }
 
     .partner-nvidia {

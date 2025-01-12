@@ -58,24 +58,28 @@
 		</div>
 
 		<div class="scroll-to-learn-more">
-			<a href="#mission"><h2>Scroll down to learn more</h2></a>
+			<a href="#company"><h2>Scroll down to learn more</h2></a>
 		</div>
 
 		<!-- Mission Section -->
-		<div id="mission" class="section-header">
-			<h1>Mission and Vision</h1>
+		<div id="company" class="section-header">
+			<h1>Company Overview</h1>
 		</div>
-		<div class="mission-container">
-			<div class="mission">
-				<p>Our mission at Cilindir is to facilitate human integration into shared virtual spaces. We believe this is important for two reasons:</p>
+		<div class="company-overview-container">
+			<div class="tile">
+				<i aria-hidden="true" class="fas fa-compass fa-4x" title="Mission"></i>
+				<h2>Mission</h2>
+				<div style="height: 20px;"></div>
+				<div class="tile-contents">To facilitate human integration into shared virtual spaces.</div>
+				<div style="height: 20px;"></div>
 			</div>
-			<ol class="mission-list">
-				<li>Improving remote human-to-human communication is essential for fostering collaboration and engagement in remote work, enhancing remote learning and training, and unlocking next-generation entertainment experiences. Moreover, it is essential for preserving meaningful, human connections as society transitions towards collective virtual spaces like the Metaverse.</li>
-				<li>More natural and human-like interactions are crucial for enhancing communication and building trust with AI systems, making these technologies more accessible and effective in various contexts.</li>
-			</ol>
-			<div class="mission">
-				<p>Our Vision is for a more connected world; in which everyone is empowered to experience the extraordinary.</p>
+
+			<div class="tile">
+				<i aria-hidden="true" class="fas fa-binoculars fa-4x" title="Vision"></i>
+				<h2>Vision</h2>
+				<div class="tile-contents">A more connected world; in which everyone is empowered to experience the extraordinary.</div>
 			</div>
+
 		</div>
 
 		<div class="hr-div">
@@ -228,10 +232,15 @@
 		</div>
 		<div class="partner-container">
 			<div class="partner-logo">
-				<img src="/partner_logos/iF-Logo_colour-1-300x118.png" alt="NVIDIA Inception Program" class="partner-if">
+				<a href="https://innovationfactory.ca/" target="_blank">
+					<img src="/partner_logos/iF-Logo_colour-1-300x118.png" alt="NVIDIA Inception Program" class="partner-if">
+				</a>
 			</div>
+
 			<div class="partner-logo">
-				<img src="/partner_logos/nvidia-inception-program-badge-rgb-for-screen.png" alt="NVIDIA Inception Program" class="partner-nvidia">
+				<a href="https://www.nvidia.com/en-us/startups/" target="_blank">
+					<img src="/partner_logos/nvidia-inception-program-badge-rgb-for-screen.png" alt="NVIDIA Inception Program" class="partner-nvidia">
+				</a>
 			</div>
 		</div>
 
@@ -256,7 +265,7 @@
             event.preventDefault(); // Prevent default anchor behavior
 
             // Get the target section's offset
-            const target = document.querySelector('#mission');
+            const target = document.querySelector('#company');
             const offset = 50; // Adjust this value as needed
 
             window.scrollTo({
