@@ -9,6 +9,7 @@ ul{
 html,
 body{
 	height: 100%;
+    scroll-behavior: smooth;
 }
 
 #header {
@@ -28,12 +29,6 @@ body{
 	font-family: "Titillium Web";
 	color: #5D5F5E;
 }
-
-    input[type="text"], input[type="email"] {
-        font-family: "Titillium Web";
-        font-weight: bold;
-        font-size: 1.3rem;
-    }
 
 	.logo{
 		float: left;
@@ -74,17 +69,24 @@ body{
     .input-container {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 26px;
         margin: 0 auto; /* Center the form horizontally */
-    }
-
-    .submit-button-container {
-        padding-top: 10px;
     }
 
     input {
         margin-bottom: 15px; /* Adjust spacing between fields */
         padding: 10px; /* Optional: Adjust padding for better appearance */
+    }
+    
+    input[type="text"], input[type="email"] {
+        font-family: "Titillium Web";
+        font-weight: bold;
+        font-size: 1.3rem;
+        width: 350px;
+    }
+
+    .submit-button-container {
+        padding-top: 13px;
     }
 
     .signup-btn {
@@ -107,7 +109,7 @@ body{
         justify-content: space-around;
         width: 100%;
         background-color: #15244C;
-        padding-top: 40px;
+        padding-top: 70px;
     }
 
 	.welcome-message {
@@ -129,7 +131,7 @@ body{
     .welcome-message h2 {
         font-size: 3rem;
         margin-top: 0.3rem;
-        margin-bottom: 0px;
+        margin-bottom: 2rem;
         text-align: left;
     }
 
@@ -139,8 +141,8 @@ body{
 
     .welcome-message p {
         font-size: 1.3rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         text-align: left;
         width: 96%;
         margin-left: 0;
@@ -153,7 +155,8 @@ body{
 
     .welcome-message .sign-up-form p {
         text-align: center;
-        width: 100%
+        width: 100%;
+        margin-top: 10px;
     }
 
     .cilindir-picture-container {
@@ -229,6 +232,10 @@ body{
         display: inline-block;
         width: 100%;
         padding-top: 20px;
+    }
+
+    .section-header h1 {
+        margin: 0px;
     }
 
     @media (max-width: 768px) {
@@ -467,107 +474,45 @@ body{
 
     .founder-container {
         display: flex;
-        justify-content: space-around;
-        background-color: #EEF0F2;
+        justify-content: center;
+        gap: 50px;
     }
 
-    .founder-left {
-        text-align: center;
-        width: 24%;
-        padding: 20px;
-        margin-left: 300px;
-        border: 1px solid #ddd; /* Add border for visual separation */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+    .founder-summary h2 {
+        margin: 0;
     }
 
-    .founder-left h2 {
-        margin: 0px;
-    }
-
-    .founder-left h4 {
-        margin-top: 0px;
-    }
-
-    .founder-right h2 {
-        margin: 0px;
-    }
-
-    .founder-right h4 {
-        margin-top: 0px;
-    }
-
-    .founder-right {
-        text-align: center;
-        width: 24%;
-        padding: 20px;
-        margin-right: 300px;
-        border: 1px solid #ddd; /* Add border for visual separation */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+    .founder-summary h3 {
+        margin: 0;
     }
 
     .founder-image {
-        width: 250px; /* Adjust image width */
-        border-radius: 25%; /* Rounded image */
+        width: 350px; /* Adjust image width */
         margin: 15px;
     }
 
-    .founder-left p,
-    .founder-right p {
-       width: 85%;
-       text-align: justify;
+    .founder-description {
+        text-align: left;
+        width: 40%;
     }
+    
+    .founder-description a {
+        text-decoration: none;
+        color: inherit; /* This makes the link color match the surrounding text */
+     }
 
     @media (max-width: 768px) {
         .founder-container {
             flex-direction: column; /* Stack founders vertically */
             padding: 10px; /* Adjust padding for smaller screens */
         }
-
-        .founder-left {
-            margin: 0 auto; /* Remove side margins for small screens */
-            width: 80%;
-        }
-
-       .founder-right {
-            margin: 0 auto; /* Remove side margins for small screens */
-            width: 80%;
-       }
-
-       .founder-left {
-           margin-bottom: 30px; /* Add vertical spacing below the left founder */
-       }
-
-       .founder-left h2,
-       .founder-right h2 {
-            font-size: 1.6rem;
-       }
-
-       .founder-left h4,
-       .founder-right h4 {
-            font-size: 1.2rem;
-       }
-
-       .founder-left p,
-       .founder-right p {
-           font-size: 1rem;
-           width: 90%
-       }
     }
 
     .partner-container {
       display: flex;
-      justify-content: space-around;
-      background-color: #EEF0F2;
-    }
-
-    .partner-logo-left {
-      text-align: center;
-      margin-left: 450px;
-    }
-
-    .partner-logo-right {
-      text-align: center;
-      margin-right: 450px;
+      justify-content: center;
+      gap: 180px;
+      margin-top: 10px;
     }
 
     .partner-if {
@@ -614,7 +559,35 @@ body{
 
     .spacer {
         height: 40px;
-        background-color: #EEF0F2;
+    }
+
+    
+    .contact-form {
+        margin: 20px 0;
+    }
+
+     .contact-form p {
+        max-width: 800px;
+     }
+
+
+    .contact-form a {
+        color: #15244C;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .contact-form {
+            padding: 10px; /* Reduce padding on smaller screens */
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .contact-form a {
+            color: #15244C;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
     }
 
     .footer-copyright {
@@ -683,11 +656,9 @@ body{
     }
 
     .hr-div {
-        background-color: #EEF0F2;
-        padding-top: 35px;    /* Adjust the top padding as needed */
+        padding-top: 25px;    /* Adjust the top padding as needed */
         padding-right: 15%;  /* Adjust the right padding as needed */
         padding-left: 15%;   /* Adjust the left padding as needed */
-        padding-bottom: 5px;    /* Remove the bottom padding */
         text-align: center;       /* Center the hr element */
         margin: 0px 0px;
     }
@@ -697,10 +668,6 @@ body{
         border-top: 2px solid #A9A9A9; /* Define the line using the border property */
         display: block;
         margin: 0px 0px;          /* Center the line horizontally */
-    }
-
-    .spacer-1 {
-        padding: 15px;      /* Adds space inside the element */
     }
 
     .spacer-2 {
