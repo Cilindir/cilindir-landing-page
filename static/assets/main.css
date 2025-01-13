@@ -106,7 +106,8 @@ body{
 
 	.welcome-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 50px;
         width: 100%;
         background-color: #15244C;
         padding-top: 70px;
@@ -162,11 +163,7 @@ body{
     .cilindir-picture-container {
         display: flex;
         width: 45%;
-        padding-right: 120px;
-        padding-left: 0px;
-        padding-bottom: 0px;
         align-items: center;
-        color: #5D5F5E;
     }
 
     .scroll-to-learn-more {
@@ -250,7 +247,7 @@ body{
         justify-content: center;
         gap: 50px;
         padding: 20px;
-        max-width: 900px;
+        max-width: 1200px;
         margin: auto;
         align-items: flex-start;
     }
@@ -265,8 +262,23 @@ body{
         margin-bottom: 0px;
     }
 
-    .company-overview-container .tile-contents {
+    .company-overview-container .tile-contents-problem {
+        line-height: 1.15;
         font-size: 1.6rem;
+        text-align: center;
+        width: 85%;
+    }
+
+    .company-overview-container .tile-contents-solution {
+        line-height: 1.1;
+        font-size: 1.75rem;
+        text-align: center;
+        width: 85%;
+    }
+
+    .company-overview-container .tile-contents-mission {
+        line-height: 1.2;
+        font-size: 2rem;
         text-align: center;
         width: 90%
     }
