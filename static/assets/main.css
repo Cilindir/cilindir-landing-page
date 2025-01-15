@@ -332,6 +332,11 @@ body{
         font-size: 1.6rem;
         text-align: center;
         width: 85%;
+        hyphens: manual;
+    }
+
+    .company-overview-container .problem-spacer-div {
+        height: 2px;
     }
 
     .company-overview-container .tile-contents-solution {
@@ -346,6 +351,10 @@ body{
         font-size: 2rem;
         text-align: center;
         width: 90%
+    }
+
+    .company-overview-container .mission-spacer-div {
+        height: 8px;
     }
 
     @media (max-width: 768px) {
@@ -543,6 +552,7 @@ body{
         justify-content: center;
         align-items: center;
         gap: 50px;
+        max-width: 1800px;
     }
 
     .founder-container p {
@@ -569,7 +579,7 @@ body{
     }
 
     .founder-image {
-        width: 380px; /* Adjust image width */
+        width: 75%; /* Adjust image width */
         margin: 15px;
     }
 
@@ -664,18 +674,11 @@ body{
         height: 40px;
     }
 
-    
     .contact-form {
-        display: flex;
         text-align: center;
-        margin: 20px 0;
-        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
     }
-
-     .contact-form p {
-        max-width: 800px;
-     }
-
 
     .contact-form a {
         color: #15244C;
@@ -684,10 +687,9 @@ body{
 
     @media (max-width: 768px) {
         .contact-form {
-            padding: 0.5rem;
+            padding-bottom: 0.5rem;
             padding-top: 0.3rem;
             width: 85%;
-            margin: 0;
         }
 
         .contact-form p {
@@ -702,7 +704,7 @@ body{
     }
 
     .footer-copyright {
-        margin-top: auto;
+        margin-top: 18px;
         width: 100%;
         height: 45px;
     }
@@ -719,8 +721,9 @@ body{
 
     @media (max-width: 768px) {
         .footer-copyright {
-            padding: 0.5rem;
-            height: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            height: 30px;
         }
 
         .footer-copyright p {
@@ -729,7 +732,7 @@ body{
         }
 
         .copyright-symbol {
-            font-size: 1.5rem;
+            font-size: 1.45rem;
         }
     }
 
