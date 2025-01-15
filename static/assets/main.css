@@ -107,17 +107,21 @@ body{
 	.welcome-container {
         display: flex;
         justify-content: center;
+        background-color: #15244C;
+        padding-top: 75px;
+    }
+
+    .welcome-contents {
+        display: flex;
+        justify-content: center;
         gap: 50px;
         width: 100%;
+        max-width: 1750px;
         background-color: #15244C;
-        padding-top: 70px;
     }
 
 	.welcome-message {
         width: 65%;
-        padding-left: 80px;
-        padding-right: 0px;
-        padding-bottom: 0px;
         color: #EEF0F2;
     }
 
@@ -178,9 +182,11 @@ body{
     }
 
     @media (max-width: 768px) {
-        .welcome-container {
+        .welcome-contents {
             flex-direction: column; /* Stack columns vertically on mobile */
             align-items: center; /* Center align items */
+            gap: 0;
+            padding-bottom: 1rem;
         }
 
         .welcome-message {
@@ -199,18 +205,54 @@ body{
 
         .welcome-message h1 {
             font-size: 1.8rem;
+            padding-bottom: 0.1rem;
+        }
+
+        .welcome-message h2 {
+            font-size: 1.4rem;
+            margin-top: 0.4rem;
+            margin-bottom: 1.2rem;
+            text-align: left;
+            line-height: 1.2;
         }
 
         .welcome-message p {
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             max-width: 100%;
             margin-top: 15px;
             margin-bottom: 15px;
+            line-height: 1.35;
+        }
+
+        .welcome-message .sign-up-form {
+            padding: 0;
+        }
+        
+        input {
+            margin-bottom: 8px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            margin: 0 auto; /* Center the form horizontally */
+            align-items: center;
+        }
+
+        .submit-button-container {
+            padding-top: 5px;
+        }
+
+        .welcome-message .sign-up-form p {
+            margin-top: 0;
+            margin-bottom: 0.6rem;
         }
 
         input[type="text"], input[type="email"] {
             font-size: 1rem;
             padding: 4px;
+            width: 150%;
         }
 
         .signup-btn {
@@ -218,7 +260,7 @@ body{
             padding: 5px 10px;
         }
 
-        .scroll-to-learn-more h2 {
+        .scroll-to-learn-more {
             display: none;
         }
     }
