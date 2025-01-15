@@ -45,6 +45,14 @@ body{
     }
 
 	@media (max-width: 768px) {
+
+        .logo{
+            float: left;
+            height: 50px;
+            width: auto;
+            top: 1rem;
+        }
+
         .logo img {
             width: 150px;
             height: auto; /* Maintain aspect ratio */
@@ -182,6 +190,11 @@ body{
     }
 
     @media (max-width: 768px) {
+
+        .welcome-container {
+            padding-top: 70px;
+        }
+
         .welcome-contents {
             flex-direction: column; /* Stack columns vertically on mobile */
             align-items: center; /* Center align items */
@@ -735,17 +748,17 @@ body{
         }
             li{
                 display: inline-block;
-                margin: 0 11px;
+                margin: 0 6px;
                 list-style-type: circle;
             }
                 a {
-                    color: #EEF0F2;
                     text-decoration: none;
                     font-size: 1rem;
                 }
 
         ul.social-icons {
-            padding: 15px;
+            padding-top: 10px;
+            
         }
     }
 
@@ -778,7 +791,7 @@ body{
         }
 
         .welcome-message h1 {
-            margin-top: 10px;
+            margin-top: 0;
             margin-bottom: 0px;
         }
 
