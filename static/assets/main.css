@@ -601,6 +601,32 @@ body{
         .founder-container {
             flex-direction: column; /* Stack founders vertically */
             padding: 10px; /* Adjust padding for smaller screens */
+            gap: 0;
+        }
+
+        .founder-image {
+            width: 80%;
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        .founder-summary h2 {
+            font-size: 1.6rem;
+        }
+
+        .founder-summary h3 {
+            font-size: 1.3rem;
+        }
+
+        .founder-description {
+            width: 92%;
+            text-align: left;
+        }
+
+        .founder-description p {
+            font-size: 1rem;
+            line-height: 1.35;
+            margin: 15px;
         }
     }
 
@@ -626,7 +652,7 @@ body{
     @media (max-width: 768px) {
         .partner-container {
             flex-direction: column; /* Stack founders vertically */
-            padding: 10px; /* Adjust padding for smaller screens */
+            padding-top: 8px; /* Adjust padding for smaller screens */
             gap: 5px;
         }
 
