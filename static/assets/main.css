@@ -261,13 +261,18 @@ body{
         }
 
         .scroll-to-learn-more {
+            background-color: #EEF0F2;
+            height: 0.1rem;
+            padding: 0;
+        }
+
+        .scroll-to-learn-more p {
             display: none;
         }
     }
 
     .section-header {
         font-size: 2rem;
-        background-color: #EEF0F2;
         display: inline-block;
         width: 100%;
         padding-top: 20px;
@@ -278,6 +283,11 @@ body{
     }
 
     @media (max-width: 768px) {
+        
+        .section-header {
+            padding-top: 5px;
+        }
+
         .section-header h1 {
             font-size: 2rem;
         }
@@ -323,6 +333,48 @@ body{
         font-size: 2rem;
         text-align: center;
         width: 90%
+    }
+
+    @media (max-width: 768px) {
+        .company-overview-container {
+            grid-template-columns: 1fr; /* Change to a single column layout */
+            grid-template-rows: auto; /* Adjust row height to content */
+            gap: 20px; /* Adjust the gap for smaller screens */
+            width: 85%;
+        }
+
+        .tile i {
+            font-size: 2.5em !important; /* Override fa-4x */
+        }
+
+        .company-overview-container .fa-4x {
+            padding: 15px;
+        }
+
+        .company-overview-container h2 {
+            font-size: 1.6rem;
+            margin-top: 12px;
+            margin-bottom: 0px;
+        }
+
+        .company-overview-container .tile-contents-problem {
+            line-height: 1.4;
+            font-size: 1rem;
+        }
+    
+        .company-overview-container .tile-contents-solution {
+            line-height: 1.4;
+            font-size: 1rem;
+        }
+    
+        .company-overview-container .tile-contents-mission {
+            line-height: 1.4;
+            font-size: 1rem;
+        }
+
+        .company-overview-container .fas {
+            padding: 0.5rem;
+        }
     }
 
     .tile-container {
@@ -383,7 +435,9 @@ body{
         }
 
         .app-description {
-            font-size: 1.2rem; /* Font size for description */
+            font-size: 1rem; /* Font size for description */
+            font-style: normal;
+            line-height: 1.4;
         }
     }
 
@@ -403,8 +457,6 @@ body{
         max-width: 500 px;
         margin-right: 300px;
     }
-
-
 
     .benefit-text-reverse {
         flex: 1;
@@ -451,29 +503,34 @@ body{
     @media (max-width: 768px) {
         .benefit {
             flex-direction: column; /* Stack text and image vertically */
-            padding: 10px; /* Adjust padding for smaller screens */
+            padding: 5px; /* Adjust padding for smaller screens */
         }
 
         .benefit-text,
         .benefit-text-reverse {
             order: 2; /* Text comes second */
             margin: 0 auto; /* Remove side margins for small screens */
+            padding-top: 0;
         }
 
         .benefit-text h2,
         .benefit-text-reverse h2 {
             font-size: 1.6rem;
+            margin: 0px
         }
 
         .benefit-text p,
         .benefit-text-reverse p {
-            font-size: 1.2rem;
+            font-size: 1rem;
+            width: 92%
         }
 
        .benefit-image,
         .benefit-image-reverse {
             order: 1; /* Image comes first */
             margin: 0 auto; /* Remove side margins for small screens */
+            padding: 10px;
+            width: 88%;
         }
 
         .benefit-image img,
@@ -557,27 +614,22 @@ body{
         .partner-container {
             flex-direction: column; /* Stack founders vertically */
             padding: 10px; /* Adjust padding for smaller screens */
+            gap: 5px;
         }
 
-        .partner-logo-left {
+        .partner-logo {
             margin: 0 auto; /* Remove side margins for small screens */
             width: 80%;
         }
 
-       .partner-logo-right {
-         margin: 0 auto; /* Remove side margins for small screens */
-         width: 80%;
-         padding-top: 25px;
-       }
-
        .partner-if {
-          width: 250px;
+          width: 190px;
           height: auto;
           margin: 0px;
         }
 
         .partner-nvidia {
-          width: 256px;
+          width: 180px;
           height: auto;
           margin: 0px;
         }
@@ -589,7 +641,10 @@ body{
 
     
     .contact-form {
+        display: flex;
+        text-align: center;
         margin: 20px 0;
+        justify-content: center;
     }
 
      .contact-form p {
@@ -604,29 +659,32 @@ body{
 
     @media (max-width: 768px) {
         .contact-form {
-            padding: 10px; /* Reduce padding on smaller screens */
-            padding-left: 25px;
-            padding-right: 25px;
+            padding: 0.5rem;
+            padding-top: 0.3rem;
+            width: 85%;
+            margin: 0;
         }
+
+        .contact-form p {
+            font-size: 1rem;
+         }
 
         .contact-form a {
             color: #15244C;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 
     .footer-copyright {
-        display: block;
         margin-top: auto;
         width: 100%;
         height: 45px;
-        background-color: #EEF0F2;
     }
 
     .footer-copyright p {
         text-align: center;
-        line-height: 20px;
+        line-height: 15px;
     }
 
     .copyright-symbol {
@@ -636,7 +694,17 @@ body{
 
     @media (max-width: 768px) {
         .footer-copyright {
-            padding-top: 15px;
+            padding: 0.5rem;
+            height: auto;
+        }
+
+        .footer-copyright p {
+            font-size: 1rem;
+            line-height: 0;
+        }
+
+        .copyright-symbol {
+            font-size: 1.5rem;
         }
     }
 
@@ -712,5 +780,13 @@ body{
         .welcome-message h1 {
             margin-top: 10px;
             margin-bottom: 0px;
+        }
+
+        .hr-div {
+            padding-top: 5px;    /* Adjust the top padding as needed */
+            padding-right: 10%;  /* Adjust the right padding as needed */
+            padding-left: 10%;   /* Adjust the left padding as needed */
+            text-align: center;       /* Center the hr element */
+            margin: 0px 0px;
         }
     }
