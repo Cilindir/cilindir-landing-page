@@ -189,6 +189,14 @@ body{
         font-size: 1.5rem;
     }
 
+    .desktop-only {
+        display: block;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
     @media (max-width: 768px) {
 
         .welcome-container {
@@ -213,7 +221,7 @@ body{
         .cilindir-picture-container {
             order: 2; /* Stack this second */
             padding: 0px;
-            width: 90%;
+            width: 100%;
         }
 
         .welcome-message h1 {
@@ -222,9 +230,9 @@ body{
         }
 
         .welcome-message h2 {
-            font-size: 1.4rem;
+            font-size: 1.45rem;
             margin-top: 0.4rem;
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.2rem;
             text-align: left;
             line-height: 1.2;
         }
@@ -237,8 +245,17 @@ body{
             line-height: 1.35;
         }
 
+        .desktop-only {
+            display: none;
+        }
+
+        .mobile-only {
+            display: block;
+            text-align: center;
+        }
+
         .welcome-message .sign-up-form {
-            padding: 0;
+            padding-bottom: 10px;
         }
         
         input {
