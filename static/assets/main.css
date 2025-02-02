@@ -222,6 +222,9 @@ body{
             order: 2; /* Stack this second */
             padding: 0px;
             width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            align-items: center;
         }
 
         .welcome-message h1 {
@@ -369,7 +372,7 @@ body{
         width: 95%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1480px) {
         .company-overview-container {
             grid-template-columns: 1fr; /* Change to a single column layout */
             grid-template-rows: auto; /* Adjust row height to content */
@@ -377,40 +380,49 @@ body{
             width: 85%;
         }
 
-        .company-overview-container .tile {
-            display: grid;
-            grid-template-columns: 1fr;  /* Icon in one column, header + text in another */
-            align-items: center;
-            width: 300px; 
-        }
+        @media (max-width: 768px) {
+            .company-overview-container {
+                grid-template-columns: 1fr; /* Change to a single column layout */
+                grid-template-rows: auto; /* Adjust row height to content */
+                gap: 20px; /* Adjust the gap for smaller screens */
+                width: 85%;
+            }
 
-        .tile i {
-            font-size: 2.5em !important; /* Override fa-4x */
-        }
-
-        .company-overview-container .fa-4x {
-            padding: 15px;
-        }
-
-        .company-overview-container h2 {
-            font-size: 1.6rem;
-            margin-top: 12px;
-            margin-bottom: 0px;
-        }
-
-        .company-overview-container p {
-            font-size: 1rem;
-            margin: 0;
-        }
-
-        .company-overview-container .tile-contents {
-            line-height: 1.4;
-            font-size: 1rem;
-            text-align: center;
-        }
-
-        .company-overview-container .fas {
-            padding: 0.5rem;
+            .company-overview-container .tile {
+                display: grid;
+                grid-template-columns: 1fr;  /* Icon in one column, header + text in another */
+                align-items: center;
+                width: 300px; 
+            }
+    
+            .tile i {
+                font-size: 2.5em !important; /* Override fa-4x */
+            }
+    
+            .company-overview-container .fa-4x {
+                padding: 15px;
+            }
+    
+            .company-overview-container h2 {
+                font-size: 1.6rem;
+                margin-top: 12px;
+                margin-bottom: 0px;
+            }
+    
+            .company-overview-container p {
+                font-size: 1rem;
+                margin: 0;
+            }
+    
+            .company-overview-container .tile-contents {
+                line-height: 1.4;
+                font-size: 1rem;
+                text-align: center;
+            }
+    
+            .company-overview-container .fas {
+                padding: 0.5rem;
+            }
         }
     }
 
@@ -426,7 +438,7 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
         grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
-        gap: 50px; /* Adjust the space between tiles */
+        gap: 30px; /* Adjust the space between tiles */
         width: 100%; /* Full width of the container */
         max-width: 1200px; /* Optional: Maximum width for the grid */
         margin: auto; /* Center the grid */
@@ -459,22 +471,32 @@ body{
         text-align: center;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
+
         .tile-grid {
-            grid-template-columns: 1fr; /* Change to a single column layout */
+            grid-template-columns: 1fr 1fr; /* Change to a single column layout */
             grid-template-rows: auto; /* Adjust row height to content */
-            gap: 20px; /* Adjust the gap for smaller screens */
-            width: 85%;
+            width: 600px;
         }
 
-        .app-name {
-            font-size: 1.6rem; /* Font size for application name */
-        }
-
-        .app-description {
-            font-size: 1rem; /* Font size for description */
-            font-style: normal;
-            line-height: 1.4;
+        @media (max-width: 768px) {
+            .tile-grid {
+                grid-template-columns: 1fr; /* Change to a single column layout */
+                grid-template-rows: auto; /* Adjust row height to content */
+                gap: 20px; /* Adjust the gap for smaller screens */
+                width: 85%;
+                max-width: 300px;
+            }
+    
+            .app-name {
+                font-size: 1.6rem; /* Font size for application name */
+            }
+    
+            .app-description {
+                font-size: 1rem; /* Font size for description */
+                font-style: normal;
+                line-height: 1.4;
+            }
         }
     }
 
@@ -526,7 +548,7 @@ body{
         margin: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         .benefit {
             flex-direction: column; /* Stack text and image vertically */
             padding: 5px; /* Adjust padding for smaller screens */
@@ -542,7 +564,7 @@ body{
             margin: 0 0; /* Remove side margins for small screens */
             padding-top: 0;
             width: 85%;
-            max-width: 100%;
+            max-width: 300px;
         }
 
         .benefit-text h2 {
@@ -559,23 +581,31 @@ body{
             margin: 0 auto; /* Remove side margins for small screens */
             padding: 10px;
             width: 88%;
+            max-width: 400px;
         }
     }
 
     .founder-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         gap: 50px;
         max-width: 1800px;
     }
 
-    .founder-container p {
+    .founder-tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .founder-tile p {
         margin-top: 25px;
         margin-bottom: 25px;
     }
 
-    .founder-container p:last-child {
+    .founder-tile p:last-child {
         margin-bottom: 8px;
     }
 
@@ -594,7 +624,7 @@ body{
     }
 
     .founder-image {
-        width: 75%; /* Adjust image width */
+        width: 375px; /* Adjust image width */
         margin: 15px;
     }
 
@@ -609,7 +639,12 @@ body{
      }
 
     @media (max-width: 768px) {
+
         .founder-container {
+            gap: 0;
+        }
+
+        .founder-tile {
             flex-direction: column; /* Stack founders vertically */
             padding: 10px; /* Adjust padding for smaller screens */
             gap: 0;
