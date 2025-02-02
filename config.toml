@@ -10,7 +10,7 @@ googleAnalytics = ""
 
 [params]
   tagline = "From Any Place to Every Face."
-  mailchimpURL = "https://cilindir.us10.list-manage.com/subscribe/post?u=221a649a4ff715fc8c2c8cee1&amp;id=051d52933a&amp;f_id=00d67be1f0"
+  mailchimpURL = "https://cilindir.us17.list-manage.com/subscribe/post?u=775074a4e48299ffc7184b09f&amp;id=ee7095d424&amp;f_id=00d6c2e1f0"
 
 [markup]
   [markup.goldmark.renderer]
