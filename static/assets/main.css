@@ -325,53 +325,48 @@ body{
 
     .company-overview-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 30px;
         padding: 20px;
-        max-width: 1200px;
         margin: auto;
-        align-items: flex-start;
+        max-width: 1430px;
+    }
+
+    .company-overview-container .tile {
+        display: grid;
+        grid-template-columns: 1fr 4fr;  /* Icon in one column, header + text in another */
+        align-items: center;
+        width: 700px; 
+    }
+
+    .company-overview-container .tile i {
+        justify-self: center; /* Centers the icon horizontally */
     }
 
     .company-overview-container .fa-4x {
         padding: 15px;
+        padding-right: 25px;
     }
 
     .company-overview-container h2 {
-        font-size: 2.5rem;
-        margin-top: 30px;
+        font-size: 1.8rem;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
 
-    .company-overview-container .tile-contents-problem {
+    .company-overview-container p {
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .company-overview-container .tile-contents {
         line-height: 1.15;
         font-size: 1.6rem;
-        text-align: center;
-        width: 85%;
-        hyphens: manual;
-    }
-
-    .company-overview-container .problem-spacer-div {
-        height: 2px;
-    }
-
-    .company-overview-container .tile-contents-solution {
-        line-height: 1.1;
-        font-size: 1.75rem;
-        text-align: center;
-        width: 85%;
-    }
-
-    .company-overview-container .tile-contents-mission {
-        line-height: 1.2;
-        font-size: 2rem;
-        text-align: center;
-        width: 90%
-    }
-
-    .company-overview-container .mission-spacer-div {
-        height: 8px;
+        text-align: left;
+        width: 95%;
     }
 
     @media (max-width: 768px) {
@@ -380,6 +375,13 @@ body{
             grid-template-rows: auto; /* Adjust row height to content */
             gap: 20px; /* Adjust the gap for smaller screens */
             width: 85%;
+        }
+
+        .company-overview-container .tile {
+            display: grid;
+            grid-template-columns: 1fr;  /* Icon in one column, header + text in another */
+            align-items: center;
+            width: 300px; 
         }
 
         .tile i {
@@ -396,19 +398,15 @@ body{
             margin-bottom: 0px;
         }
 
-        .company-overview-container .tile-contents-problem {
-            line-height: 1.4;
+        .company-overview-container p {
             font-size: 1rem;
+            margin: 0;
         }
-    
-        .company-overview-container .tile-contents-solution {
+
+        .company-overview-container .tile-contents {
             line-height: 1.4;
             font-size: 1rem;
-        }
-    
-        .company-overview-container .tile-contents-mission {
-            line-height: 1.4;
-            font-size: 1rem;
+            text-align: center;
         }
 
         .company-overview-container .fas {
