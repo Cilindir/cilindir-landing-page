@@ -146,7 +146,7 @@ body{
     .welcome-message h2 {
         font-size: 3rem;
         margin-top: 0.3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         text-align: left;
     }
 
@@ -156,8 +156,8 @@ body{
 
     .welcome-message p {
         font-size: 1.3rem;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         text-align: left;
         width: 96%;
         margin-left: 0;
@@ -240,13 +240,30 @@ body{
 
         @media (max-width: 1568px) {
 
+            .welcome-message h1 {
+                font-size: 2.5rem;
+                margin-top: 10px;
+                margin-bottom: 0px;
+                line-height: 1.2;
+            }
+        
+            .welcome-message h2 {
+                font-size: 1.8rem;
+                margin-top: 0.3rem;
+                margin-bottom: 0.5rem;
+                line-height: 0.9;
+            }
+
+            .welcome-contents {
+                gap: 0;
+            }
             .welcome-message {
-                width: 44%;
+                width: 55%;
             }
 
             input[type="text"], input[type="email"] {
                 font-size: 1rem;
-                width: 150px;
+                width: 200px;
             }
 
             .signup-btn {
@@ -660,6 +677,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
         gap: 50px;
         max-width: 1800px;
     }
@@ -707,45 +725,83 @@ body{
     .founder-description a {
         text-decoration: none;
         color: inherit; /* This makes the link color match the surrounding text */
-     }
+    }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1280px) {
 
         .founder-container {
             gap: 0;
+            max-width: 100%;
         }
 
         .founder-tile {
-            flex-direction: column; /* Stack founders vertically */
-            padding: 10px; /* Adjust padding for smaller screens */
-            gap: 0;
-        }
-
-        .founder-image {
-            width: 80%;
-            margin-top: 5px;
-            margin-bottom: 2px;
-        }
-
-        .founder-summary h2 {
-            font-size: 1.6rem;
-        }
-
-        .founder-summary h3 {
-            font-size: 1.3rem;
+            max-width: 94%;
         }
 
         .founder-description {
-            width: 92%;
-            text-align: left;
+            width: 56%;
         }
 
-        .founder-description p {
-            font-size: 1rem;
-            line-height: 1.35;
-            margin: 15px;
+        .founder-tile p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .founder-description a {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 1000px) {
+
+            .founder-container {
+                gap: 0;
+                max-width: 600px;
+            }
+    
+            .founder-tile {
+                flex-direction: column; /* Stack founders vertically */
+                padding: 10px; /* Adjust padding for smaller screens */
+                gap: 0;
+            }
+    
+            .founder-image {
+                width: 80%;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                max-width: 300px;
+            }
+    
+            .founder-summary h2 {
+                font-size: 1.6rem;
+            }
+    
+            .founder-summary h3 {
+                font-size: 1.3rem;
+            }
+    
+            .founder-description {
+                width: 92%;
+                text-align: left;
+            }
+    
+            .founder-description p {
+                font-size: 1rem;
+                line-height: 1.35;
+                margin: 15px;
+            }
+
+            .founder-description a {
+                font-size: 1rem;
+            }
+
+            .founder-description a {
+                text-decoration: none;
+                color: inherit; /* This makes the link color match the surrounding text */
+            }
         }
     }
+
+    
 
     .partner-container {
       display: flex;
