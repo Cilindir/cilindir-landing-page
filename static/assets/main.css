@@ -412,11 +412,15 @@ body{
     @media (max-width: 768px) {
         
         .section-header {
+            display: flex;
+            justify-content: center;
             padding-top: 5px;
+            line-height: 1.2;
         }
 
         .section-header h1 {
             font-size: 2rem;
+            max-width: 88%;
         }
     }
 
@@ -807,13 +811,15 @@ body{
         }
     }
 
-    
-
     .partner-container {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       justify-content: center;
-      gap: 180px;
+      align-items: center;
+      gap: 45px 45px;
+      margin: auto;
       margin-top: 10px;
+      width: 800px;
     }
 
     .partner-if {
@@ -823,16 +829,32 @@ body{
     }
 
     .partner-nvidia {
-      width: 312px;
+      width: 290px;
+      height: auto;
+      margin: 0px;
+      margin-top: 2px;
+    }
+
+    .partner-uofa {
+        width: 305px;
+        height: auto;
+        margin: 0px;
+    }
+
+    .partner-uoft {
+      padding-top: 3px;
+      width: 325px;
       height: auto;
       margin: 0px;
     }
 
     @media (max-width: 768px) {
         .partner-container {
+            display: flex;
             flex-direction: column; /* Stack founders vertically */
             padding-top: 8px; /* Adjust padding for smaller screens */
             gap: 5px;
+            width: 100%;
         }
 
         .partner-logo {
@@ -850,6 +872,19 @@ body{
           width: 180px;
           height: auto;
           margin: 0px;
+        }
+
+        .partner-uofa {
+            width: 180px;
+            height: auto;
+            margin: 0px;
+            margin-top: 7px;
+        }
+  
+        .partner-uoft {
+            width: 170px;
+            height: auto;
+            margin: 0px;
         }
     }
 
