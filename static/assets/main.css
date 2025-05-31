@@ -60,7 +60,7 @@ body{
         }
 
         .logo img {
-            width: 175px;
+            width: 150px;
             height: auto; /* Maintain aspect ratio */
         }
     }
@@ -85,7 +85,10 @@ body{
         font-size: clamp(2.5rem, 3.5vw, 4rem);
         margin-top: 1.75rem;
         margin-bottom: 0px;
-        text-align: left;
+    }
+
+    .mobile-break {
+        display: none;
     }
 
     .tri-render-container {
@@ -119,6 +122,45 @@ body{
         font-weight: bold;
         font-style: italic;
         color: #5D5F5E;
+    }
+
+    @media (max-width: 768px) {
+        
+        .welcome-contents h1 {
+            font-size: 2.5rem;
+            margin-top: 0.4rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.25;
+        }
+
+        .mobile-break {
+            display: inline;
+        }
+
+        .tri-render-container {
+            grid-template-columns: 1fr;
+            gap: 10px; /* optional smaller gap */
+            max-width: 75vw; /* optional wider container on mobile */
+        }
+
+          /* On mobile: reorder h2 before images */
+        .mobile-above-images {
+            order: 1;
+        }
+        .tri-render-container {
+            order: 2;
+        }
+
+        .welcome-contents h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.25;
+        }
+
+          .scroll-to-learn-more {
+            display: none;
+        }
+
     }
 
     .section-header {
