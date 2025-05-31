@@ -15,6 +15,7 @@ body{
 #header {
     position: fixed;
     top: 0;
+    height: 7rem;
     width: 100%;
     background-color: #15244C;
     z-index: 1000;
@@ -115,53 +116,52 @@ body{
 	.welcome-container {
         display: flex;
         justify-content: center;
-        background-color: #15244C;
         padding-top: 75px;
     }
 
     .welcome-contents {
         display: flex;
+        flex-direction: column; /* This makes children stack vertically */
         justify-content: center;
-        gap: 50px;
+        align-items: center;
+        gap: 5px;
         width: 100%;
         max-width: 1750px;
-        background-color: #15244C;
     }
 
-	.welcome-message {
-        display: flex;
-        flex-direction: column;
-        width: 65%;
-        color: #EEF0F2;
-    }
-
-    .welcome-message h1 {
+    .welcome-contents h1 {
         font-size: 4.5rem;
         margin-top: 45px;
         margin-bottom: 0px;
-        line-height: 0.9;
         text-align: left;
     }
 
     .welcome-message h2 {
         font-size: 3rem;
-        margin-top: 0.3rem;
-        margin-bottom: 1.5rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.3rem;
         text-align: left;
     }
 
-    .welcome-message .emphasized {
-        font-weight: bold;
+    .tri-render-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
     }
 
-    .welcome-message p {
-        font-size: 1.3rem;
-        margin-top: 11px;
-        margin-bottom: 11px;
-        text-align: left;
-        width: 96%;
-        margin-left: 0;
-        margin-right: auto;
+    .tri-render-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tri-render-container img {
+        max-width: 100%;
+        height: auto;
+        flex: 1 1 30%; /* Ensures the images are responsive */
+        min-width: 200px; /* Prevents them from getting too small */
     }
 
     .welcome-message .sign-up-form {
@@ -174,228 +174,15 @@ body{
         margin-top: 10px;
     }
 
-    .cilindir-picture-container {
-        display: flex;
-        width: 45%;
-        align-items: center;
-    }
-
     .scroll-to-learn-more {
         padding: 20px 0;
         margin: 0;
-        background-color: #15244C;
     }
 
     .scroll-to-learn-more h2 {
-        color: #EEF0F2;
         font-weight: normal;
         font-size: 1.5rem;
-    }
-
-    .desktop-only {
-        display: flex;
-        align-items: center;
-    }
-
-    .mobile-only {
-        display: none;
-    }
-
-    @media (max-width: 1900px) {
-
-        .welcome-contents {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            width: 92%;
-        }
-
-        .welcome-message p {
-            margin-top: 8px;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-
-        .welcome-message h1 {
-            font-size: 2.8rem;
-            margin-top: 25px;
-            margin-bottom: 0px;
-            line-height: 0.9;
-        }
-    
-        .welcome-message h2 {
-            font-size: 2.2rem;
-            margin-top: 0.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .cilindir-picture-container {
-            max-width: 600px;
-        }
-
-        input[type="text"], input[type="email"] {
-            font-size: 1.1rem;
-            width: 250px;
-        }
-
-        @media (max-width: 1568px) {
-
-            .welcome-message h1 {
-                font-size: 2.5rem;
-                margin-top: 5px;
-                margin-bottom: 0px;
-                line-height: 1.2;
-            }
-        
-            .welcome-message h2 {
-                font-size: 1.8rem;
-                margin-top: 0.3rem;
-                margin-bottom: 0.5rem;
-                line-height: 0.9;
-            }
-
-            .welcome-contents {
-                gap: 0;
-            }
-
-            .welcome-message {
-                width: 60%;
-            }
-
-            .welcome-message p {
-                margin-top: 8px;
-                margin-bottom: 8px;
-            }
-
-            input[type="text"], input[type="email"] {
-                font-size: 1rem;
-                width: 200px;
-            }
-
-            .signup-btn {
-                font-size: 1rem;
-                padding: 5px 10px;
-            }
-
-            .scroll-to-learn-more {
-                background-color: #EEF0F2;
-                height: 0.1rem;
-                padding: 0;
-            }
-
-            .scroll-to-learn-more p {
-                display: none;
-            }
-
-            .welcome-contents {
-                margin-bottom: 30px;
-            }
-
-            @media (max-width: 1000px) {
-
-                .welcome-container {
-                    padding-top: 70px;
-                }
-        
-                .welcome-contents {
-                    flex-direction: column; /* Stack columns vertically on mobile */
-                    align-items: center; /* Center align items */
-                    gap: 0;
-                    padding-bottom: 1rem;
-                }
-        
-                .welcome-message {
-                    order: 1; /* Stack this first */
-                    padding: 10px;
-                    padding-top: 0px;
-                    padding-bottom: 0px;
-                    width: 85%;
-                }
-        
-                .cilindir-picture-container {
-                    order: 2; /* Stack this second */
-                    padding: 0px;
-                    width: 100%;
-                    max-width: 400px;
-                    margin: 0 auto;
-                    align-items: center;
-                }
-        
-                .welcome-message h1 {
-                    font-size: 1.8rem;
-                    padding-bottom: 0.1rem;
-                    order: 1;
-                }
-        
-                .welcome-message h2 {
-                    font-size: 1.45rem;
-                    margin-top: 0.4rem;
-                    margin-bottom: 0.2rem;
-                    text-align: left;
-                    line-height: 1.2;
-                    order: 2;
-                }
-        
-                .welcome-message p {
-                    font-size: 0.95rem;
-                    max-width: 100%;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    line-height: 1.35;
-                    order: 3;
-                }
-        
-                .desktop-only {
-                    display: none;
-                }
-        
-                .mobile-only {
-                    display: flex;
-                    align-items: center;
-                    order: 2;
-                }
-    
-                .sign-up-form {
-                    order: 4;
-                }
-        
-                .welcome-message .sign-up-form {
-                    padding-bottom: 10px;
-                }
-                
-                input {
-                    margin-bottom: 8px;
-                }
-        
-                .input-container {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.2rem;
-                    margin: 0 auto; /* Center the form horizontally */
-                    align-items: center;
-                }
-        
-                .submit-button-container {
-                    padding-top: 5px;
-                }
-        
-                .welcome-message .sign-up-form p {
-                    margin-top: 0;
-                    margin-bottom: 0.6rem;
-                }
-        
-                input[type="text"], input[type="email"] {
-                    font-size: 1rem;
-                    padding: 4px;
-                    width: 150%;
-                }
-        
-                .signup-btn {
-                    font-size: 1rem;
-                    padding: 5px 10px;
-                }
-            }
-        }
+        color: #5D5F5E;
     }
 
     .section-header {
