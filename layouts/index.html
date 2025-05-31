@@ -12,6 +12,9 @@
 	{{ template "_internal/opengraph.html" . }}
 	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-light.svg" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark.svg" media="(prefers-color-scheme: dark)">
+
+	<!-- Swiper CSS -->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -34,17 +37,32 @@
 			<div class="welcome-contents">
 				<h1>Introducing the<br class="mobile-break"> Cilindir Rift</h1>
 
-				<div class="tri-render-container">
+				<!-- Desktop grid container -->
+				<div class="tri-render-container desktop-only">
 					<img src="/product_renders/2_panel_scene1_presentation.png" alt="Cilindir Rift: Presentation">
 					<img src="/product_renders/2_panel_scene2_learning.png" alt="Cilindir Rift: Learning">
 					<img src="/product_renders/2_panel_scene3_conferencing.png" alt="Cilindir Rift: Conferencing">
 				</div>
 
-				<h2 class="mobile-above-images">Where presence powers team performance and growth.</h2>
-				
-				<!-- <h2>Where presence powers team performance and growth.</h2> -->
+				<!-- Mobile swiper container -->
+				<div class="swiper-container mobile-only">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+					<img src="/product_renders/2_panel_scene1_presentation.png" alt="Cilindir Rift: Presentation" />
+					</div>
+					<div class="swiper-slide">
+					<img src="/product_renders/2_panel_scene2_learning.png" alt="Cilindir Rift: Learning" />
+					</div>
+					<div class="swiper-slide">
+					<img src="/product_renders/2_panel_scene3_conferencing.png" alt="Cilindir Rift: Conferencing" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				</div>
+
+				<h2>Where presence powers team performance and growth.</h2>
 			
-				<div class="scroll-to-learn-more">
+				<div class="scroll-to-learn-more desktop-only">
 					<a href="#company"><h2>Scroll down to learn more</h2></a>
 				</div>
 				
@@ -56,7 +74,7 @@
 		</div>
 
 		<!-- Mission Section -->
-		<div class="sign-up-form">
+		<!-- <div class="sign-up-form">
 			<p>Be the first to know!</p>
 			<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<div class="input-container">
@@ -67,7 +85,7 @@
 					<input type="submit" value="Join the Waitlist" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
 				</div>
 			</form>
-		</div>
+		</div> -->
 
 		<!-- Mission Section -->
 		<div id="company" class="section-header">
@@ -348,5 +366,22 @@
         });
     </script>
 
+	<!-- Swiper JS -->
+  	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script>
+	const swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		breakpoints: {
+		769: {
+			enabled: false,
+		},
+		},
+	});
+	</script>
 </body>
 </html>
