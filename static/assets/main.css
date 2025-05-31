@@ -208,6 +208,50 @@ body{
         }
     }
 
+    .technology-overview-container {
+        width: 80%;
+        max-width: 1220px;
+        margin: auto;
+    }
+
+    .technology-overview-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .remote-conferencing-images-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* space between images */
+        margin-top: 1rem;
+    }
+
+    .remote-conferencing-images-grid img {
+        width: 100%;  /* smaller than 100% */
+        max-width: 600px; /* limit max image width */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ai-conferencing-images-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* space between images */
+        margin-top: 1rem;
+    }
+
+    .ai-conferencing-images-grid img {
+        width: 70%;  /* smaller than 100% */
+        max-width: 600px; /* limit max image width */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 	.benefit i {
         padding-top: 20px; /* Adjust the padding as needed */
     }
