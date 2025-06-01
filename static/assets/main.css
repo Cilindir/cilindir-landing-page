@@ -40,6 +40,10 @@ body{
         line-height: 1.35;
     }
 
+    h2 {
+        line-height: 1.35;
+    }
+
 	.logo{
         padding-top: 5px;
         padding-left: 3rem;
@@ -261,6 +265,10 @@ body{
 
     @media (max-width: 768px) {
 
+        .problem-overview-container {
+            width: 90%;
+        }
+
         .problem-overview-container h2 {
             font-size: 1.2rem;
             margin-top: 0.6rem;
@@ -273,7 +281,6 @@ body{
 
         .cost-tile-grid {
             grid-template-columns: 1fr;
-            max-width: 95%;
         }
 
         .cost-tile {
@@ -298,15 +305,15 @@ body{
         }
     }   
 
-    /* Technology overview section */
+    /* Rift overview section */
 
-    .technology-overview-container {
+    .rift-overview-container {
         width: 80%;
         max-width: 1220px;
         margin: auto;
     }
 
-    .technology-overview-container h2 {
+    .rift-overview-container h2 {
         font-size: 1.6rem;
         width: 74%;
         margin: auto;
@@ -349,8 +356,19 @@ body{
         margin-right: auto;
     }
 
-	.benefit i {
-        padding-top: 20px; /* Adjust the padding as needed */
+    @media (max-width: 768px) {
+
+        .rift-overview-container {
+            width: 90%;
+        }
+
+        .rift-overview-container h2 {
+            font-size: 1.2rem;
+            margin-top: 0.6rem;
+            font-weight: normal;
+            width: 95%;
+        }
+
     }
 
     /* Sign-up form styling */
@@ -655,7 +673,6 @@ body{
 
     .product-image {
         width: auto;
-        /* height: 50%; */
         height: 25vw;
         margin: 0;
     }
@@ -684,6 +701,42 @@ body{
         font-weight: 700;
         color: #111;
         margin: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .pricing-container {
+            grid-template-columns: 1fr; /* Stack vertically */
+            gap: 30px; /* Smaller gap between stacked items */
+            width: 90%;
+            padding: 10px;
+        }
+
+        .product-image {
+            height: 60vw; /* Allow image to scale naturally */
+        }  
+
+        .product-dimensions,
+        .product-price {
+            width: 100%;
+            text-align: center;
+        }
+
+        .product-column {
+            padding: 10px;
+        }
+
+        .product-column .product-name {
+            font-size: 1.4rem;
+        }
+
+        .product-column .product-dimensions {
+            font-size: 1rem;
+        }
+
+        .product-column .product-description {
+            width: 85%;
+            font-size: 1rem;
+        }
     }
 
     /* Founder Section */
