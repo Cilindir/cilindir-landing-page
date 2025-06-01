@@ -45,7 +45,7 @@
 				</div>
 
 				<!-- Mobile swiper container -->
-				<div class="swiper-container mobile-only">
+				<div class="swiper-container welcome-carousel mobile-only">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 					<img src="/product_renders/mobile_carousel/eric.png" alt="Cilindir Rift: Presentation" />
@@ -57,7 +57,7 @@
 					<img src="/product_renders/mobile_carousel/carla.png" alt="Cilindir Rift: Conferencing" />
 					</div>
 				</div>
-					<div class="swiper-pagination"></div>
+					<div class="welcome-pagination"></div>
 				</div>
 
 				<h2>Where presence powers team performance and growth.</h2>
@@ -81,7 +81,7 @@
 
 			<h2 class="whats-lost-message">What's lost when face-to-face nuance is reduced to video tiles and message threads?</h2>
 			
-			<div class="cost-tile-grid">
+			<div class="cost-tile-grid desktop-only">
 				
 				<div class="cost-tile">
 					<div class="percentage-display">95%</div>
@@ -111,6 +111,45 @@
 						<p>Some missing statistic, probably about time waisted due to text convo with ChatGPT.</p>
 					</div>
 				</div>
+			</div>
+
+			<!-- Carousel version for mobile -->
+			<div class="swiper-container cost-carousel mobile-only">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="cost-tile">
+							<div class="percentage-display">95%</div>
+							<div class="statistic-contents">
+							<p>Of people say face-to-face meetings are key to successfully building and maintaining long-term relationships.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cost-tile">
+							<div class="percentage-display">67%</div>
+							<div class="statistic-contents">
+								<p>Of employees claim to be distracted during online meetings and 55% admit to checking their emails during calls.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cost-tile">
+							<div class="percentage-display">49%</div>
+							<div class="statistic-contents">
+								<p>Of individuals report being exhausted due to being on webcam during meetings.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="cost-tile">
+							<div class="percentage-display">xx%</div>
+							<div class="statistic-contents">
+								<p>Some missing statistic, probably about time waisted due to text convo with ChatGPT.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cost-pagination"></div>
 			</div>
 
 			<h2 class="impact-message">The impact: Poor communication costs $12,506 per employee per year.</h2>
@@ -503,11 +542,11 @@
 	<!-- Swiper JS -->
   	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script>
-	const swiper = new Swiper('.swiper-container', {
+	const welcomeSwiper = new Swiper('.welcome-carousel', {
 		slidesPerView: 1,
 		spaceBetween: 20,
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.welcome-pagination',
 			clickable: true,
 		},
 		breakpoints: {
@@ -515,6 +554,20 @@
 			enabled: false,
 		},
 		},
+	});
+
+	const costSwiper = new Swiper('.cost-carousel', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: '.cost-pagination',
+			clickable: true,
+		},
+		breakpoints: {
+			769: {
+			enabled: false,
+			}
+		}
 	});
 	</script>
 </body>

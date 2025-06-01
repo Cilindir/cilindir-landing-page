@@ -170,7 +170,7 @@ body{
             height: auto;
         }
 
-        .swiper-container .swiper-pagination {
+        .welcome-carousel .welcome-pagination {
             position: relative;
             text-align: center;
         }
@@ -267,7 +267,19 @@ body{
         justify-self: center;
     }
 
+    .mobile-only {
+        display: none;
+    }
+
     @media (max-width: 768px) {
+
+        .desktop-only {
+            display: none;
+        }
+
+          .mobile-only {
+            display: block;
+        }
 
         .problem-overview-container {
             width: 90%;
@@ -278,9 +290,13 @@ body{
             margin-top: 0.6rem;
             font-weight: normal;
         }
-
+ 
         .problem-overview-container .impact-message {
             margin-top: 0;
+        }
+
+        .problem-overview-container .whats-lost-message {
+            margin-bottom: 15px;
         }
 
         .cost-tile-grid {
@@ -306,6 +322,12 @@ body{
             font-size: 1rem;
             width: 90%;
             margin: auto;
+        }
+
+        .cost-carousel .cost-pagination {
+            position: relative;
+            text-align: center;
+            margin-top: 10px;
         }
     }   
 
