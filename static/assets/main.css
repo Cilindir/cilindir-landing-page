@@ -65,6 +65,8 @@ body{
         }
     }
 
+    /* Welcome container */
+
 	.welcome-container {
         display: flex;
         justify-content: center;
@@ -182,6 +184,8 @@ body{
 
     }
 
+    /* Section header styling */
+
     .section-header {
         font-size: 2rem;
         display: inline-block;
@@ -208,6 +212,8 @@ body{
         }
     }
 
+    /* Problem/opportunity section */
+
     .problem-overview-container h2 {
         font-size: 1.6rem;
         max-width: 70%;
@@ -216,10 +222,10 @@ body{
 
     .cost-tile-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 30px; /* space between tiles */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
         padding: 20px 0;
-        justify-items: center; /* center tiles horizontally */
+        justify-items: center;
         max-width: 75%;
         margin: auto;
     }
@@ -252,6 +258,8 @@ body{
         width: 95%;
     }
 
+    /* Technology overview section */
+
     .technology-overview-container {
         width: 80%;
         max-width: 1220px;
@@ -260,12 +268,17 @@ body{
 
     .technology-overview-container h2 {
         font-size: 1.6rem;
+        width: 74%;
+        margin: auto;
+        margin-top: 0.5rem;
+        line-height: 1.35;
     }
 
     .remote-conferencing-images-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px; /* space between images */
+        margin: 2rem;
         margin-top: 1rem;
     }
 
@@ -283,7 +296,7 @@ body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px; /* space between images */
-        margin-top: 1rem;
+        margin: 2rem;
     }
 
     .ai-conferencing-images-grid img {
@@ -299,6 +312,8 @@ body{
 	.benefit i {
         padding-top: 20px; /* Adjust the padding as needed */
     }
+
+    /* Sign-up form styling */
 
     form {
         display: flex;
@@ -344,95 +359,61 @@ body{
         margin: 0 auto;
     }
 
-    .welcome-message .sign-up-form {
-        padding: 5px 0;
-    }
-
-    .welcome-message .sign-up-form p {
-        text-align: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
     /* Applications Section */
 
-    @media (max-width: 768px) {
-        .tile i {
-            font-size: 2.5em !important; /* Override fa-4x */
-        }
-    }
-
-    .tile-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 20px 0;
-        box-sizing: border-box;
-    }
-
-    .tile-grid {
+   .application-tile-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-        grid-template-rows: repeat(3, 1fr); /* 3 rows of equal height */
-        gap: 30px; /* Adjust the space between tiles */
-        width: 100%; /* Full width of the container */
-        max-width: 1200px; /* Optional: Maximum width for the grid */
-        margin: auto; /* Center the grid */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 20px 0;
+        justify-items: center;
+        max-width: 75%;
+        margin: auto;
     }
 
-    .tile {
-        display: flex;
-        flex-direction: column; /* Stack children vertically */
+    .application-tile {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
         align-items: center;
-        justify-content: center;
         border: 1px solid #ddd;
         padding: 20px;
-        text-align: center;
+        text-align: left;
         box-sizing: border-box;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .app-name {
-        font-size: 1.8rem;
+    .application-tile i {
+        justify-self: center;
+        padding: 15px;
+        padding-right: 25px;
+    }
+
+    .application-tile .application-title {
+        font-size: 1.6rem;
+        line-height: 1.35;
         font-weight: bold;
-        margin: 5px;
-        margin-top: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .app-description {
+    .application-tile .application-description {
         font-size: 1.3rem;
-        font-style: italic;
-        text-align: center;
+        line-height: 1.35;
+        margin-top: 5px;
+        margin-bottom: 0;
     }
 
-    @media (max-width: 1280px) {
-
-        .tile-grid {
-            grid-template-columns: 1fr 1fr; /* Change to a single column layout */
-            grid-template-rows: auto; /* Adjust row height to content */
-            width: 600px;
-        }
-
-        @media (max-width: 768px) {
-            .tile-grid {
-                grid-template-columns: 1fr; /* Change to a single column layout */
-                grid-template-rows: auto; /* Adjust row height to content */
-                gap: 20px; /* Adjust the gap for smaller screens */
-                width: 85%;
-                max-width: 300px;
-            }
-    
-            .app-name {
-                font-size: 1.6rem; /* Font size for application name */
-            }
-    
-            .app-description {
-                font-size: 1rem; /* Font size for description */
-                font-style: normal;
-                line-height: 1.4;
-            }
-        }
+    /* .cost-tile .i {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-right: 25px;
+        justify-self: center;
     }
+
+    .tile-contents {
+        line-height: 1.15;
+        width: 95%;
+    } */
 
     /* Technology overview section */
 
