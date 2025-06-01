@@ -354,6 +354,8 @@ body{
         margin-top: 10px;
     }
 
+    /* Applications Section */
+
     @media (max-width: 768px) {
         .tile i {
             font-size: 2.5em !important; /* Override fa-4x */
@@ -433,6 +435,8 @@ body{
             }
         }
     }
+
+    /* Technology overview section */
 
     .benefit {
         display: flex;
@@ -518,6 +522,45 @@ body{
             max-width: 400px;
         }
     }
+
+    /* Comparison Section */
+
+    .comparison-container {
+        padding: 2rem;
+    }
+
+    .comparison-table {
+        width: 80%;
+        border-collapse: collapse;
+        text-align: center;
+        margin-top: 1rem;
+        margin: auto;
+    }
+
+    .comparison-table thead {
+        background-color: #f0f0f0;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+    }
+
+    th em {
+        display: block;
+        font-style: italic;
+        font-size: 0.85em; /* Adjust as needed */
+        margin-top: 4px;   /* Optional: adds space from heading */
+    }
+
+    th .competitor-label {
+        display: inline-block;
+        font-size: 1.4rem;
+        line-height: 1.35;
+    }
+
+    /* Founder Section */
 
     .founder-container {
         display: flex;
