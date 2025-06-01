@@ -144,6 +144,10 @@ body{
             display: inline;
         }
 
+        .swiper-container {
+            overflow: hidden;
+        }
+
         .swiper {
             width: 100%;
             max-width: 85vw;
