@@ -378,7 +378,6 @@ body{
         width: 100%; /* Full width of the container */
         max-width: 1200px; /* Optional: Maximum width for the grid */
         margin: auto; /* Center the grid */
-        background-color: #EEF0F2;
     }
 
     .tile {
@@ -386,7 +385,6 @@ body{
         flex-direction: column; /* Stack children vertically */
         align-items: center;
         justify-content: center;
-        background-color: #EEF0F2;
         border: 1px solid #ddd;
         padding: 20px;
         text-align: center;
@@ -527,6 +525,9 @@ body{
 
     .comparison-container {
         padding: 2rem;
+        overflow-x: auto;
+        max-width: 1400px;
+        margin: auto;
     }
 
     .comparison-table {
@@ -545,6 +546,7 @@ body{
     .comparison-table td {
         padding: 0.75rem;
         border: 1px solid #ccc;
+        font-size: 1.2rem; 
     }
 
     th em {
@@ -558,6 +560,30 @@ body{
         display: inline-block;
         font-size: 1.4rem;
         line-height: 1.35;
+    }
+
+    thead tr {
+        background-color: #C0C4C8; /* darker shade for header */
+    }
+
+    /* Zebra shading */
+    tr:nth-child(even) {
+        background-color: #e1e4e7; /* slightly darker than #EEF0F2 */
+    }
+
+    @media (max-width: 768px) {
+        .comparison-table th,
+        .comparison-table td {
+            font-size: 0.85rem; /* or whatever size you want */
+        }
+
+        th .competitor-label {
+            font-size: 1rem;
+        }
+
+        .comparison-table {
+            min-width: 700px;
+        }
     }
 
     /* Founder Section */
