@@ -487,13 +487,25 @@ body{
 
     /* Applications Section */
 
+    .application-container {
+        max-width: 1400px;
+        width: 75%;
+        margin: auto;
+    }
+
+    .application-container h2 {
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
    .application-tile-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         padding: 20px 0;
         justify-items: center;
-        max-width: 75%;
+        max-width: 100%;
         margin: auto;
     }
 
@@ -532,14 +544,35 @@ body{
     }
 
     @media (max-width: 768px) {
-        .application-tile-grid {
-            grid-template-columns: 1fr;
-            max-width: 90%;
+
+        .desktop-only {
+            display: none;
+        }
+
+        .mobile-only {
+            display: block;
+        }
+
+        .application-container {
+            width: 90%;
+        }
+
+        .application-container h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .swiper-container.application-carousel {
+            padding-top: 20px;
         }
 
         .application-tile {
             grid-template-columns: 1fr;
             text-align: center;
+            background-color: #15244C;
+            color: 	#EEF0F2;
         }
 
         .application-tile .application-description {
@@ -552,13 +585,19 @@ body{
         .application-tile i {
             padding: 0;
             padding: 15px;
+            padding-bottom: 20px;
             justify-self: center;
-            font-size: 3em;
         }
 
         .application-tile .application-title,
         .application-tile .application-description {
             text-align: center;
+        }
+
+        .application-carousel .application-pagination {
+            position: relative;
+            text-align: center;
+            margin-top: 10px;
         }
     }   
 
