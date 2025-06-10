@@ -535,7 +535,7 @@ body{
     .application-container h2 {
         width: 80%;
         margin: auto;
-        padding-top: 10px;
+        margin-top: 10px;
     }
 
    .application-tile-grid {
@@ -601,7 +601,8 @@ body{
             font-size: 1.2rem;
             font-weight: normal;
             width: 100%;
-            margin: 10px 0;
+            margin: 8px 0;
+            padding-top: 0;
         }
 
         .swiper-container.application-carousel {
@@ -1096,27 +1097,32 @@ body{
 
     }
 
-    /* Founder Section */
+    /* About Us Section */
+
+    .about-us-container {
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     .founder-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* two equal columns */
         gap: 50px;
-        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     .founder-tile {
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        gap: 50px;
-    }
-
-    .founder-tile p {
-        margin-top: 25px;
-        margin-bottom: 25px;
+        text-align: center;
     }
 
     .founder-tile p:last-child {
@@ -1127,104 +1133,41 @@ body{
         align-items: center;
     }
 
+    .founder-image {
+        max-width: 350px;
+        width: 80%;
+        height: auto;
+        margin: 15px;
+    }
+
     .founder-summary h2 {
         margin: 0;
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .founder-summary h3 {
         margin: 0;
-        font-size: 1.75rem;
+        font-size: 1.3rem;
     }
 
-    .founder-image {
-        width: 375px; /* Adjust image width */
-        margin: 15px;
+    .founder-tile p {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .founder-description {
-        text-align: justify;
-        width: 44%;
+        text-align: left;
+        width: 85%;
+        margin-bottom: 20px;
     }
 
     .founder-description a {
         text-decoration: none;
-        color: inherit; /* This makes the link color match the surrounding text */
+        color: inherit;
     }
 
-    @media (max-width: 1280px) {
-
-        .founder-container {
-            gap: 0;
-            max-width: 100%;
-        }
-
-        .founder-tile {
-            max-width: 94%;
-        }
-
-        .founder-description {
-            width: 56%;
-        }
-
-        .founder-tile p {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .founder-description a {
-            font-size: 1.3rem;
-        }
-
-        @media (max-width: 1000px) {
-
-            .founder-container {
-                gap: 0;
-                max-width: 600px;
-            }
     
-            .founder-tile {
-                flex-direction: column; /* Stack founders vertically */
-                padding: 10px; /* Adjust padding for smaller screens */
-                gap: 0;
-            }
-    
-            .founder-image {
-                width: 80%;
-                margin-top: 5px;
-                margin-bottom: 2px;
-                max-width: 300px;
-            }
-    
-            .founder-summary h2 {
-                font-size: 1.6rem;
-            }
-    
-            .founder-summary h3 {
-                font-size: 1.3rem;
-            }
-    
-            .founder-description {
-                width: 92%;
-                text-align: left;
-            }
-    
-            .founder-description p {
-                font-size: 1rem;
-                line-height: 1.35;
-                margin: 15px;
-            }
-
-            .founder-description a {
-                font-size: 1rem;
-            }
-
-            .founder-description a {
-                text-decoration: none;
-                color: inherit; /* This makes the link color match the surrounding text */
-            }
-        }
-    }
+    /* Our innovation ecosystem */
 
     .partner-container {
       display: grid;
