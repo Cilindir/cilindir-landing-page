@@ -990,6 +990,61 @@ body{
         font-size: 1.6rem;
     }
 
+    @media (max-width: 768px) {
+
+        .book-a-demo-container {
+            width: 90%;
+        }
+
+        .column-box {
+            grid-template-columns: 1fr;  /* single column */
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .demo-text h2,
+        .contact-form h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .demo-text p {
+            font-size: 1rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            width: 85%;
+        }
+
+        .contact-form h2 {
+            margin-top: 1.3rem;
+        }
+
+        .contact-form a {
+            font-size: 1.2rem;
+        }
+
+        input[type="text"], input[type="email"] {
+            font-size: 1.05rem;
+            width:70%;
+        }
+
+        .input-container {
+            gap: 0.7rem;
+        }
+
+        .signup-btn {
+            padding: 8px 16px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 0.7rem;
+            width: 100px;
+        }
+
+    }
+
     /* Founder Section */
 
     .founder-container {
@@ -1194,24 +1249,6 @@ body{
             width: 170px;
             height: auto;
             margin: 0px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .contact-form {
-            padding-bottom: 0.5rem;
-            padding-top: 0.3rem;
-            width: 85%;
-        }
-
-        .contact-form p {
-            font-size: 1rem;
-         }
-
-        .contact-form a {
-            color: #15244C;
-            font-weight: bold;
-            font-size: 1rem;
         }
     }
 
