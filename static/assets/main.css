@@ -32,6 +32,7 @@ body{
 	font-size: 1.3rem;
 	font-family: "Titillium Web";
 	color: #5D5F5E;
+    overflow-x: hidden;
 }
 
     p {
@@ -472,52 +473,6 @@ body{
 
     }
 
-    /* Sign-up form styling */
-
-    form {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto; /* Center the form horizontally */
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: row;
-        gap: 26px;
-        margin: 0 auto; /* Center the form horizontally */
-    }
-
-    input {
-        margin-bottom: 15px; /* Adjust spacing between fields */
-        padding: 10px; /* Optional: Adjust padding for better appearance */
-    }
-    
-    input[type="text"], input[type="email"] {
-        font-family: "Titillium Web";
-        font-weight: bold;
-        font-size: 1.3rem;
-        width: 350px;
-    }
-
-    .submit-button-container {
-        padding-top: 13px;
-    }
-
-    .signup-btn {
-        padding: 10px 20px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        background-color: #EEF0F2;
-        color: #15244C;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-        font-family: "Titillium Web";
-        max-width: 200px;
-        margin: 0 auto;
-    }
-
     /* Applications Section */
 
     .application-container {
@@ -938,6 +893,103 @@ body{
         }
     }
 
+    /* Book a demo section */
+
+    .book-a-demo-container {
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .column-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .demo-text {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        height: 100%; */
+    }
+
+    .demo-text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.3rem;
+        margin-top: 0;
+    }
+
+    .demo-text p {
+        font-size: 1.3rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input {
+        padding: 10px; /* Optional: Adjust padding for better appearance */
+    }
+    
+    input[type="text"], input[type="email"] {
+        font-family: "Titillium Web";
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .submit-button-container {
+        padding-top: 0;
+    }
+
+    .signup-btn {
+        padding: 10px 20px; /* vertical and horizontal padding */
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white; /* white text for contrast */
+        background-color: #15244C; /* dark blue background */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Titillium Web";
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 120px;
+    }
+
+    .contact-form {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact-form h2 {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+    }
+
+    .contact-form a {
+        color: #15244C;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
     /* Founder Section */
 
     .founder-container {
@@ -1143,21 +1195,6 @@ body{
             height: auto;
             margin: 0px;
         }
-    }
-
-    .spacer {
-        height: 40px;
-    }
-
-    .contact-form {
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .contact-form a {
-        color: #15244C;
-        font-weight: bold;
     }
 
     @media (max-width: 768px) {
