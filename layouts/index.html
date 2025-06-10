@@ -69,6 +69,10 @@
 			</div>
 		</div>
 
+		<div id="book-a-demo-btn-container" class="section-header mobile-only">
+			<button id="book-a-demo-btn" class="signup-btn">Request a Demo</button>
+		</div>
+
 		<div class="hr-div">
 			<hr>
 		</div>
@@ -621,7 +625,7 @@
 		</div>
 
 		<!-- Book a Demo Section -->
-		<div class="section-header">
+		<div id="book-a-demo-section-header" class="section-header">
 			<h1>Request a Demo</h1>
 		</div>
 		<div class="book-a-demo-container">
@@ -737,11 +741,11 @@
 	</div>
 
 	<script>
-		// Scrolling to mission section goes a little too far down, adjust with offset
+		// Scroll down when the 'Scroll to Learn More' button is pressed
         document.querySelector('.scroll-to-learn-more a').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default anchor behavior
 
-            // Get the target section's offset
+            // Scrolling to mission section goes a little too far down, adjust with offset
             const target = document.querySelector('#problem');
             const offset = 100; // Adjust this value as needed
 
@@ -750,6 +754,24 @@
                 behavior: 'smooth'
             });
         });
+
+		// Scroll to the Request a Demo section when the mobile button is pressed
+		document.getElementById('book-a-demo-btn').addEventListener('click', function(event) {
+			event.preventDefault(); // Prevent default anchor behavior
+
+            const target = document.querySelector('#book-a-demo-section-header');
+            const offset = 78; // Adjust this value as needed
+
+            window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: 'smooth'
+            });
+
+			window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: 'smooth'
+            });
+		});
     </script>
 
 	<!-- Swiper JS -->
