@@ -22,6 +22,26 @@ body{
     display: flex;
     align-items: center;  /* Vertically centers children */
     justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header-demo-link {
+	background-color: #EEF0F2;
+	color: #15244C;
+	font-weight: bold;
+	font-size: 1.1rem;
+	padding: 0.3rem 0.75rem;
+	border-radius: 8px;
+	text-decoration: none;
+	font-family: "Titillium Web", sans-serif;
+	transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;  /* this centers the button + icons vertically */
+	gap: 0.6rem;
 }
 
 body{
@@ -224,14 +244,30 @@ body{
         }
     }
 
-    /* Mobile book a demo button */
+    /* Book a demo buttons */
 
-    #book-a-demo-btn {
+    .request-demo-btn {
+        padding: 8px 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #EEF0F2;
+        background-color: #15244C;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Titillium Web";
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: auto;
+    }
+
+    #book-a-demo-btn-mobile {
         display: none; /* hidden by default */
     }
 
     @media (max-width: 768px) {
-        #book-a-demo-btn {
+        #book-a-demo-btn-mobile {
             display: block;
             width: 240px;
             margin: 1.05rem auto 1.1rem;
@@ -971,12 +1007,12 @@ body{
         padding-top: 0;
     }
 
-    .signup-btn {
-        padding: 10px 20px; /* vertical and horizontal padding */
+    .submit-btn {
+        padding: 8px 20px;
         font-size: 1.4rem;
         font-weight: bold;
-        color: white; /* white text for contrast */
-        background-color: #15244C; /* dark blue background */
+        color: #EEF0F2;
+        background-color: #15244C;
         border: none;
         border-radius: 5px;
         cursor: pointer;

@@ -24,10 +24,15 @@
 				<img src="/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
 			</a>
 		</div>
-		<ul class="social-icons">
-			<li><a href="https://www.linkedin.com/company/cilindir/" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
-			<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
-		</ul>
+
+		<div class="header-right">
+			<button id="book-a-demo-btn-desktop" class="header-demo-link desktop-only">Request a Demo</button>
+
+			<ul class="social-icons">
+				<li><a href="https://www.linkedin.com/company/cilindir/" title="LinkedIn"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a></li>
+				<li><a href="https://github.com/Cilindir/" title="GitHub"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a></li>
+			</ul>
+		</div>
 	</header>
 
 	<div class="page-content">
@@ -70,7 +75,7 @@
 		</div>
 
 		<div id="book-a-demo-btn-container" class="section-header mobile-only">
-			<button id="book-a-demo-btn" class="signup-btn">Request a Demo</button>
+			<button id="book-a-demo-btn-mobile" class="request-demo-btn">Request a Demo</button>
 		</div>
 
 		<div class="hr-div">
@@ -295,20 +300,6 @@
 			</div>
 
 		</div>
-
-		<!-- Sign-up form -->
-		<!-- <div class="sign-up-form">
-			<p>Be the first to know!</p>
-			<form action="{{ .Site.Params.mailchimpURL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div class="input-container">
-					<input type="text" placeholder="Your Name" value="" name="FNAME" class="required fname" id="mce-FNAME">
-					<input type="email" placeholder="Your Email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-				</div>
-				<div class="submit-button-container">
-					<input type="submit" value="Join the Waitlist" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
-				</div>
-			</form>
-		</div> -->
 
 		<div class="hr-div">
 			<hr>
@@ -643,7 +634,7 @@
 							<input type="email" placeholder="Your Email" name="EMAIL" class="required email" id="mce-EMAIL">
 						</div>
 						<div class="submit-button-container">
-							<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="signup-btn">
+							<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="submit-btn">
 						</div>
 					</form>
 				</div>
@@ -756,7 +747,7 @@
         });
 
 		// Scroll to the Request a Demo section when the mobile button is pressed
-		document.getElementById('book-a-demo-btn').addEventListener('click', function(event) {
+		document.getElementById('book-a-demo-btn-mobile').addEventListener('click', function(event) {
 			event.preventDefault(); // Prevent default anchor behavior
 
             const target = document.querySelector('#book-a-demo-section-header');
@@ -766,8 +757,16 @@
                 top: target.offsetTop - offset,
                 behavior: 'smooth'
             });
+		});
 
-			window.scrollTo({
+		// Scroll to the Request a Demo section when the desktop button is pressed
+		document.getElementById('book-a-demo-btn-desktop').addEventListener('click', function(event) {
+			event.preventDefault(); // Prevent default anchor behavior
+
+            const target = document.querySelector('#book-a-demo-section-header');
+            const offset = 110; // Adjust this value as needed
+
+            window.scrollTo({
                 top: target.offsetTop - offset,
                 behavior: 'smooth'
             });
