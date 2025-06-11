@@ -452,7 +452,11 @@
 			<div class="application-pagination"></div>
 			</div>
 
-			<h2>Not shopping for business? Contact us to discover how the Rift is transforming professional services, telemedicine, personal connection, and more.</h2>
+			<h2>Not shopping for business? 
+				<a id="contact-link-desktop" class="contact-link desktop-only">Contact us</a>
+				<a id="contact-link-mobile" class="contact-link mobile-only">Contact us</a>
+				to discover how the Rift is transforming professional services, telemedicine, personal connection, and more.
+			</h2>
 
 		</div>
 
@@ -656,7 +660,7 @@
 		</div>
 		<div class="about-us-container">
 
-			<h2>Our mission to humanize how people and AI connect.</h2>
+			<h2>Our mission is to humanize how people and AI connect.</h2>
 			
 			<p>
 				We believe the evolution of communication technologies is driven by our human need for more immediate and interactive ways to connect.
@@ -820,12 +824,36 @@
             });
 		});
 
+		document.getElementById('contact-link-mobile').addEventListener('click', function(event) {
+			event.preventDefault(); // Prevent default anchor behavior
+
+            const target = document.querySelector('#book-a-demo-section-header');
+            const offset = 78; // Adjust this value as needed
+
+            window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: 'smooth'
+            });
+		});
+
 		// Scroll to the Request a Demo section when the desktop button is pressed
 		document.getElementById('book-a-demo-btn-desktop').addEventListener('click', function(event) {
 			event.preventDefault(); // Prevent default anchor behavior
 
             const target = document.querySelector('#book-a-demo-section-header');
-            const offset = 110; // Adjust this value as needed
+            const offset = 100; // Adjust this value as needed
+
+            window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: 'smooth'
+            });
+		});
+
+		document.getElementById('contact-link-desktop').addEventListener('click', function(event) {
+			event.preventDefault(); // Prevent default anchor behavior
+
+            const target = document.querySelector('#book-a-demo-section-header');
+            const offset = 100; // Adjust this value as needed
 
             window.scrollTo({
                 top: target.offsetTop - offset,
