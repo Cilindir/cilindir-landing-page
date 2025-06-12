@@ -700,10 +700,26 @@ body{
     }
 
     .technology-overview-container summary {
+        position: relative;
         font-size: 1.4rem;
         font-weight: bold;
         cursor: pointer;
         list-style: none;
+    }
+
+    .technology-overview-container summary::after {
+        content: '▶';
+        display: inline-block;
+        margin-left: 0.8rem;
+        transition: transform 0.2s ease;
+        font-size: 0.8rem;
+        vertical-align: middle;
+        margin-bottom: 4px;
+    }
+
+    /* Rotate arrow when details is open */
+    .technology-overview-container details[open] summary::after {
+        transform: rotate(90deg);
     }
 
     .technology-overview-container summary::-webkit-details-marker {
@@ -758,7 +774,7 @@ body{
         }
 
         .technology-overview-container summary {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
 
         .technology-overview-container .feature-content img {
@@ -774,7 +790,10 @@ body{
             margin-bottom: 1rem;
             margin-top: 0;
         }
-        
+
+        .technology-overview-container summary::after {
+            font-size: 0.6rem;
+        }
     }
 
     /* Comparison Section */
