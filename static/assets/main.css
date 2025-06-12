@@ -668,110 +668,113 @@ body{
     /* Technology overview section */
 
     .technology-overview-container {
-        width: 100%;
+        width: 80%;
         max-width: 1400px;
         margin: auto;
+        padding: 1rem;
     }
 
     .technology-overview-container h2 {
-        width: 90%;
-        margin: auto;
         font-size: 1.6rem;
-        padding: 10px;
+        margin-top: 0;
+        width: 65%;
+        margin: 0 auto 1rem auto;
     }
 
-    .feature {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 45px;
-        padding-top: 5px;
-        margin: 0 auto;
-        gap: 40px;
-        max-width: 1400px;
-    }
-
-    .feature:last-child {
-        padding-bottom: 10px; /* Reduced bottom padding */
-    }
-
-    .feature-text {
-        width: 50%;
-        padding: 20px; /* Padding inside each section */
-        max-width: 30%;
-    }
-
-    .feature-text h2 {
-        margin-top: 0px;
-        margin-bottom: 5px;
-        font-size: 1.6rem;
-    }
-
-    .feature-text p {
-        margin: 0 auto;
+    .technology-overview-container p {
         font-size: 1.3rem;
-        line-height: 1.35;
+        margin-top: 0;
+        width: 74%;
+        margin: 1rem auto 1.5rem auto;
     }
 
-    .feature-image {
+    .technology-overview-container details {
+        width: 60%;
+        margin-bottom: 1rem;
+        border: 1px solid #444;
+        border-radius: 6px;
+        padding: 0.5rem;
+        background: #15244C;
+        color: #EEF0F2;
+        margin: 0 auto 1rem auto;
+    }
+
+    .technology-overview-container summary {
+        font-size: 1.4rem;
+        font-weight: bold;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .technology-overview-container summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .technology-overview-container .feature-content {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        width: 32%;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
     }
 
-    .feature-image img {
-        width: 100%; /* Adjust the width as needed */
+    .technology-overview-container .feature-content img {
+        /* width: 30vw; */
+        width: 55%;
+        max-width: 450px;
         height: auto;
-        margin: 0;
+        border-radius: 10px;
+        margin: 1.5rem auto 1rem auto;
+    }
+
+    .technology-overview-container details p {
+        font-size: 1.1rem;
+        width: 65%;
+        margin-bottom: 1rem;
+        margin-top: 0;
     }
 
     @media (max-width: 1000px) {
+        .technology-overview-container {
+            width: 90%;
+            margin: auto;
+            padding: 1rem;
+            padding-bottom: 0;
+        }
 
         .technology-overview-container h2 {
-            width: 92%;
-            margin: auto;
             font-size: 1.2rem;
+            width: 95%;
             font-weight: normal;
-            padding: 20px;
         }
 
-        .feature {
-            flex-direction: column; /* Stack text and image vertically */
-            padding: 5px; /* Adjust padding for smaller screens */
-            gap: 0;
-        }
-
-        .feature:last-child {
-            padding-bottom: 0; /* Reduced bottom padding */
-        }
-
-        .feature-text {
-            order: 2; /* Text comes second */
-            margin: 0 0; /* Remove side margins for small screens */
-            padding-top: 0;
-            width: 85%;
-            max-width: 300px;
-        }
-
-        .feature-text h2 {
-            font-size: 1.6rem;
-            line-height: 1.3;
-        }
-
-        .feature-text p {
+        .technology-overview-container p {
             font-size: 1rem;
+            width: 80%;
+            margin-bottom: 16px;
         }
 
-       .feature-image {
-            order: 1; /* Image comes first */
-            margin: 0 auto; /* Remove side margins for small screens */
-            padding: 10px;
-            width: 88%;
-            max-width: 400px;
+        .technology-overview-container details {
+            width: 90%;
         }
+
+        .technology-overview-container summary {
+            font-size: 1.3rem;
+        }
+
+        .technology-overview-container .feature-content img {
+            width: 80%;
+            border-radius: 6px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .technology-overview-container details p {
+            font-size: 1rem;
+            width: 85%;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+        
     }
 
     /* Comparison Section */
