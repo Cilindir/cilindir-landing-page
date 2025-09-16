@@ -1,0 +1,47 @@
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    // Scroll down when 'Scroll to Learn More' button is pressed
+    document.querySelector('.scroll-to-learn-more a')?.addEventListener('click', function (event) {
+        event.preventDefault();
+        const target = document.querySelector('#problem');
+        const offset = 100;
+        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    });
+
+    // Scroll to the Request a Demo section
+    const scrollButtons = [
+        'book-a-demo-btn-mobile',
+        'contact-link-mobile',
+        'book-a-demo-btn-desktop',
+        'contact-link-desktop'
+    ];
+
+    scrollButtons.forEach(id => {
+        document.getElementById(id)?.addEventListener('click', function (event) {
+            event.preventDefault();
+            const target = document.querySelector('#book-a-demo-section-header');
+            const offset = id.includes('mobile') ? 78 : 100;
+            window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        });
+    });
+
+    // Initialize Swiper sliders
+    function initSwiper(containerClass, paginationClass) {
+        return new Swiper(containerClass, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: { el: paginationClass, clickable: true },
+            breakpoints: { 769: { enabled: false } },
+        });
+    }
+
+    const welcomeSwiper = initSwiper('.welcome-carousel', '.welcome-pagination');
+    const costSwiper = initSwiper('.cost-carousel', '.cost-pagination');
+    const remoteConfSwiper = initSwiper('.remote-conferencing-carousel', '.remote-conferencing-pagination');
+    const aiConferencingSwiper = initSwiper('.ai-conferencing-carousel', '.ai-conferencing-pagination');
+    const applicationSwiper = initSwiper('.application-carousel', '.application-pagination');
+    const pricingSwiper = initSwiper('.pricing-carousel', '.pricing-pagination');
+    const founderSwiper = initSwiper('.founder-carousel', '.founder-pagination');
+</script>
