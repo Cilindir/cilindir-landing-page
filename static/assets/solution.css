@@ -1,0 +1,107 @@
+.rift-overview-container {
+    width: 80%;
+    max-width: 1220px;
+    margin: auto;
+}
+
+.rift-overview-container h2 {
+    font-size: 1.6rem;
+    width: 74%;
+    margin: auto;
+    margin-top: 0.5rem;
+    line-height: 1.35;
+}
+
+.remote-conferencing-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* space between images */
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+.remote-conferencing-images-grid img {
+    width: 100%;
+    /* smaller than 100% */
+    max-width: 600px;
+    /* limit max image width */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ai-conferencing-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* space between images */
+    margin: 2rem;
+}
+
+.ai-conferencing-images-grid img {
+    width: 70%;
+    /* smaller than 100% */
+    max-width: 600px;
+    /* limit max image width */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .rift-overview-container {
+        width: 90%;
+    }
+
+    .rift-overview-container h2 {
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+        font-weight: normal;
+        width: 95%;
+    }
+
+    .remote-conferencing-carousel .cost-pagination {
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .swiper-container.remote-conferencing-carousel {
+        padding-top: 10px;
+    }
+
+    .swiper-container.ai-conferencing-carousel {
+        padding-top: 20px;
+    }
+
+    .swiper-container.remote-conferencing-carousel img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-container.ai-conferencing-carousel img {
+        display: block;
+        height: 100vw;
+        width: auto;
+        margin: 0 auto;
+    }
+}

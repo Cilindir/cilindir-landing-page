@@ -1,0 +1,138 @@
+.application-container {
+    max-width: 1400px;
+    width: 75%;
+    margin: auto;
+}
+
+.application-container h2 {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.application-container a {
+    color: #15244C;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.application-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+    justify-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.application-tile {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.application-tile i {
+    width: 104px;
+    justify-self: center;
+    text-align: center;
+    padding: 25px;
+    padding-right: 35px;
+}
+
+.application-tile .application-title {
+    font-size: 1.6rem;
+    line-height: 1.35;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.application-tile .application-description {
+    font-size: 1.3rem;
+    line-height: 1.35;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .application-container {
+        width: 90%;
+    }
+
+    .application-container h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        width: 100%;
+        margin: 8px 0;
+        padding-top: 0;
+    }
+
+    .application-container a {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .swiper-container.application-carousel {
+        padding-top: 20px;
+    }
+
+    .application-tile {
+        grid-template-columns: 1fr;
+        text-align: center;
+        background-color: #15244C;
+        color: #EEF0F2;
+    }
+
+    .application-tile .application-description {
+        font-size: 1rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 8px;
+    }
+
+    .application-tile i {
+        padding: 0;
+        padding: 15px;
+        padding-bottom: 20px;
+        justify-self: center;
+    }
+
+    .application-tile .application-title,
+    .application-tile .application-description {
+        text-align: center;
+    }
+
+    .application-carousel .application-pagination {
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .application-carousel .swiper-wrapper {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .application-carousel .swiper-slide {
+        display: flex;
+        height: auto;
+    }
+}

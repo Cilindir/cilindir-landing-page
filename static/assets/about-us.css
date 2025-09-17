@@ -1,0 +1,163 @@
+.about-us-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-us-container h2 {
+    margin: 20px;
+}
+
+.founder-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* two equal columns */
+    gap: 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.founder-tile {
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.founder-summary {
+    align-items: center;
+}
+
+.founder-image {
+    max-width: 350px;
+    width: 80%;
+    height: auto;
+    margin: 15px;
+}
+
+.founder-summary h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.founder-summary h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.founder-tile p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.founder-description {
+    text-align: left;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.founder-description a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .founder-image {
+        max-width: 250px;
+        margin: 5px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .contact-link.mobile-only {
+        display: inline;
+    }
+
+    .about-us-container {
+        gap: 30px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-us-container h2 {
+        font-size: 1.3rem;
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .about-us-container p {
+        font-size: 1rem;
+        width: 95%;
+        margin: 20px auto;
+        margin-top: 15px;
+    }
+
+    .founder-tile {
+        padding: 15px;
+    }
+
+    .founder-description {
+        text-align: justify;
+        margin-bottom: 0;
+    }
+
+
+    .founder-summary h2 {
+        font-size: 1.4rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .founder-summary h3 {
+        font-size: 1.15rem;
+    }
+
+    .founder-tile p {
+        font-size: 0.95rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .swiper-container.founder-carousel {
+        padding-top: 20px;
+    }
+
+    .founder-description {
+        width: 100%;
+    }
+
+    .founder-carousel .founder-pagination {
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: -5px;
+    }
+
+    .founder-carousel .swiper-wrapper {
+        align-items: stretch;
+        display: flex;
+    }
+
+    .founder-carousel .swiper-slide {
+        display: flex;
+        height: auto;
+    }
+}

@@ -1,0 +1,68 @@
+.comparison-container {
+    padding: 2rem;
+    overflow-x: auto;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.comparison-table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 1rem;
+    margin: auto;
+}
+
+.comparison-table thead {
+    background-color: #f0f0f0;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+}
+
+th em {
+    display: block;
+    font-style: italic;
+    font-size: 0.85em;
+    /* Adjust as needed */
+    margin-top: 4px;
+    /* Optional: adds space from heading */
+}
+
+th .competitor-label {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.35;
+}
+
+thead tr {
+    background-color: #C0C4C8;
+    /* darker shade for header */
+}
+
+/* Zebra shading */
+tr:nth-child(even) {
+    background-color: #e1e4e7;
+    /* slightly darker than #EEF0F2 */
+}
+
+@media (max-width: 768px) {
+
+    .comparison-table th,
+    .comparison-table td {
+        font-size: 0.85rem;
+        /* or whatever size you want */
+    }
+
+    th .competitor-label {
+        font-size: 1rem;
+    }
+
+    .comparison-table {
+        min-width: 700px;
+    }
+}

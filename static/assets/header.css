@@ -1,0 +1,107 @@
+#header {
+    position: fixed;
+    top: 0;
+    height: 5.5rem;
+    width: 100%;
+    background-color: #15244C;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    /* Vertically centers children */
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header-demo-link {
+    background-color: #EEF0F2;
+    color: #15244C;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Titillium Web", sans-serif;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    /* this centers the button + icons vertically */
+    gap: 0.6rem;
+}
+
+.logo {
+    padding-top: 5px;
+    padding-left: 3rem;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+
+    #header {
+        height: 4rem;
+    }
+
+    .logo {
+        padding-left: 1.5rem;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+}
+
+
+ul.social-icons {
+    float: right;
+    margin: 0;
+    padding: 20px;
+    padding-right: 3rem;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    display: inline-block;
+    margin: 0 11px;
+    list-style-type: circle;
+}
+
+a {
+    color: #EEF0F2;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 6px;
+        list-style-type: circle;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    ul.social-icons {
+        padding-top: 15px;
+        padding-right: 1.5rem;
+    }
+}
