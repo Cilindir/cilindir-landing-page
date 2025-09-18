@@ -1,34 +1,7 @@
 <!doctype html>
 <html>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="/assets/main.css" />
-	<link rel="stylesheet" href="/assets/header.css" />
-	<link rel="stylesheet" href="/assets/hero.css" />
-	<link rel="stylesheet" href="/assets/problem.css" />
-	<link rel="stylesheet" href="/assets/solution.css" />
-	<link rel="stylesheet" href="/assets/technology-overview.css" />
-	<link rel="stylesheet" href="/assets/applications.css" />
-	<link rel="stylesheet" href="/assets/how-we-compare.css" />
-	<link rel="stylesheet" href="/assets/pricing.css" />
-	<link rel="stylesheet" href="/assets/request-demo.css" />
-	<link rel="stylesheet" href="/assets/about-us.css" />
-	<link rel="stylesheet" href="/assets/innovation-ecosystem.css" />
-	<link rel="stylesheet" href="/assets/footer.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/vendor/fontawesome-6/css/fontawesome.min.css">
-	<link rel="stylesheet" href="/vendor/fontawesome-6/css/solid.min.css">
-	<link rel="stylesheet" href="/vendor/fontawesome-6/css/brands.min.css">
-	{{ template "_internal/google_analytics.html" . }}
-	{{ template "_internal/opengraph.html" . }}
-	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-light.svg" media="(prefers-color-scheme: light)">
-	<link rel="icon" type="image/svg" href="/branding/cilindir-favicon-dark.svg" media="(prefers-color-scheme: dark)">
-
-	<!-- Swiper CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-</head>
+{{ partial "head.html" . }}
 
 <body>
 
@@ -41,8 +14,6 @@
 		<!-- Welcome Container-->
 		{{ partial "hero.html" . }}
 		{{ partial "hr.html" . }}
-
-
 
 		<!-- Solution Section -->
 		{{ partial "solution.html" . }}
@@ -64,14 +35,6 @@
 
 		<!-- Section on how we compare -->
 		{{ partial "how-we-compare.html" . }}
-		{{ partial "hr.html" . }}
-
-		<!-- Pricing Section -->
-		{{ partial "pricing.html" . }}
-		{{ partial "hr.html" . }}
-
-		<!-- Book a Demo Section -->
-		{{ partial "request-demo.html" . }}
 		{{ partial "hr.html" . }}
 
 		<!-- About Us Section -->
