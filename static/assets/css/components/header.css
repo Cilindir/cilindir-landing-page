@@ -1,0 +1,142 @@
+@layer components {
+
+    /* Header container already exists */
+    #header {
+        position: fixed;
+        top: 0;
+        height: 5.5rem;
+        width: 100%;
+        background-color: #15244C;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    /* Logo styling remains the same */
+    .logo {
+        padding-top: 5px;
+        padding-left: 3rem;
+    }
+
+    .logo img {
+        width: 250px;
+        height: auto;
+    }
+
+    /* Right side container */
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    /* Demo button */
+    .header-demo-link {
+        background-color: #EEF0F2;
+        color: #15244C;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: "Titillium Web", sans-serif;
+        transition: background-color 0.2s ease;
+        cursor: pointer;
+    }
+
+    /* Social icons */
+    ul.social-icons {
+        float: right;
+        margin: 0;
+        padding: 20px 3rem 20px 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 11px;
+    }
+
+    a {
+        color: #EEF0F2;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+
+    /* Navigation */
+    .main-nav ul {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .main-nav li {
+        position: relative;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #15244C;
+        min-width: 180px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .dropdown-content li {
+        display: block;
+        margin: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px 15px;
+        font-size: 1rem;
+        color: #EEF0F2;
+        transition: background 0.2s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #1f2a5a;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        #header {
+            height: 4rem;
+        }
+
+        .logo {
+            padding-left: 1.5rem;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        li {
+            margin: 0 6px;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+
+        ul.social-icons {
+            padding-top: 15px;
+            padding-right: 1.5rem;
+        }
+    }
+}
