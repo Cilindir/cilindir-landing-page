@@ -21,7 +21,7 @@
     scrollButtons.forEach(id => {
         document.getElementById(id)?.addEventListener('click', function (event) {
             event.preventDefault();
-            const target = document.querySelector('#book-a-demo-section-header');
+            const target = document.querySelector('#book-a-demo-page-header');
             const offset = id.includes('mobile') ? 78 : 100;
             window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
         });

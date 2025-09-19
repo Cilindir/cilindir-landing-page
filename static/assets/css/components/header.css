@@ -12,10 +12,18 @@
         gap: 1.5rem;
     }
 
-    /* Logo styling remains the same */
     .logo {
-        padding-top: 5px;
         padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* make it wrap tightly around the image */
+    .logo a {
+        display: inline-flex;
+        align-items: center;
+        height: auto;
     }
 
     .logo img {
