@@ -16,7 +16,11 @@
 @layer variables {
     :root {
         --color-primary: #15244C;
+        --color-primary-hover: #1E326F;
+
         --color-background: #EEF0F2;
+        --color-background-hover: #E0E2E5;
+
         --color-text: #5D5F5E;
         --font-main: "Titillium Web", sans-serif;
     }

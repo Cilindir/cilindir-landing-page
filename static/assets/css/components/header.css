@@ -35,7 +35,7 @@
     .header-right {
         display: flex;
         align-items: center;
-        gap: 0.6rem;
+        gap: 1rem;
     }
 
     /* Demo button */
@@ -65,13 +65,17 @@
     }
 
     a {
-        color: #EEF0F2;
+        color: var(--color-background);
         text-decoration: none;
         font-size: 1.4rem;
     }
 
+    a:hover {
+        background-color: var(--color-primary-hover);
+    }
+
     /* Navigation */
-    .main-nav ul {
+    .main-nav>ul {
         display: flex;
         gap: 1rem;
         margin: 0;
@@ -89,7 +93,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #15244C;
+        background-color: var(--color-primary);
         min-width: 180px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1001;
@@ -106,15 +110,20 @@
         display: block;
         padding: 10px 15px;
         font-size: 1rem;
-        color: #EEF0F2;
         transition: background 0.2s ease;
     }
 
     .dropdown-content a:hover {
-        background-color: #1f2a5a;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown-content {
+        /* hide by default */
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        /* show only when parent has .active */
         display: block;
     }
 
