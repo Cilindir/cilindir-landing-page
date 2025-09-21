@@ -111,8 +111,8 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: calc(100% + 0.3rem);
+        left: 0rem;
         background-color: var(--color-primary);
         min-width: 180px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,8 +128,9 @@
 
     .dropdown-content a {
         display: block;
-        padding: 10px 15px;
-        font-size: 1rem;
+        padding: 12px 18px;
+        font-size: 1.25rem;
+        font-weight: 100;
         transition: background 0.2s ease;
     }
 
@@ -153,7 +154,7 @@
     }
 
     .main-nav .dropdown-toggle i {
-        margin-left: 0.7rem;
+        margin-left: 0.6rem;
         font-size: 1rem;
         transition: transform 0.2s ease;
     }

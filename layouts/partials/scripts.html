@@ -10,23 +10,6 @@
         window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
     });
 
-    // Scroll to the Request a Demo section
-    const scrollButtons = [
-        'book-a-demo-btn-mobile',
-        'contact-link-mobile',
-        'book-a-demo-btn-desktop',
-        'contact-link-desktop'
-    ];
-
-    scrollButtons.forEach(id => {
-        document.getElementById(id)?.addEventListener('click', function (event) {
-            event.preventDefault();
-            const target = document.querySelector('#book-a-demo-page-header');
-            const offset = id.includes('mobile') ? 78 : 100;
-            window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
-        });
-    });
-
     // Initialize Swiper sliders
     function initSwiper(containerClass, paginationClass) {
         return new Swiper(containerClass, {
