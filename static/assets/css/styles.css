@@ -28,7 +28,15 @@
 
 /* Base styles */
 @layer base {
+
+    html,
     body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
         font-family: var(--font-main);
         background-color: var(--color-background);
         color: var(--color-text);
@@ -36,11 +44,9 @@
         overflow-x: hidden;
     }
 
-    .page-content {
+    main.page-content {
+        flex: 1 0 auto;
         padding-top: 5.5rem;
-        /* offset for the fixed header */
-        min-height: calc(100vh - 5.5rem);
-        /* fills remaining viewport height */
         box-sizing: border-box;
     }
 

@@ -161,6 +161,7 @@
 
     @media (max-width: 768px) {
 
+        /* Header adjustments */
         #header {
             height: 4.5rem;
         }
@@ -183,7 +184,10 @@
             background: none;
             border: none;
             cursor: pointer;
-            margin-right: 2rem;
+            margin-right: 1.5rem;
+            /* your desired spacing from the right */
+            z-index: 1003;
+            /* above mobile nav */
         }
 
         #hamburger span {
@@ -197,33 +201,63 @@
         #mobile-nav {
             display: none;
             position: fixed;
-            top: 5.5rem;
-            /* below header */
+            top: 4.5rem;
             left: 0;
             width: 100%;
             background-color: var(--color-primary);
-            padding: 1rem 2rem;
             z-index: 1002;
+            max-height: calc(100vh - 4.5rem);
+            box-sizing: border-box;
+        }
+
+        #mobile-nav.active {
+            display: flex;
+            align-items: center;
+            width: 100%;
         }
 
         #mobile-nav ul {
+            width: 100%;
             list-style: none;
-            margin: 0;
-            padding: 0;
+            padding: 1rem 2rem;
         }
 
         #mobile-nav li {
+            display: block;
             margin-bottom: 1rem;
+            text-align: center;
         }
 
+        #mobile-nav .social-icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Links */
         #mobile-nav a {
             color: var(--color-background);
             text-decoration: none;
             font-size: 1.25rem;
+            display: inline-block;
+            padding: 0.25rem 0;
         }
 
-        #mobile-nav a:hover {
-            color: var(--color-primary-hover);
+        /* Mobile dropdown */
+        #mobile-nav .mobile-dropdown>.dropdown-content {
+            display: none;
+            padding-left: 1rem;
+        }
+
+        #mobile-nav .mobile-dropdown.active>.dropdown-content {
+            display: block;
+        }
+
+        /* Remove bottom margin from last item */
+        #mobile-nav li:last-child {
+            margin-bottom: 0;
         }
     }
 }

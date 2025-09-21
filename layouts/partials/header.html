@@ -50,19 +50,29 @@
         <span></span>
         <span></span>
     </button>
+
 </header>
 
 <!-- Mobile nav menu -->
 <nav id="mobile-nav" class="mobile-only">
     <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/applications/museums/">Museums</a></li>
-        <li><a href="/applications/education/">Education</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/demo/" target="_blank" rel="noopener noreferrer">Request a Demo</a></li>
-        <li><a href="https://www.linkedin.com/company/cilindir/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <li class="mobile-dropdown">
+            <a href="#" class="dropdown-toggle">Applications <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-content">
+                <li><a href="/applications/museums/">Museums</a></li>
+                <li><a href="/applications/education/">Education</a></li>
+            </ul>
         </li>
-        <li><a href="https://github.com/Cilindir/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/demo/">Request a Demo</a></li>
+        <li class="social-icons-row">
+            <a href="https://www.linkedin.com/company/cilindir/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://github.com/Cilindir/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+        </li>
     </ul>
 </nav>
