@@ -48,6 +48,8 @@
         flex: 1 0 auto;
         padding-top: 5.5rem;
         box-sizing: border-box;
+        max-width: 1600px;
+        margin: 0 auto;
     }
 
     a {
