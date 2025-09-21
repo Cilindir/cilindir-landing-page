@@ -1,11 +1,11 @@
 <header id="header">
     <div class="logo">
         <a href="/">
-            <img src="/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
+            <img src="/images/branding/cilindir-logo-long-dark.svg" alt="Cilindir Logo">
         </a>
     </div>
 
-    <div class="header-right">
+    <div class="header-right desktop-only">
         <!-- Main Navigation -->
         <nav class="main-nav">
             <ul>
@@ -23,7 +23,8 @@
         </nav>
 
         <div class="header-demo">
-            <a href="/demo/" id="book-a-demo-btn-desktop" class="header-demo-link desktop-only">
+            <a href="/demo/" target="_blank" rel="noopener noreferrer" id="book-a-demo-btn-desktop"
+                class="header-demo-link">
                 Request a Demo
             </a>
         </div>
@@ -42,4 +43,26 @@
             </li>
         </ul>
     </div>
+
+    <!-- Hamburger menu for mobile -->
+    <button id="hamburger" class="mobile-only" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
+
+<!-- Mobile nav menu -->
+<nav id="mobile-nav" class="mobile-only">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/applications/museums/">Museums</a></li>
+        <li><a href="/applications/education/">Education</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/demo/" target="_blank" rel="noopener noreferrer">Request a Demo</a></li>
+        <li><a href="https://www.linkedin.com/company/cilindir/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li><a href="https://github.com/Cilindir/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+</nav>
