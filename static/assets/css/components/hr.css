@@ -21,7 +21,7 @@
         /* Center the line horizontally */
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
         .hr-div {
             padding-top: 5px;
             /* Adjust the top padding as needed */

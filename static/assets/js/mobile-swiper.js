@@ -8,7 +8,7 @@ function initSwiper(containerClass, paginationClass) {
             clickable: true,
         },
         breakpoints: {
-            769: {
+            1100: {
                 enabled: false,
             },
         },

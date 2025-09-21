@@ -96,7 +96,7 @@
         font-size: 1.6rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
 
         .book-a-demo-container {
             width: 90%;

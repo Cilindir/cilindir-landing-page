@@ -51,7 +51,7 @@
         /* slightly darker than #EEF0F2 */
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
 
         .comparison-table th,
         .comparison-table td {
