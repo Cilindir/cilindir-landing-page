@@ -58,11 +58,17 @@
     }
 
     @media (max-width: 768px) {
-        .page-content {
+
+        html,
+        body {
+            height: auto;
+        }
+
+        main.page-content {
             padding-top: 4.5rem;
+            box-sizing: border-box;
+            max-width: 100%;
             min-height: calc(100vh - 4.5rem);
-            padding-left: 1rem;
-            padding-right: 1rem;
         }
     }
 }
@@ -100,7 +106,7 @@
         }
 
         .page-header {
-            padding: 1.5rem 1rem;
+            padding: 1.5rem 0;
         }
 
         .page-header h1 {
