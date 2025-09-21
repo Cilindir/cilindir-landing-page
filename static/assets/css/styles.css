@@ -59,16 +59,11 @@
 
     @media (max-width: 1100px) {
 
-        html,
-        body {
-            height: auto;
-        }
-
         main.page-content {
             padding-top: 4.5rem;
             box-sizing: border-box;
             max-width: 100%;
-            min-height: calc(100vh - 4.5rem);
+            min-height: 0;
         }
     }
 }

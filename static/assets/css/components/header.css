@@ -234,7 +234,7 @@
 
         #mobile-nav a {
             text-decoration: none;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             display: inline-block;
             padding: 0;
         }
@@ -245,8 +245,8 @@
         }
 
         #mobile-nav .dropdown-toggle i {
-            margin-left: 0.5rem;
-            font-size: 1rem;
+            margin-left: 0.6rem;
+            font-size: 1.25rem;
             transition: transform 0.2s ease;
         }
 
@@ -254,7 +254,7 @@
         #mobile-nav .social-icons-row {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 1.5rem;
             margin-bottom: 2rem;
         }
 
