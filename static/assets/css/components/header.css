@@ -185,9 +185,7 @@
             border: none;
             cursor: pointer;
             margin-right: 1.5rem;
-            /* your desired spacing from the right */
             z-index: 1003;
-            /* above mobile nav */
         }
 
         #hamburger span {
@@ -208,37 +206,34 @@
             z-index: 1002;
             max-height: calc(100vh - 4.5rem);
             box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
         }
+
+
 
         #mobile-nav.active {
             display: flex;
-            align-items: center;
-            width: 100%;
         }
 
         #mobile-nav ul {
             width: 100%;
             list-style: none;
-            padding: 1rem 2rem;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #mobile-nav li {
-            display: block;
-            margin-bottom: 1rem;
+            width: 100%;
             text-align: center;
+            margin-bottom: 1rem;
         }
 
-        #mobile-nav .social-icons-row {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 0;
-        }
-
-        /* Links */
         #mobile-nav a {
-            color: var(--color-background);
             text-decoration: none;
             font-size: 1.25rem;
             display: inline-block;
@@ -249,10 +244,36 @@
         #mobile-nav .mobile-dropdown>.dropdown-content {
             display: none;
             padding-left: 1rem;
+            margin-top: 0.25rem;
+            width: 100%;
         }
 
         #mobile-nav .mobile-dropdown.active>.dropdown-content {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #mobile-nav .mobile-dropdown>.dropdown-content li {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        #mobile-nav .mobile-dropdown>.dropdown-content li a {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 0.25rem 0;
+        }
+
+        /* Social icons row */
+        #mobile-nav .social-icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            width: 100%;
         }
 
         /* Remove bottom margin from last item */
