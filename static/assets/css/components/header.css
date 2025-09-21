@@ -208,7 +208,6 @@
             max-height: calc(100vh - 4.5rem);
             flex-direction: column;
             align-items: center;
-            padding: 0.25rem 0;
         }
 
         #mobile-nav.active {
@@ -220,11 +219,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
 
         #mobile-nav li {
             text-align: center;
-            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            width: 100%;
+        }
+
+        #mobile-nav li:first-child {
+            margin-top: 1rem;
         }
 
         #mobile-nav a {
@@ -234,12 +239,23 @@
             padding: 0;
         }
 
+        #mobile-nav .dropdown-toggle {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        #mobile-nav .dropdown-toggle i {
+            margin-left: 0.5rem;
+            font-size: 1rem;
+            transition: transform 0.2s ease;
+        }
+
         /* Social icons row */
         #mobile-nav .social-icons-row {
             display: flex;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
 
         /* Mobile dropdown */
@@ -247,9 +263,10 @@
             position: static;
             display: none;
             flex-direction: column;
-            width: 100%;
-            margin-top: 1rem;
+            width: 90%;
             padding: 0;
+            background-color: var(--color-primary-hover);
+            margin: 1rem auto 0;
         }
 
         #mobile-nav .mobile-dropdown.active>.dropdown-content {
@@ -259,11 +276,15 @@
         }
 
         #mobile-nav .mobile-dropdown>.dropdown-content li {
-            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        #mobile-nav .mobile-dropdown>.dropdown-content li:first-child {
+            margin-top: 1rem;
         }
 
         #mobile-nav .mobile-dropdown>.dropdown-content li:last-child {
-            margin-bottom: 0;
+            margin-bottom: 1rem;
         }
     }
 }
