@@ -78,8 +78,16 @@
         transition: background-color 0.2s ease;
     }
 
-    a:hover {
+    .main-nav a:hover {
         background-color: var(--color-primary-hover);
+    }
+
+    .header-demo a:hover {
+        background-color: var(--color-background-hover);
+    }
+
+    .social-icons a:hover {
+        color: var(--color-background-hover);
     }
 
     /* Navigation */
@@ -137,6 +145,17 @@
     .dropdown.active .dropdown-content {
         /* show only when parent has .active */
         display: block;
+    }
+
+    .main-nav .dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .main-nav .dropdown-toggle i {
+        margin-left: 0.7rem;
+        font-size: 1rem;
+        transition: transform 0.2s ease;
     }
 
     /* Responsive adjustments */
