@@ -66,14 +66,6 @@
 
     @media (max-width: 1100px) {
 
-        .desktop-only {
-            display: none;
-        }
-
-        .mobile-only {
-            display: block;
-        }
-
         .application-container {
             width: 90%;
         }

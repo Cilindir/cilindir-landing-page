@@ -89,13 +89,7 @@
 }
 
 @layer components {
-    .desktop-only {
-        display: flex;
-    }
 
-    .mobile-only {
-        display: none;
-    }
 
     .page-header {
         max-width: 1200px;
@@ -112,13 +106,6 @@
     }
 
     @media (max-width: 1100px) {
-        .desktop-only {
-            display: none;
-        }
-
-        .mobile-only {
-            display: flex;
-        }
 
         .page-header {
             padding-top: 3vh;
@@ -127,6 +114,26 @@
 
         .page-header h1 {
             font-size: 2rem;
+        }
+    }
+}
+
+@layer utilities {
+    .desktop-only {
+        display: flex;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    @media (max-width: 1100px) {
+        .desktop-only {
+            display: none;
+        }
+
+        .mobile-only {
+            display: flex;
         }
     }
 }

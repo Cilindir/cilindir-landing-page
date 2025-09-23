@@ -1,12 +1,16 @@
 @layer components {
     .about-us-container {
-        width: 80%;
-        max-width: 1200px;
-        margin: auto;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .about-us-container h2:first-of-type {
+        margin-top: 0;
     }
 
     .about-us-container h2 {
-        margin: 20px;
+        margin: 20px 0;
+        text-align: center;
     }
 
     .founder-container {
@@ -44,7 +48,6 @@
 
     .founder-summary h2 {
         margin: 0;
-        font-size: 1.6rem;
     }
 
     .founder-summary h3 {
@@ -63,52 +66,38 @@
         margin-bottom: 10px;
     }
 
+    .founder-description p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
     .founder-description a {
         text-decoration: none;
         color: inherit;
     }
 
-    .mobile-only {
-        display: none;
-    }
-
     @media (max-width: 1100px) {
+
+        .about-us-container {
+            gap: 30px;
+            width: 85%;
+            margin: 0 auto;
+        }
 
         .founder-image {
             max-width: 250px;
             margin: 5px;
         }
 
-        .desktop-only {
-            display: none;
-        }
-
-        .mobile-only {
-            display: block;
-        }
-
-        .contact-link.mobile-only {
-            display: inline;
-        }
-
-        .about-us-container {
-            gap: 30px;
-            width: 90%;
-            padding: 10px;
-        }
-
         .about-us-container h2 {
-            font-size: 1.3rem;
             width: 80%;
-            margin: auto;
-            margin-top: 10px;
+            margin: 0 auto;
         }
 
         .about-us-container p {
-            font-size: 1rem;
-            width: 95%;
-            margin: 20px auto;
             margin-top: 15px;
+            text-align: justify;
         }
 
         .founder-tile {

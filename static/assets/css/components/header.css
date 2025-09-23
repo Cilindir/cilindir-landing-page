@@ -197,7 +197,6 @@
 
         /* Mobile nav panel */
         #mobile-nav {
-            display: none;
             position: fixed;
             top: 4.5rem;
             left: 0;
@@ -208,10 +207,6 @@
             max-height: calc(100vh - 4.5rem);
             flex-direction: column;
             align-items: center;
-        }
-
-        #mobile-nav.active {
-            display: flex;
         }
 
         #mobile-nav ul {
@@ -286,5 +281,15 @@
         #mobile-nav .mobile-dropdown>.dropdown-content li:last-child {
             margin-bottom: 1rem;
         }
+    }
+}
+
+@layer utilities {
+    #mobile-nav {
+        display: none;
+    }
+
+    #mobile-nav.active {
+        display: flex;
     }
 }
