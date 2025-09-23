@@ -115,6 +115,21 @@
         .page-header h1 {
             font-size: 2rem;
         }
+
+        .swiper-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            height: auto;
+        }
+
+        .swiper-pagination {
+            text-align: center;
+            margin-top: 15px;
+        }
     }
 }
 

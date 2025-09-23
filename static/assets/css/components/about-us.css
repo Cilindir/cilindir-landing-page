@@ -106,9 +106,9 @@
 
         .founder-description {
             text-align: justify;
+            margin-top: 5px;
             margin-bottom: 0;
         }
-
 
         .founder-summary h2 {
             font-size: 1.4rem;
@@ -122,33 +122,11 @@
 
         .founder-tile p {
             font-size: 0.95rem;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        .swiper-container.founder-carousel {
-            padding-top: 20px;
+            margin: 10px 0;
         }
 
         .founder-description {
-            width: 100%;
-        }
-
-        .founder-carousel .founder-pagination {
-            position: relative;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: -5px;
-        }
-
-        .founder-carousel .swiper-wrapper {
-            align-items: stretch;
-            display: flex;
-        }
-
-        .founder-carousel .swiper-slide {
-            display: flex;
-            height: auto;
+            width: 90%;
         }
     }
 }

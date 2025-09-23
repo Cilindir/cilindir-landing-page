@@ -1,10 +1,10 @@
-
-function initSwiper(containerClass, paginationClass) {
-    return new Swiper(containerClass, {
+document.querySelectorAll('.swiper-container').forEach(container => {
+    const paginationSelector = container.dataset.pagination;
+    new Swiper(container, {
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
-            el: paginationClass,
+            el: paginationSelector,
             clickable: true,
         },
         breakpoints: {
@@ -13,12 +13,4 @@ function initSwiper(containerClass, paginationClass) {
             },
         },
     });
-}
-
-const welcomeSwiper = initSwiper('.welcome-carousel', '.welcome-pagination');
-const costSwiper = initSwiper('.cost-carousel', '.cost-pagination');
-const remoteConfSwiper = initSwiper('.remote-conferencing-carousel', '.remote-conferencing-pagination');
-const aiConferencingSwiper = initSwiper('.ai-conferencing-carousel', '.ai-conferencing-pagination');
-const applicationSwiper = initSwiper('.application-carousel', '.application-pagination');
-const pricingSwiper = initSwiper('.pricing-carousel', '.pricing-pagination');
-const founderSwiper = initSwiper('.founder-carousel', '.founder-pagination');
+});
