@@ -1,0 +1,72 @@
+@layer components {
+    .technology-overview-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .rift-overview-text {
+        width: auto;
+        text-align: center;
+    }
+
+    .rift-overview-text h2 {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 0 1.5rem auto;
+    }
+
+    .rift-overview-text h2:last-child {
+        margin-bottom: 0;
+    }
+
+    .rift-overview-image img {
+        height: 65vh;
+        width: auto;
+        display: block;
+    }
+
+    @media (max-width: 1100px) {
+
+        .rift-overview-container {
+            width: 90%;
+        }
+
+        .rift-overview-container h2 {
+            font-size: 1.2rem;
+            margin-top: 0.6rem;
+            font-weight: normal;
+            width: 95%;
+        }
+
+        .remote-conferencing-carousel .cost-pagination {
+            position: relative;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .swiper-container.remote-conferencing-carousel {
+            padding-top: 10px;
+        }
+
+        .swiper-container.ai-conferencing-carousel {
+            padding-top: 20px;
+        }
+
+        .swiper-container.remote-conferencing-carousel img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .swiper-container.ai-conferencing-carousel img {
+            display: block;
+            height: 100vw;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+}
