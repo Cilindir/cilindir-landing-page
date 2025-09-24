@@ -35,7 +35,7 @@
     }
 
     .tri-render-container img {
-        width: 100%;
+        width: auto;
         height: auto;
         min-width: 200px;
     }

@@ -7,41 +7,28 @@
 
 	{{ partial "header.html" . }}
 
-	<div class="page-content">
+	<main class="page-content">
 
 		<!-- Welcome Container-->
 		{{ partial "hero.html" . }}
-		{{ partial "hr.html" . }}
+		{{ partial "section-break.html" . }}
 
 		<!-- Solution Section -->
 		{{ partial "solution.html" . }}
-		{{ partial "hr.html" . }}
+		{{ partial "section-break.html" . }}
 
 		<!-- Applications Section -->
 		{{ partial "applications.html" . }}
-		{{ partial "hr.html" . }}
-
-		<!-- Problem Container -->
-		<!-- {{ partial "problem.html" . }} -->
-		<!--{{ partial "hr.html" . }} -->
+		{{ partial "section-break.html" . }}
 
 		<!-- Technology Overview Section -->
 		{{ partial "technology-overview.html" . }}
-		{{ partial "hr.html" . }}
-
-		<!-- Section on how we compare -->
-		{{ partial "how-we-compare.html" . }}
-		{{ partial "hr.html" . }}
+		{{ partial "section-break.html" . }}
 
 		<!-- Ecosystem Section -->
 		{{ partial "innovation-ecosystem.html" . }}
 
-		<div class="contact-form">
-			<h2>For collaboration, investment, or career inquiries, please reach out to us on <a
-					href="https://www.linkedin.com/company/cilindir/people/">LinkedIn.</a></h2>
-		</div>
-
-	</div>
+	</main>
 
 	{{ partial "footer.html" . }}
 </body>

@@ -1,0 +1,20 @@
+@layer components {
+    .section-break {
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .section-break hr {
+        border: none;
+        border-top: 2px solid var(--color-section-break);
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1100px) {
+        .section-break {
+            margin-top: 5px;
+        }
+    }
+}

@@ -21,6 +21,8 @@
         --color-background: #EEF0F2;
         --color-background-hover: #D1D4D9;
 
+        --color-section-break: #A9A9A9;
+
         --color-text: #5D5F5E;
         --font-main: "Titillium Web", sans-serif;
     }
@@ -90,7 +92,6 @@
 
 @layer components {
 
-
     .page-header {
         max-width: 1200px;
         margin: 0 auto;
@@ -118,7 +119,13 @@
 
         .swiper-container {
             width: 100%;
-            overflow: hidden;
+            position: relative;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
         }
 
         .swiper-slide {
@@ -127,9 +134,11 @@
         }
 
         .swiper-pagination {
+            position: relative;
             text-align: center;
-            margin-top: 15px;
+            padding-top: 50px;
         }
+
     }
 }
 

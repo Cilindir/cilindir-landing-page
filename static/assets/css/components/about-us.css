@@ -4,13 +4,12 @@
         margin: 0 auto;
     }
 
-    .about-us-container h2:first-of-type {
-        margin-top: 0;
+    .about-us-container h2 {
+        text-align: center;
     }
 
-    .about-us-container h2 {
-        margin: 20px 0;
-        text-align: center;
+    .about-mission {
+        margin-bottom: 2rem;
     }
 
     .founder-container {
@@ -23,6 +22,7 @@
         padding: 15px;
         padding-top: 0;
         box-sizing: border-box;
+        margin-top: 2rem;
     }
 
     .founder-tile {
@@ -61,8 +61,8 @@
     }
 
     .founder-description {
+        width: 87%;
         text-align: left;
-        width: 85%;
         margin-bottom: 10px;
     }
 
@@ -85,11 +85,6 @@
             margin: 0 auto;
         }
 
-        .founder-image {
-            max-width: 250px;
-            margin: 5px;
-        }
-
         .about-us-container h2 {
             width: 80%;
             margin: 0 auto;
@@ -100,14 +95,22 @@
             text-align: justify;
         }
 
+        .founder-image {
+            max-width: 250px;
+            margin: 5px;
+        }
+
         .founder-tile {
             padding: 15px;
         }
 
+        .founder-tile p {
+            font-size: 0.95rem;
+            margin: 10px 0;
+        }
+
         .founder-description {
             text-align: justify;
-            margin-top: 5px;
-            margin-bottom: 0;
         }
 
         .founder-summary h2 {
@@ -120,13 +123,8 @@
             font-size: 1.15rem;
         }
 
-        .founder-tile p {
-            font-size: 0.95rem;
-            margin: 10px 0;
-        }
-
-        .founder-description {
-            width: 90%;
+        .about-us-container .swiper-container {
+            margin-top: 1.5rem;
         }
     }
 }
