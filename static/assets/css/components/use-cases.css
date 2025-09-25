@@ -1,35 +1,19 @@
 @layer components {
-    .application-container {
-        max-width: 1400px;
-        width: 75%;
-        margin: auto;
+    .use-cases-container {
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .application-container h2 {
-        width: 70%;
-        margin: auto;
-        margin-top: 10px;
-        font-size: 1.6rem;
-    }
-
-    .application-container a {
-        color: #15244C;
-        font-weight: bold;
-        font-size: 1.6rem;
-        cursor: pointer;
-    }
-
-    .application-tile-grid {
-        display: grid;
+    .use-cases-tile-grid {
+        display: grid !important;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        padding: 20px 0;
         justify-items: center;
         max-width: 100%;
         margin: auto;
     }
 
-    .application-tile {
+    .use-cases-tile {
         display: grid;
         grid-template-columns: 1fr 4fr;
         align-items: center;
@@ -41,15 +25,14 @@
         flex-grow: 1;
     }
 
-    .application-tile i {
-        width: 104px;
+    .use-cases-tile i {
         justify-self: center;
         text-align: center;
         padding: 25px;
         padding-right: 35px;
     }
 
-    .application-tile .application-title {
+    .use-cases-tile .use-cases-title {
         font-size: 1.6rem;
         line-height: 1.35;
         font-weight: bold;
@@ -57,74 +40,79 @@
         margin-bottom: 0;
     }
 
-    .application-tile .application-description {
+    .use-cases-tile .use-cases-description {
         font-size: 1.3rem;
         line-height: 1.35;
         margin-top: 5px;
         margin-bottom: 0;
     }
 
+    .use-cases-footer {
+        max-width: 88%;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 30px auto 0;
+    }
+
+    .use-cases-footer a {
+        color: var(--color-text-link);
+        transition: color 0.2s ease;
+    }
+
+    .use-cases-footer a:hover {
+        color: var(--color-text-link-hover);
+        /* lighter hover color */
+    }
+
     @media (max-width: 1100px) {
 
-        .application-container {
+        .use-cases-container {
             width: 90%;
         }
 
-        .application-container h2 {
-            font-size: 1.2rem;
-            font-weight: normal;
-            width: 100%;
-            margin: 8px 0;
-            padding-top: 0;
-        }
-
-        .application-container a {
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .swiper-container.application-carousel {
+        .swiper-container.use-cases-carousel {
             padding-top: 20px;
         }
 
-        .application-tile {
+        .use-cases-tile {
             grid-template-columns: 1fr;
             text-align: center;
-            background-color: #15244C;
-            color: #EEF0F2;
+            background-color: var(--color-primary);
+            color: var(--color-background);
         }
 
-        .application-tile .application-description {
+        .use-cases-tile .use-cases-description {
             font-size: 1rem;
             width: 90%;
             margin: auto;
             margin-top: 8px;
         }
 
-        .application-tile i {
+        .use-cases-tile i {
             padding: 0;
             padding: 15px;
             padding-bottom: 20px;
             justify-self: center;
         }
 
-        .application-tile .application-title,
-        .application-tile .application-description {
+        .use-cases-tile .use-cases-title,
+        .use-cases-tile .use-cases-description {
             text-align: center;
         }
 
-        .application-carousel .application-pagination {
+        .use-cases-carousel .use-cases-pagination {
             position: relative;
             text-align: center;
             margin-top: 10px;
         }
 
-        .application-carousel .swiper-wrapper {
+        .use-cases-carousel .swiper-wrapper {
             align-items: stretch;
             display: flex;
         }
 
-        .application-carousel .swiper-slide {
+        .use-cases-carousel .swiper-slide {
             display: flex;
             height: auto;
         }
