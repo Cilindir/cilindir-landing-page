@@ -48,7 +48,7 @@
     }
 
     .scroll-to-learn-more h2 {
-        font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
         font-weight: bold;
         font-style: italic;
         color: #5D5F5E;

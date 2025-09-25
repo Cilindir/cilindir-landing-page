@@ -10,6 +10,14 @@
         text-align: center;
     }
 
+    .features-intro h2 {
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+        font-weight: bold;
+        font-style: italic;
+        color: #5D5F5E;
+        margin-top: 5px;
+    }
+
     .feature-overview-container details {
         width: 60%;
         margin-bottom: 1rem;
@@ -64,11 +72,21 @@
     }
 
     .feature-overview-container details p {
-        width: 65%;
+        width: 85%;
         margin: 0 auto;
         text-align: center;
         padding-bottom: 0.75rem;
         font-size: 1.1rem;
+    }
+
+    .feature-overview-container details a {
+        font-size: inherit;
+        color: var(--color-text-link)
+    }
+
+    .feature-overview-container details a:hover {
+        color: var(--color-text-link-hover);
+        text-decoration: underline;
     }
 
     @media (max-width: 1000px) {
