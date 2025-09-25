@@ -1,38 +1,11 @@
-<div class="page-header">
-    <h1>Introducing the<br class="mobile-break">&nbsp;Cilindir Rift</h1>
-</div>
-<div class="welcome-container">
-    <div class="welcome-contents">
-        <!-- Desktop grid container -->
-        <div class="tri-render-container desktop-only">
-            <img src="/images/renders/home/penguins.png" alt="Cilindir Rift: Penguins">
-            <img src="/images/renders/home/firefighter.png" alt="Cilindir Rift: Firefighter">
-            <img src="/images/renders/home/archaeology.png" alt="Cilindir Rift: Archaeology">
-        </div>
+<div class="hero-container">
 
-        <!-- Mobile swiper container -->
-        <div class="swiper-container welcome-carousel mobile-only">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/images/renders/home/penguins.png" alt="Cilindir Rift: Penguins" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="/images/renders/home/firefighter.png" alt="Cilindir Rift: Firefighter" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="/images/renders/home/archaeology.png" alt="Cilindir Rift: Archaeology" />
-                </div>
-            </div>
-            <div class="welcome-pagination"></div>
-        </div>
+    {{ partial "tri-render-container.html" . }}
 
-        <h2>Lifelike AI for more immersive learning.</h2>
-
-        <div class="scroll-to-learn-more desktop-only">
-            <a href="#problem">
-                <h2>Scroll down to learn more</h2>
-            </a>
-        </div>
-
+    {{ with .Params.hero_text }}
+    <div class="hero-text">
+        <h2>{{ . }}</h2>
     </div>
+    {{ end }}
+
 </div>

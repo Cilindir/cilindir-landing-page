@@ -1,6 +1,7 @@
 ---
-title: "Education"
-layout: "education"
+title: "Home"
+layout: "home"
+url: "/"
 
 page_images:
   - src: "/images/renders/home/penguins.png"

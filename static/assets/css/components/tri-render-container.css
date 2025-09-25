@@ -1,0 +1,32 @@
+@layer components {
+    .tri-render-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tri-render-contents {
+        display: flex;
+        flex-direction: column;
+        /* This makes children stack vertically */
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        max-width: 1750px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        max-width: 70vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    .image-grid img {
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+}
