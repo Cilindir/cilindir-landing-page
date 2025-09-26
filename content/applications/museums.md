@@ -27,7 +27,7 @@ stats:
     source_url: "https://www.approvedbusinesscommunications.co.uk/blog/2018-01-11-face-to-face-meetings-are-way-more-effective-than-emails-study-suggest"
 
 feature_dropdowns:
-  intro: "Click on the tiles below to learn more about the Rift platform."
+  intro: "Click on the tiles below to explore exhibits brought to life with Cilindir."
   tiles:
     - title: "AI-Powered Learning"
       imageSrc: "/images/stock/planning_session.png"
