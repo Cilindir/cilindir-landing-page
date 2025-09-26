@@ -13,6 +13,10 @@
         {{ partial "scroll-to-learn-more.html" . }}
         {{ partial "section-break.html" . }}
 
+        {{ partial "page-header.html" (dict "Title" "Interactive Scenarios") }}
+        {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
+        {{ partial "section-break.html" . }}
+
         {{ partial "page-header.html" (dict "Title" "The Power of Interactive AI") }}
         {{ partial "stat-tile-grid/stat-tile-grid.html" . }}
         {{ partial "section-break.html" . }}

@@ -19,7 +19,8 @@
         <!-- Technology Overview -->
         {{ partial "page-header.html" (dict "Title" "Technology") }}
         {{ partial "technology.html" . }}
-        {{ partial "features.html" . }}
+        {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
+
         {{ partial "section-break.html" . }}
 
         <!-- Use cases -->

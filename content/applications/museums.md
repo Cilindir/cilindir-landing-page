@@ -2,7 +2,7 @@
 title: "Museums"
 layout: "museums"
 
-page_images:
+hero_images:
   - src: "/images/renders/home/penguins.png"
     alt: "Cilindir Rift: Penguins"
   - src: "/images/renders/home/firefighter.png"
@@ -11,10 +11,6 @@ page_images:
     alt: "Cilindir Rift: Archaeology"
 
 hero_text: "Interactive AI exhibits that boost visitor engagement and retention."
-
-section_footer: |
-  Arrange a live demo at your museum. 
-  <a href='/demo'>Request a Demo</a>.
 
 stats:
   - value: "40%"
@@ -29,6 +25,25 @@ stats:
   - value: "34x"
     text: "Face-to-face meetings are 34 times more effective than email threads."
     source_url: "https://www.approvedbusinesscommunications.co.uk/blog/2018-01-11-face-to-face-meetings-are-way-more-effective-than-emails-study-suggest"
+
+feature_dropdowns:
+  intro: "Click on the tiles below to learn more about the Rift platform."
+  tiles:
+    - title: "AI-Powered Learning"
+      imageSrc: "/images/stock/planning_session.png"
+      imageAlt: "Shared virtual spaces"
+      description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI systems as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
+      open: true
+
+    - title: "Powered by Unreal"
+      imageSrc: "/images/stock/three_person_networking.png"
+      imageAlt: "Full Body Capture"
+      description: "The Rift is built on <a href='https://www.unrealengine.com/' target='_blank' rel='noopener'>Unreal Engine</a>, a leading game development engine known for its stunning graphics and advanced physics. This makes it possible for learners to explore dynamic virtual worlds where AI characters can move naturally and interact with their surroundings."
+
+    - title: "Wearables-Free Immersion"
+      imageSrc: "/images/stock/three_person_networking.png"
+      imageAlt: "Full Body Capture"
+      description: "The Cilindir Rift provides a fully wearables-free experience—no VR headset required. This eliminates discomfort and fatigue associated with the prolonged use of headsets and hand controllers, reduces hygiene concerns, and avoids barriers for both younger and older learners."
 
 comparison_table:
   cols:
@@ -55,4 +70,8 @@ comparison_table:
     - ["Multi-party conferencing", "✅", "✅", "❌", "✅"]
     - ["Multiple users per device", "❌", "❌", "✅", "❌"]
     - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>"]
+
+section_footer: |
+  Ready for a live demo at your museum?
+  <a href='/demo'>Request a Demo</a>.
 ---

@@ -3,7 +3,7 @@
 
         <!-- Desktop grid container -->
         <div class="image-grid desktop-only">
-            {{ range .Params.page_images }}
+            {{ range .Params.hero_images }}
             <img src="{{ .src }}" alt="{{ .alt }}">
             {{ end }}
         </div>
@@ -11,7 +11,7 @@
         <!-- Mobile swiper container -->
         <div class="swiper-container mobile-only">
             <div class="swiper-wrapper">
-                {{ range .Params.page_images }}
+                {{ range .Params.hero_images }}
                 <div class="swiper-slide">
                     <img src="{{ .src }}" alt="{{ .alt }}">
                 </div>

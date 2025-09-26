@@ -2,7 +2,7 @@
 title: "Zoos and Aquariums"
 layout: "zoos-and-aquariums"
 
-page_images:
+hero_images:
   - src: "/images/renders/home/penguins.png"
     alt: "Cilindir Rift: Penguins"
   - src: "/images/renders/home/firefighter.png"
