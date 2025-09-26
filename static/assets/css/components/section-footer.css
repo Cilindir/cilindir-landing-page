@@ -1,0 +1,18 @@
+@layer components {
+    .section-footer {
+        max-width: 88%;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 30px auto 0;
+    }
+
+    .section-footer a {
+        color: var(--color-text-link);
+        transition: color 0.2s ease;
+    }
+
+    .section-footer a:hover {
+        color: var(--color-text-link-hover);
+    }
+}

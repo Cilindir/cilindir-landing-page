@@ -47,24 +47,6 @@
         margin-bottom: 0;
     }
 
-    .use-cases-footer {
-        max-width: 88%;
-        font-size: 1.3rem;
-        text-align: center;
-        line-height: 1.5;
-        margin: 30px auto 0;
-    }
-
-    .use-cases-footer a {
-        color: var(--color-text-link);
-        transition: color 0.2s ease;
-    }
-
-    .use-cases-footer a:hover {
-        color: var(--color-text-link-hover);
-        /* lighter hover color */
-    }
-
     @media (max-width: 1100px) {
 
         .use-cases-container {

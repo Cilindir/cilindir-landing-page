@@ -10,6 +10,19 @@
         {{ partial "page-header.html" . }}
 
         {{ partial "hero.html" . }}
+        {{ partial "scroll-to-learn-more.html" . }}
+        {{ partial "section-break.html" . }}
+
+        {{ partial "page-header.html" (dict "Title" "The Power of Interactive AI") }}
+        {{ partial "stat-tile-grid/stat-tile-grid.html" . }}
+        {{ partial "section-break.html" . }}
+
+        {{ partial "page-header.html" (dict "Title" "How We Compare") }}
+        {{ partial "comparison-table.html" .Params.comparison_table }}
+
+        {{ with .Params.section_footer }}
+        {{ partial "section-footer.html" . }}
+        {{ end }}
 
     </main>
 

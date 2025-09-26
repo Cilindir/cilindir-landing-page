@@ -1,0 +1,22 @@
+<div class="stat-tile-grid-container">
+
+    <!-- Desktop grid -->
+    <div class="stat-tile-grid desktop-only">
+        {{ range .Params.stats }}
+        {{ partial "stat-tile-grid/stat-tile.html" . }}
+        {{ end }}
+    </div>
+
+    <!-- Mobile carousel -->
+    <div class="swiper-container mobile-only">
+        <div class="swiper-wrapper">
+            {{ range .Params.stats }}
+            <div class="swiper-slide">
+                {{ partial "stat-tile-grid/stat-tile.html" . }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="pagination"></div>
+    </div>
+
+</div>

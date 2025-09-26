@@ -1,8 +1,6 @@
 @layer components {
     .comparison-container {
-        padding: 2rem;
         overflow-x: auto;
-        max-width: 1400px;
         margin: auto;
     }
 

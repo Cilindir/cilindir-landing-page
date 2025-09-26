@@ -7,7 +7,6 @@
     .tri-render-contents {
         display: flex;
         flex-direction: column;
-        /* This makes children stack vertically */
         justify-content: center;
         align-items: center;
         gap: 5px;

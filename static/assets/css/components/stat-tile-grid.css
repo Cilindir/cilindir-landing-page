@@ -1,11 +1,10 @@
 @layer components {
-    .problem-overview-container {
+    .stat-tile-grid-container {
         width: 80%;
-        max-width: 1400px;
         margin: auto;
     }
 
-    .problem-overview-container h2 {
+    .stat-tile-grid-container h2 {
         font-size: 1.6rem;
         width: 72%;
         line-height: 1.35;
@@ -14,8 +13,8 @@
         max-width: 800px;
     }
 
-    .cost-tile-grid {
-        display: grid;
+    .stat-tile-grid {
+        display: grid !important;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         padding: 20px 0;
@@ -24,11 +23,11 @@
         margin: auto;
     }
 
-    .cost-tile {
+    .stat-tile {
         display: grid;
         grid-template-columns: 1fr 4fr;
         align-items: center;
-        background-color: #EEF0F2;
+        background-color: var(--color-background);
         border: 1px solid #ddd;
         padding: 20px;
         text-align: left;
@@ -38,7 +37,7 @@
         width: 100%;
     }
 
-    .cost-tile .percentage-display {
+    .stat-tile .percentage-display {
         font-size: 3rem;
         font-weight: bold;
         padding-right: 30px;
@@ -52,10 +51,6 @@
         fill: #5D5F5E;
         vertical-align: middle;
         margin-left: 0.25em;
-    }
-
-    .desktop-break {
-        display: inline;
     }
 
     @media (max-width: 1100px) {
@@ -80,33 +75,33 @@
             width: 75%;
         }
 
-        .cost-tile-grid {
+        .stat-tile-grid {
             grid-template-columns: 1fr;
         }
 
-        .cost-tile {
+        .stat-tile {
             grid-template-columns: 1fr;
             text-align: center;
-            background-color: #15244C;
-            color: #EEF0F2;
+            background-color: var(--color-primary);
+            color: var(--color-background);
             flex-grow: 1;
         }
 
-        .cost-tile a .external-icon {
-            fill: #EEF0F2;
+        .stat-tile a .external-icon {
+            fill: var(--color-background);
         }
 
-        .cost-tile .percentage-display,
-        .cost-tile .statistic-contents {
+        .stat-tile .percentage-display,
+        .stat-tile .statistic-contents {
             text-align: center;
         }
 
-        .cost-tile .percentage-display {
+        .stat-tile .percentage-display {
             padding: 0;
             margin-top: -10px;
         }
 
-        .cost-tile .statistic-contents {
+        .stat-tile .statistic-contents {
             font-size: 1rem;
             width: 90%;
             margin: auto;

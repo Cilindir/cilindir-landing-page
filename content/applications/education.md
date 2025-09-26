@@ -11,4 +11,8 @@ page_images:
     alt: "Cilindir Rift: Archaeology"
 
 hero_text: "Lifelike AI for more immersive learning."
+
+section_footer: |
+  Arrange a live demo at your museum: 
+  <a href='/demo'>Request a Demo</a>.
 ---
