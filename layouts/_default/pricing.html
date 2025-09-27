@@ -9,7 +9,7 @@
     <main class="page-content">
         {{ partial "page-header.html" . }}
 
-        {{ partial "pricing.html" . }}
+        {{ partial "pricing.html" .Params.products }}
     </main>
 
     {{ partial "footer.html" . }}
