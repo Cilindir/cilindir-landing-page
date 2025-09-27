@@ -3,16 +3,16 @@ title: "Zoos and Aquariums"
 layout: "zoos-and-aquariums"
 
 desktop_hero_image:
-  src: "/images/renders/hero/desktop/main.png"
+  src: "/images/renders/hero/desktop/zoo_aquarium.png"
   alt: "Tri Render Container"
 
 mobile_hero_images:
-  - src: "/images/renders/home/penguins.png"
+  - src: "/images/renders/hero/mobile/zoo_aquarium/penguins.png"
+    alt: "Cilindir Rift: Archaeologist"
+  - src: "/images/renders/hero/mobile/zoo_aquarium/tiger.png"
+    alt: "Cilindir Rift: Teacher"
+  - src: "/images/renders/hero/mobile/zoo_aquarium/aquarium.png"
     alt: "Cilindir Rift: Penguins"
-  - src: "/images/renders/home/firefighter.png"
-    alt: "Cilindir Rift: Firefighter"
-  - src: "/images/renders/home/archaeology.png"
-    alt: "Cilindir Rift: Archaeology"
 
 hero_text: "Lifelike AI for more immersive learning."
 

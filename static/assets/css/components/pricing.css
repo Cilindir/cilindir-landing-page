@@ -94,11 +94,5 @@
             width: 85%;
             font-size: 1rem;
         }
-
-        .pricing-carousel .pricing-pagination {
-            position: relative;
-            text-align: center;
-            margin-top: 20px;
-        }
     }
 }

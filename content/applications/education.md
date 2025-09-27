@@ -3,16 +3,16 @@ title: "Education"
 layout: "education"
 
 desktop_hero_image:
-  src: "/images/renders/hero/desktop/main.png"
+  src: "/images/renders/hero/desktop/education.png"
   alt: "Tri Render Container"
 
 mobile_hero_images:
-  - src: "/images/renders/home/penguins.png"
+  - src: "/images/renders/hero/mobile/education/inca.png"
+    alt: "Cilindir Rift: Archaeologist"
+  - src: "/images/renders/hero/mobile/education/teacher.png"
+    alt: "Cilindir Rift: Teacher"
+  - src: "/images/renders/hero/mobile/education/plant_science.png"
     alt: "Cilindir Rift: Penguins"
-  - src: "/images/renders/home/firefighter.png"
-    alt: "Cilindir Rift: Firefighter"
-  - src: "/images/renders/home/archaeology.png"
-    alt: "Cilindir Rift: Archaeology"
 
 hero_text: "Lifelike AI for more immersive learning."
 

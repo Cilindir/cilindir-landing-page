@@ -13,3 +13,13 @@ document.querySelectorAll('#mobile-nav .dropdown-toggle').forEach(toggle => {
         parentLi.classList.toggle('active');
     });
 });
+
+// Close mobile nav when clicking outside
+document.addEventListener("click", (e) => {
+    // Check if click is outside mobile nav and hamburger
+    if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        mobileNav.classList.remove("active");
+        // Close any open dropdowns
+        document.querySelectorAll('#mobile-nav li.active').forEach(li => li.classList.remove('active'));
+    }
+});

@@ -7,12 +7,12 @@ desktop_hero_image:
   alt: "Tri Render Container"
 
 mobile_hero_images:
-  - src: "/images/renders/home/penguins.png"
+  - src: "/images/renders/hero/mobile/museum/archaeologist.png"
+    alt: "Cilindir Rift: Archaeologist"
+  - src: "/images/renders/hero/mobile/museum/soldier.png"
+    alt: "Cilindir Rift: Teacher"
+  - src: "/images/renders/hero/mobile/museum/guide.png"
     alt: "Cilindir Rift: Penguins"
-  - src: "/images/renders/home/firefighter.png"
-    alt: "Cilindir Rift: Firefighter"
-  - src: "/images/renders/home/archaeology.png"
-    alt: "Cilindir Rift: Archaeology"
 
 hero_text: "Interactive AI Exhibits that Boost Visitor Engagement and Retention."
 

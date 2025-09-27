@@ -1,5 +1,6 @@
 @layer components {
     .hero-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -7,6 +8,7 @@
     }
 
     .tri-render-container {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -58,13 +60,18 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
+        .hero-container {
+            width: 90%;
+            margin: 0 auto;
+        }
 
-        .welcome-contents h1 {
-            font-size: 2.5rem;
-            margin-top: 0.4rem;
-            margin-bottom: 0.25rem;
-            line-height: 1.25;
+        .hero-container .swiper-slide img {
+            max-width: 95%;
+        }
+
+        .hero-text h2 {
+            font-size: 1rem;
         }
     }
 }
