@@ -1,11 +1,15 @@
 @layer components {
+    #technology {
+        scroll-margin-top: 11rem;
+    }
+
     .technology-overview-container {
         width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 2rem;
-        margin: 0 auto;
+        gap: 3rem;
+        margin: -2rem auto 1.5rem;
     }
 
     .rift-overview-text {
@@ -14,8 +18,7 @@
     }
 
     .rift-overview-text h2 {
-        width: 90%;
-        max-width: 400px;
+        max-width: 65%;
         margin: 0 0 1.5rem auto;
     }
 
@@ -24,9 +27,33 @@
     }
 
     .rift-overview-image img {
-        height: 65vh;
+        height: 70vh;
         width: auto;
         display: block;
+    }
+
+    @media (max-width: 1280px) {
+        #technology {
+            scroll-margin-top: 9.5rem;
+        }
+
+        .technology-overview-container {
+            gap: 2rem;
+            margin: -1rem auto 1rem;
+        }
+
+        .rift-overview-text {
+            margin-left: 1rem;
+        }
+
+        .rift-overview-text h2 {
+            max-width: 80%;
+        }
+
+        .rift-overview-image img {
+            height: 64vh;
+            margin-left: 1rem;
+        }
     }
 
     @media (max-width: 1024px) {
