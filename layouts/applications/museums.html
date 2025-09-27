@@ -10,7 +10,6 @@
         {{ partial "page-header.html" . }}
 
         {{ partial "hero.html" . }}
-        {{ partial "scroll-to-learn-more.html" . }}
         {{ partial "section-break.html" . }}
 
         {{ partial "page-header.html" (dict "Title" "Interactive Scenarios") }}
@@ -27,7 +26,6 @@
         {{ with .Params.section_footer }}
         {{ partial "section-footer.html" . }}
         {{ end }}
-
     </main>
 
     {{ partial "footer.html" . }}

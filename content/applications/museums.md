@@ -2,7 +2,11 @@
 title: "Museums"
 layout: "museums"
 
-hero_images:
+desktop_hero_image:
+  src: "/images/renders/hero/desktop/museum.png"
+  alt: "Tri Render Container"
+
+mobile_hero_images:
   - src: "/images/renders/home/penguins.png"
     alt: "Cilindir Rift: Penguins"
   - src: "/images/renders/home/firefighter.png"
@@ -10,7 +14,7 @@ hero_images:
   - src: "/images/renders/home/archaeology.png"
     alt: "Cilindir Rift: Archaeology"
 
-hero_text: "Interactive AI exhibits that boost visitor engagement and retention."
+hero_text: "Interactive AI Exhibits that Boost Visitor Engagement and Retention."
 
 stats:
   - value: "40%"

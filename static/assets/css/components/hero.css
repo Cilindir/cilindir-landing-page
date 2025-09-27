@@ -6,6 +6,20 @@
         align-items: center;
     }
 
+    .tri-render-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-grid {
+        width: 78vw;
+        margin: auto;
+    }
+
+    .image-grid img {
+        min-width: 0;
+    }
+
     .hero-text {
         margin-top: 2rem;
     }
@@ -17,7 +31,34 @@
         margin-bottom: 0.5vw;
     }
 
-    @media (max-width: 1100px) {
+    .scroll-to-learn-more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll-to-learn-more h2 {
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+        font-weight: bold;
+        font-style: italic;
+        color: #5D5F5E;
+        margin-top: 0.3rem;
+        margin-bottom: 0;
+    }
+
+
+    @media (max-width: 1280px) {
+
+        .image-grid {
+            width: 72vw;
+        }
+
+        .hero-text {
+            margin-top: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
 
         .welcome-contents h1 {
             font-size: 2.5rem;

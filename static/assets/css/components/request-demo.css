@@ -64,7 +64,7 @@
         width: 120px;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
 
         .book-a-demo-container {
             width: 85%;

@@ -1,11 +1,34 @@
 <div class="hero-container">
 
-    {{ partial "tri-render-container.html" . }}
+    <div class="tri-render-container">
+        <!-- Desktop grid container -->
+        <div class="image-grid desktop-only">
+            <img src="{{ .Params.desktop_hero_image.src }}" alt="{{ .Params.desktop_hero_image.alt }}">
+        </div>
+
+        <!-- Mobile swiper container -->
+        <div class="swiper-container mobile-only">
+            <div class="swiper-wrapper">
+                {{ range .Params.mobile_hero_images }}
+                <div class="swiper-slide">
+                    <img src="{{ .src }}" alt="{{ .alt }}">
+                </div>
+                {{ end }}
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
     {{ with .Params.hero_text }}
     <div class="hero-text">
         <h2>{{ . }}</h2>
     </div>
     {{ end }}
+
+    <div class="scroll-to-learn-more desktop-only">
+        <a href="#technology">
+            <h2>Scroll down to learn more</h2>
+        </a>
+    </div>
 
 </div>

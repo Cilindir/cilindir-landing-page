@@ -47,7 +47,7 @@
         margin-bottom: 0;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
 
         .use-cases-container {
             width: 90%;

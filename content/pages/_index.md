@@ -3,7 +3,11 @@ title: "Introducing the Cilindir Rift"
 layout: "home"
 url: "/"
 
-hero_images:
+desktop_hero_image:
+  src: "/images/renders/hero/desktop/main.png"
+  alt: "Tri Render Container"
+
+mobile_hero_images:
   - src: "/images/renders/home/penguins.png"
     alt: "Cilindir Rift: Penguins"
   - src: "/images/renders/home/firefighter.png"
@@ -11,7 +15,7 @@ hero_images:
   - src: "/images/renders/home/archaeology.png"
     alt: "Cilindir Rift: Archaeology"
 
-hero_text: "Lifelike AI for more immersive learning."
+hero_text: "Lifelike AI for More Immersive Learning."
 
 feature_dropdowns:
   intro: "Click on the tiles below to learn more about the Rift platform."
