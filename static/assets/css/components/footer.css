@@ -16,4 +16,10 @@
         font-size: 1.5rem;
         vertical-align: middle;
     }
+
+    @media (max-width: 1280px) {
+        .site-footer {
+            margin-top: 1.5rem;
+        }
+    }
 }
