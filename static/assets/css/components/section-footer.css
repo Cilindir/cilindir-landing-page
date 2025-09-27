@@ -1,18 +1,29 @@
 @layer components {
     .section-footer {
-        max-width: 88%;
         font-size: 1.3rem;
         text-align: center;
-        line-height: 1.5;
-        margin: 30px auto 0;
+        margin: 2rem auto 0;
     }
 
     .section-footer a {
         color: var(--color-text-link);
         transition: color 0.2s ease;
+        font-size: inherit;
+        font-weight: inherit;
     }
 
     .section-footer a:hover {
         color: var(--color-text-link-hover);
+    }
+
+    @media (max-width: 1280px) {
+        .section-footer {
+            margin-top: 1rem;
+        }
+
+        .section-footer {
+            width: 55%;
+            line-height: 1.3;
+        }
     }
 }

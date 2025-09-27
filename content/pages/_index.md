@@ -63,7 +63,7 @@ use_cases:
     description: "Engage with lessons and concepts through interactive and emotive storytelling."
 
 section_footer: |
-  Learn more about how educators and institutions are using Cilindir:
+  Learn more about how educators and institutions are using Cilindir:<span class="show-1280"><br></span>
   <a href='/applications/education'>Education</a>,
   <a href='/applications/museums'>Museums</a>, and
   <a href='/applications/zoos-and-aquariums'>Zoos and Aquariums</a>.

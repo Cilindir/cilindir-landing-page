@@ -12,6 +12,12 @@
         margin: 0 auto;
     }
 
+    @media (max-width: 1280px) {
+        .section-break {
+            margin-top: 1rem;
+        }
+    }
+
     @media (max-width: 1024px) {
         .section-break {
             margin-top: 5px;
