@@ -15,7 +15,7 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/zoo_aquarium/penguins.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: "Lifelike AI for More Immersive Learning."
+hero_text: Lifelike AI for More Immersive Learning.
 
 scroll_target: "technology"
 

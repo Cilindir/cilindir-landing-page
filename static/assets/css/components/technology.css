@@ -49,42 +49,29 @@
     }
 
     @media (max-width: 768px) {
-
-        .rift-overview-container {
+        .technology-overview-container {
             width: 90%;
-        }
-
-        .rift-overview-container h2 {
-            font-size: 1.2rem;
-            margin-top: 0.6rem;
-            font-weight: normal;
-            width: 95%;
-        }
-
-        .remote-conferencing-carousel .cost-pagination {
-            position: relative;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+            margin: 0 auto;
             text-align: center;
-            margin-top: 10px;
+            margin-bottom: 1rem;
         }
 
-        .swiper-container.remote-conferencing-carousel {
-            padding-top: 10px;
+        .rift-overview-text {
+            margin: 0 auto;
         }
 
-        .swiper-container.ai-conferencing-carousel {
-            padding-top: 20px;
+        .rift-overview-text h2 {
+            max-width: 88%;
+            font-weight: normal;
+            margin: 0 auto;
+            margin-bottom: 1rem;
         }
 
-        .swiper-container.remote-conferencing-carousel img {
-            display: block;
+        .rift-overview-image img {
             width: 100%;
             height: auto;
-        }
-
-        .swiper-container.ai-conferencing-carousel img {
-            display: block;
-            height: 100vw;
-            width: auto;
             margin: 0 auto;
         }
     }
