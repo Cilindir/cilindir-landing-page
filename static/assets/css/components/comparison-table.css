@@ -20,16 +20,17 @@
     .comparison-table td {
         padding: 0.75rem;
         border: 1px solid #ccc;
-        font-size: 1.2rem;
+    }
+
+    .comparison-table td {
+        font-size: 1.15rem;
     }
 
     th em {
         display: block;
         font-style: italic;
-        font-size: 0.85em;
-        /* Adjust as needed */
+        font-size: 0.95rem;
         margin-top: 4px;
-        /* Optional: adds space from heading */
     }
 
     th .competitor-label {
@@ -40,13 +41,25 @@
 
     thead tr {
         background-color: #C0C4C8;
-        /* darker shade for header */
     }
 
     /* Zebra shading */
     tr:nth-child(even) {
         background-color: #e1e4e7;
-        /* slightly darker than #EEF0F2 */
+    }
+
+    @media (max-width: 1280px) {
+        th .competitor-label {
+            font-size: 1.2rem;
+        }
+
+        .comparison-table td {
+            font-size: 1rem;
+        }
+
+        th em {
+            font-size: 0.90rem;
+        }
     }
 
     @media (max-width: 1024px) {
@@ -54,7 +67,6 @@
         .comparison-table th,
         .comparison-table td {
             font-size: 0.85rem;
-            /* or whatever size you want */
         }
 
         th .competitor-label {

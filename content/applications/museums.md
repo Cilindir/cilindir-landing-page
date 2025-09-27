@@ -59,13 +59,13 @@ comparison_table:
       width: "18%"
     - label: "Static Exhibits"
       width: "18%"
-      sub_label: "..."
+      sub_label: "This company, that one, and another"
     - label: "Traditional VR Exhibits"
       width: "18%"
-      sub_label: "..."
+      sub_label: "This company, that one, and another"
     - label: "Immersive Installations"
       width: "18%"
-      sub_label: "..."
+      sub_label: "This company, that one, and another"
   rows:
     - ["Full-body capture", "✅", "❌", "✅", "❌"]
     - ["Natural eye contact", "✅", "❌", "✅", "✅"]
@@ -73,9 +73,6 @@ comparison_table:
     - ["AI chatbot integration", "✅", "❌", "❌", "✅ (limited)"]
     - ["AI-powered summary and insights", "✅", "✅", "❌", "✅ (emerging)"]
     - ["Video conferencing integration", "✅", "–", "❌", "❌"]
-    - ["Multi-party conferencing", "✅", "✅", "❌", "✅"]
-    - ["Multiple users per device", "❌", "❌", "✅", "❌"]
-    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>"]
 
 section_footer: |
   Ready for a live demo at your museum?
