@@ -16,6 +16,8 @@ mobile_hero_images:
 
 hero_text: "Lifelike AI for more immersive learning."
 
+scroll_target: "scenarios"
+
 stats:
   - value: "40%"
     text: "higher retention with interactive exhibits."

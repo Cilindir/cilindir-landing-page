@@ -1,8 +1,4 @@
 @layer components {
-    #technology {
-        scroll-margin-top: 11rem;
-    }
-
     .technology-overview-container {
         width: 80%;
         display: grid;
@@ -33,10 +29,6 @@
     }
 
     @media (max-width: 1280px) {
-        #technology {
-            scroll-margin-top: 9.5rem;
-        }
-
         .technology-overview-container {
             gap: 2rem;
             margin: -1rem auto 1rem;

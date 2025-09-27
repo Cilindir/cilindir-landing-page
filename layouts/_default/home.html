@@ -19,11 +19,12 @@
         {{ partial "page-header.html" (dict "Title" "Technology") }}
         {{ partial "technology.html" . }}
         {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
-
         {{ partial "section-break.html" . }}
 
         <!-- Use cases -->
-        {{ partial "use-cases.html" . }}
+        {{ partial "page-header.html" (dict "Title" "Use Cases") }}
+        {{ partial "use-case-tile-grid/use-case-tile-grid.html" . }}
+
         {{ with .Params.section_footer }}
         {{ partial "section-footer.html" . }}
         {{ end }}

@@ -12,7 +12,9 @@
         {{ partial "hero.html" . }}
         {{ partial "section-break.html" . }}
 
-        {{ partial "page-header.html" (dict "Title" "Interactive Scenarios") }}
+        <div id="scenarios">
+            {{ partial "page-header.html" (dict "Title" "Interactive Scenarios") }}
+        </div>
         {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
         {{ partial "section-break.html" . }}
 

@@ -17,6 +17,8 @@ mobile_hero_images:
 
 hero_text: "Lifelike AI for More Immersive Learning."
 
+scroll_target: "technology"
+
 feature_dropdowns:
   intro: "Click on the tiles below to learn more about the Rift platform."
   tiles:
@@ -45,6 +47,20 @@ feature_dropdowns:
       imageSrc: "/images/stock/two_panel_fold.png"
       imageAlt: "Minimal Footprint"
       description: "This optional feature allows the Rift to render content based on the user’s position and viewing angle. Like looking into a mirror, the view changes naturally as you move your head. This makes the projected image appear spatially consistent and realistic, unlike a traditional flat-screen display."
+
+use_cases:
+  - icon: "fa-user-group"
+    title: "Iconic Encounters"
+    description: "Converse with innovators, political leaders, and cultural icons brought to life as AI characters."
+  - icon: "fa-earth-americas"
+    title: "Exploration at Scale"
+    description: "Explore ancient worlds, iconic landmarks, and scientific wonders in full scale."
+  - icon: "fa-brain"
+    title: "Adaptive Learning"
+    description: "Learn interactively, with safe AI responses tailoring to guest curiosity and comprehension."
+  - icon: "fa-scroll"
+    title: "Interactive Stories"
+    description: "Engage with lessons and concepts through interactive and emotive storytelling."
 
 section_footer: |
   Learn more about how educators and institutions are using Cilindir:

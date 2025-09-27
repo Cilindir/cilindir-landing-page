@@ -16,6 +16,8 @@ mobile_hero_images:
 
 hero_text: "Interactive AI Exhibits that Boost Visitor Engagement and Retention."
 
+scroll_target: "scenarios"
+
 stats:
   - value: "40%"
     text: "higher retention with interactive exhibits."
