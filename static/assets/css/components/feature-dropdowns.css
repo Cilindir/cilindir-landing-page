@@ -134,6 +134,9 @@
         .feature-overview-container details {
             padding: 0.5rem;
             margin-bottom: 0.75rem;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
         }
 
         .feature-overview-container .feature-content img {

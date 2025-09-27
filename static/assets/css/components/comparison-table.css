@@ -1,7 +1,8 @@
 @layer components {
     .comparison-container {
+        width: 100%;
         overflow-x: auto;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .comparison-table {
@@ -64,17 +65,22 @@
 
     @media (max-width: 768px) {
 
+        .comparison-container {
+            width: 90%;
+            overflow-x: auto;
+        }
+
         .comparison-table th,
         .comparison-table td {
-            font-size: 0.85rem;
+            font-size: 0.94rem;
         }
 
         th .competitor-label {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .comparison-table {
-            min-width: 700px;
+            min-width: 900px;
         }
     }
 }

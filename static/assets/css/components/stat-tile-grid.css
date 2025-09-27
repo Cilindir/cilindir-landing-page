@@ -80,7 +80,7 @@
             text-align: center;
             background-color: var(--color-primary);
             color: var(--color-background);
-            flex-grow: 1;
+            height: 100%;
         }
 
         .stat-tile a .external-icon {

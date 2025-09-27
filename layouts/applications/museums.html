@@ -30,7 +30,9 @@
         {{ partial "comparison-table.html" .Params.comparison_table }}
 
         {{ with .Params.section_footer }}
-        {{ partial "section-footer.html" . }}
+        <div class="section-footer-container">
+            {{ partial "section-footer.html" . }}
+        </div>
         {{ end }}
     </main>
 

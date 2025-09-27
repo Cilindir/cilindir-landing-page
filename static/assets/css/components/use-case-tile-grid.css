@@ -68,6 +68,7 @@
             text-align: center;
             background-color: var(--color-primary);
             color: var(--color-background);
+            height: 100%;
         }
 
         .use-cases-tile .use-cases-description {
@@ -83,7 +84,5 @@
             padding-bottom: 20px;
             justify-self: center;
         }
-
-
     }
 }
