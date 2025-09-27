@@ -66,12 +66,17 @@
             margin: 0 auto;
         }
 
-        .hero-container .swiper-slide img {
-            max-width: 95%;
+        .hero-text {
+            margin-top: 0.5rem;
         }
 
         .hero-text h2 {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .hero-container .swiper-slide img {
+            max-width: 95%;
         }
     }
 }

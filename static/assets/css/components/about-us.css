@@ -77,22 +77,30 @@
         color: inherit;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
 
         .about-us-container {
-            gap: 30px;
             width: 85%;
             margin: 0 auto;
         }
 
         .about-us-container h2 {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }
 
         .about-us-container p {
             margin-top: 15px;
             text-align: justify;
+            font-size: 0.92rem;
+        }
+
+        .about-mission {
+            margin-bottom: 1.5rem;
+        }
+
+        .founders-heading {
+            padding-bottom: 1rem;
         }
 
         .founder-image {
@@ -105,7 +113,7 @@
         }
 
         .founder-tile p {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             margin: 10px 0;
         }
 

@@ -48,7 +48,7 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
 
         .rift-overview-container {
             width: 90%;
