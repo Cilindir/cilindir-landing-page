@@ -1,14 +1,16 @@
 <div class="stat-tile-grid-container">
 
     <!-- Desktop grid -->
-    <div class="stat-tile-grid desktop-only">
-        {{ range .Params.stats }}
-        {{ partial "stat-tile-grid/stat-tile.html" . }}
-        {{ end }}
+    <div class="desktop-only">
+        <div class="stat-tile-grid">
+            {{ range .Params.stats }}
+            {{ partial "stat-tile-grid/stat-tile.html" . }}
+            {{ end }}
+        </div>
     </div>
 
     <!-- Mobile carousel -->
-    <div class="swiper-container mobile-only">
+    <div class="swiper-container mobile-only" data-pagination=".swiper-pagination">
         <div class="swiper-wrapper">
             {{ range .Params.stats }}
             <div class="swiper-slide">
@@ -16,7 +18,7 @@
             </div>
             {{ end }}
         </div>
-        <div class="pagination"></div>
+        <div class="swiper-pagination"></div>
     </div>
 
 </div>

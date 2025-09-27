@@ -18,7 +18,11 @@
         {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
         {{ partial "section-break.html" . }}
 
-        {{ partial "page-header.html" (dict "Title" "The Power of Interactive AI") }}
+        {{ partial "page-header.html" (dict "Title" (print
+        "The Power of "
+        "<span class='line-break-mobile'><br></span>"
+        " Interactive AI"
+        )) }}
         {{ partial "stat-tile-grid/stat-tile-grid.html" . }}
         {{ partial "section-break.html" . }}
 

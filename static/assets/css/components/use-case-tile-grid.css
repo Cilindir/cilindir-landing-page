@@ -63,10 +63,6 @@
             width: 90%;
         }
 
-        .swiper-container.use-cases-carousel {
-            padding-top: 20px;
-        }
-
         .use-cases-tile {
             grid-template-columns: 1fr;
             text-align: center;
@@ -88,25 +84,6 @@
             justify-self: center;
         }
 
-        .use-cases-tile .use-cases-title,
-        .use-cases-tile .use-cases-description {
-            text-align: center;
-        }
 
-        .use-cases-carousel .use-cases-pagination {
-            position: relative;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .use-cases-carousel .swiper-wrapper {
-            align-items: stretch;
-            display: flex;
-        }
-
-        .use-cases-carousel .swiper-slide {
-            display: flex;
-            height: auto;
-        }
     }
 }

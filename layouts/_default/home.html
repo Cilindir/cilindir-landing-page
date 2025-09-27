@@ -31,7 +31,11 @@
         {{ partial "section-break.html" . }}
 
         <!-- Ecosystem Section -->
-        {{ partial "page-header.html" (dict "Title" "Out Innovation Ecosystem") }}
+        {{ partial "page-header.html" (dict "Title" (print
+        "Our Innovation "
+        "<span class='line-break-mobile'><br></span>"
+        " Ecosystem"
+        )) }}
         {{ partial "innovation-ecosystem.html" . }}
 
     </main>
