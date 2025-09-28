@@ -80,8 +80,8 @@
         }
 
         .rift-overview-image img {
-            width: 100%;
-            max-width: 342px;
+            width: 90%;
+            max-width: 300px;
             height: auto;
             margin: 0 auto;
         }
