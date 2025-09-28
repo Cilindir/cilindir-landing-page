@@ -209,6 +209,10 @@
         .line-break-1280 {
             display: inline;
         }
+
+        .line-break-mobile {
+            display: none;
+        }
     }
 
     @media (max-width: 1024px) {

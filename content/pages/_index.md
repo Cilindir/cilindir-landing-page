@@ -1,5 +1,5 @@
 ---
-title: Introducing the<span class="line-break-mobile"><br></span>Cilindir Rift
+title: Introducing the <span class="line-break-mobile"><br></span> Cilindir Rift
 layout: "home"
 url: "/"
 

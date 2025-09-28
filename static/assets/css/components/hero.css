@@ -23,7 +23,10 @@
     }
 
     .hero-text {
+        width: 80%;
+        margin: 0 auto;
         margin-top: 2rem;
+        text-align: center;
     }
 
     .hero-text h2 {
@@ -52,11 +55,12 @@
     @media (max-width: 1280px) {
 
         .image-grid {
-            width: 90vw;
+            width: 71vw;
         }
 
         .hero-text {
             margin-top: 1.5rem;
+
         }
     }
 
