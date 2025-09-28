@@ -25,7 +25,7 @@ feature_dropdowns:
     - title: "AI-Powered Learning"
       imageSrc: "/images/stock/planning_session.png"
       imageAlt: "Shared virtual spaces"
-      description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI systems as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
+      description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI educators as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
       open: true
 
     - title: "Powered by Unreal"

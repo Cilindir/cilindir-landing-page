@@ -21,7 +21,8 @@
                 <div class="product-column">
                     <h2 class="product-name">{{ .name }}</h2>
                     <img src="{{ .image }}" alt="{{ .alt }}" class="product-image" />
-                    <p class="product-dimensions">Dimensions: {{ .dimensions }}</p>
+                    <p class="product-dimensions">Dimensions:<span class="line-break-mobile"><br></span>{{ .dimensions
+                        }}</p>
                     <p class="product-description">{{ .description }}</p>
                     <p class="product-price">Starting at {{ .price }}</p>
                 </div>
