@@ -6,6 +6,18 @@
         width: 100%;
         background-color: var(--color-primary);
         z-index: 1000;
+    }
+
+    .header-container {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        /* move left edge to the center */
+        transform: translateX(-50%);
+        /* shift back by half width to center */
+        height: 5.5rem;
+        width: 100%;
+        max-width: 1600px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -163,6 +175,10 @@
 
         /* Header adjustments */
         #header {
+            height: 4.5rem;
+        }
+
+        .header-container {
             height: 4.5rem;
         }
 
