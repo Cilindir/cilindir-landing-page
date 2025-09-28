@@ -23,29 +23,29 @@ feature_dropdowns:
   intro: "Click on the tiles below to learn more about the Rift platform."
   tiles:
     - title: "AI-Powered Learning"
-      imageSrc: "/images/stock/planning_session.png"
-      imageAlt: "Shared virtual spaces"
+      imageSrc: "/images/stock/ai_instructor.png"
+      imageAlt: "AI-Powered Learning"
       description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI educators as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
       open: true
 
     - title: "Powered by Unreal"
-      imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
+      imageSrc: "/images/stock/unreal_engine.png"
+      imageAlt: "Powered by Unreal"
       description: "The Rift is built on <a href='https://www.unrealengine.com/' target='_blank' rel='noopener'>Unreal Engine</a>, a leading game development engine known for its stunning graphics and advanced physics. This makes it possible for learners to explore dynamic virtual worlds where AI characters can move naturally and interact with their surroundings."
 
     - title: "Wearables-Free Immersion"
-      imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
+      imageSrc: "/images/renders/land_before_time.png"
+      imageAlt: "Wearables-Free Immersion"
       description: "The Cilindir Rift provides a fully wearables-free experience—no VR headset required. This eliminates discomfort and fatigue associated with the prolonged use of headsets and hand controllers, reduces hygiene concerns, and avoids barriers for both younger and older learners."
 
     - title: "User Tracking"
-      imageSrc: "/images/stock/two_people_drinking_tea.png"
-      imageAlt: "Laptop Integration"
+      imageSrc: "/images/stock/students_pose.png"
+      imageAlt: "User Tracking"
       description: "Integrated cameras track the users' position and facial expression in real time, enabling more natural AI interactions. This tracking data allows AI characters to maintain natural eye contact and better understand the learner's age and level of comprehension. No video data is recorded or stored."
 
     - title: "View-Dependent Rendering"
-      imageSrc: "/images/stock/two_panel_fold.png"
-      imageAlt: "Minimal Footprint"
+      imageSrc: "/images/stock/perspective_staircase.png"
+      imageAlt: "View-Dependent Rendering"
       description: "This optional feature allows the Rift to render content based on the user’s position and viewing angle. Like looking into a mirror, the view changes naturally as you move your head. This makes the projected image appear spatially consistent and realistic, unlike a traditional flat-screen display."
 
 use_cases:
