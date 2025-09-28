@@ -25,6 +25,12 @@
         }
     }
 
+    @media (max-width: 1280px) {
+        .section-footer {
+            width: 70%;
+        }
+    }
+
     @media (max-width: 768px) {
         .section-footer-container {
             margin-top: 1.5rem;

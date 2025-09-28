@@ -28,13 +28,16 @@
         }
     }
 
-
     @media (max-width: 768px) {
         .partner-container {
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
             width: 45%;
+        }
+
+        .partner-logo img {
+            max-width: 250px;
         }
     }
 }

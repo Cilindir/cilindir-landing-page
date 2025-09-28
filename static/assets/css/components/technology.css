@@ -48,6 +48,16 @@
         }
     }
 
+    @media (max-width: 1024px) {
+        .technology-overview-container {
+            gap: 1rem;
+        }
+
+        .rift-overview-text h2 {
+            max-width: 100%;
+        }
+    }
+
     @media (max-width: 768px) {
         .technology-overview-container {
             width: 90%;
@@ -71,6 +81,7 @@
 
         .rift-overview-image img {
             width: 100%;
+            max-width: 342px;
             height: auto;
             margin: 0 auto;
         }

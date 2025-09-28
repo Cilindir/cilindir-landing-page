@@ -118,6 +118,19 @@
         }
     }
 
+    @media (max-width: 1024px) {
+        .feature-overview-container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .feature-overview-container details {
+            padding: 0.75rem;
+            width: 90%;
+            margin: 0 auto 0.75rem;
+        }
+    }
+
     @media (max-width: 768px) {
         .feature-overview-container {
             width: 90%;

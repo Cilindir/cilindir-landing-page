@@ -16,12 +16,13 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         /* two equal columns */
-        gap: 50px;
+        gap: 40px;
         width: 100%;
         margin: 0 auto;
         padding-top: 0;
         box-sizing: border-box;
         margin-top: 2rem;
+        align-items: stretch;
     }
 
     .founder-tile {
@@ -33,7 +34,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 100%;
     }
 
     .founder-summary {
@@ -78,11 +78,31 @@
         color: inherit;
     }
 
+    @media (max-width: 1024px) {
+
+        .about-us-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .founder-container {
+            gap: 2rem;
+        }
+
+        .founder-description p {
+            text-align: left;
+        }
+    }
+
     @media (max-width: 768px) {
 
         .about-us-container {
             width: 85%;
             margin: 0 auto;
+        }
+
+        .founder-tile {
+            height: 100%;
         }
 
         .about-us-container h2 {

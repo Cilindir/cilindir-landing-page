@@ -85,6 +85,20 @@
         }
     }
 
+    @media (max-width: 1024px) {
+        main.page-content {
+            padding-top: 4.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
     @media (max-width: 768px) {
         h2 {
             font-size: 1.2rem;
@@ -171,7 +185,15 @@
         display: flex;
     }
 
+    .desktop-1024 {
+        display: flex;
+    }
+
     .mobile-only {
+        display: none;
+    }
+
+    .mobile-1024 {
         display: none;
     }
 
@@ -186,6 +208,24 @@
     @media (max-width: 1280px) {
         .line-break-1280 {
             display: inline;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .mobile-1024 {
+            display: flex !important;
+        }
+
+        .desktop-1024 {
+            display: none !important;
+        }
+
+        .line-break-1280 {
+            display: none;
+        }
+
+        .line-break-mobile {
+            display: none;
         }
     }
 
