@@ -27,6 +27,13 @@
         {{ partial "section-break.html" . }}
 
         {{ partial "page-header.html" (dict "Title" "How We Compare") }}
+        <div class="comparison-note">
+            <h2>
+                Cilindir is designed to complement, not replace, live animal exhibits.
+                It offers new ways to explore ecosystems, conservation, and science
+                without disturbing habitats or wildlife.
+            </h2>
+        </div>
         {{ partial "comparison-table.html" .Params.comparison_table }}
 
         {{ with .Params.section_footer }}

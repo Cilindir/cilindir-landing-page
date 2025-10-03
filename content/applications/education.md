@@ -14,70 +14,70 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/education/plant_science.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: "Lifelike AI for more immersive learning."
+hero_text: "Immersive AI Learning that Improves Retention, Engagement, and Curiosity."
 
 scroll_target: "scenarios"
 
-stats:
-  - value: "40%"
-    text: "higher retention with interactive exhibits."
-    source_url: "https://apexglobal.ca/design/the-role-of-interactive-learning-in-museums/"
-  - value: "65%"
-    text: "Of museums say AI exhibits boost visitor engagement."
-    source_url: "https://www.apollotechnical.com/workplace-communication-statistics/"
-  - value: "40%"
-    text: "Boost in visitor satisfaction from personalized, AI-driven tours."
-    source_url: "https://www.gsb.stanford.edu/insights/thinking-inside-box-why-virtual-meetings-generate-fewer-ideas"
-  - value: "34x"
-    text: "Face-to-face meetings are 34 times more effective than email threads."
-    source_url: "https://www.approvedbusinesscommunications.co.uk/blog/2018-01-11-face-to-face-meetings-are-way-more-effective-than-emails-study-suggest"
-
 feature_dropdowns:
-  intro: "Click on the tiles below to explore exhibits brought to life with Cilindir."
+  intro: "Click on the tiles below to see how Cilindir brings learning to life, in and out of the classroom."
   tiles:
-    - title: "AI-Powered Learning"
-      imageSrc: "/images/stock/planning_session.png"
-      imageAlt: "Shared virtual spaces"
-      description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI systems as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
+    - title: "AI-Powered Teaching Assistants"
+      imageSrc: "/images/stock/teaching_assistant.png"
+      imageAlt: "AI-Powered Teaching Assistants"
+      description: "Adaptive AI instructors serve as personal, highly knowledgeable teaching assistants. Students can ask questions, receive feedback, and explore subject material through real-time conversation. Our AI educators are trained on vast knowledge bases and designed with strict safety protocols."
       open: true
 
-    - title: "Powered by Unreal"
-      imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
-      description: "The Rift is built on <a href='https://www.unrealengine.com/' target='_blank' rel='noopener'>Unreal Engine</a>, a leading game development engine known for its stunning graphics and advanced physics. This makes it possible for learners to explore dynamic virtual worlds where AI characters can move naturally and interact with their surroundings."
+    - title: "Bringing History to Life"
+      imageSrc: "/images/stock/fall_of_berlin_wall.png"
+      imageAlt: "Bringing History to Life"
+      description: "Peer into ancient civilizations, witness historic events firsthand, or converse with AI-powered historical figures. From ancient Rome to the Pyramids of Giza to the signing of the Declaration of Independence, students experience history as if they were in the room when it happened."
 
-    - title: "Wearables-Free Immersion"
+    - title: "Immersive Language Practice"
       imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
-      description: "The Cilindir Rift provides a fully wearables-free experience—no VR headset required. This eliminates discomfort and fatigue associated with the prolonged use of headsets and hand controllers, reduces hygiene concerns, and avoids barriers for both younger and older learners."
+      imageAlt: "Immersive Language Practice"
+      description: "Students learn and practice foreign languages by conversing with AI speakers in realistic settings. Whether ordering food in a Paris café or navigating a busy Tokyo street, learners build confidence and fluency through real-world interactions."
+
+    - title: "Science and Nature at Scale"
+      imageSrc: "/images/stock/circular_system.png"
+      imageAlt: "Exploration at Scale"
+      description: "Peer inside the human heart, explore the Great Barrier Reef, or study the solar system at true scale. The Cilindir Rift makes abstract concepts tangible and easier to understand."
+
+stats:
+  - value: "35%"
+    text: "Higher knowledge retention with immersive learning compared to traditional methods."
+    source_url: "https://www.immersivelearning.news/2025/05/12/research-findings-how-vr-is-enhancing-motivation-in-el-salvadors-public-schools/"
+  - value: "14%"
+    text: "Higher test scores three weeks later for students taught with immersive instruction."
+    source_url: "https://www.mdpi.com/2571-5577/7/3/50/"
+  - value: "93%"
+    text: "Of teachers believe immersion enhances teaching quality and student engagement."
+    source_url: "https://www.gostudent.org/en-gb/blog/virtual-reality-in-education-statistics/"
+  - value: "3x"
+    text: "Learners in immersive environments are three times more emotionally connected to content."
+    source_url: "https://www.databridgemarketresearch.com/ar/whitepaper/companies-are-scaling-up-their-learning-and-development/"
 
 comparison_table:
   cols:
     - label: "Feature / Experience"
       width: "28%"
-    - label: "Cilindir Rift"
+    - label: "Learning with Rift"
       width: "18%"
-    - label: "Static Exhibits"
+    - label: "Traditional Learning"
       width: "18%"
-      sub_label: "..."
-    - label: "Traditional VR Exhibits"
+      sub_label: "Lectures, textbooks, and slide decks"
+    - label: "Learning with VR"
       width: "18%"
-      sub_label: "..."
-    - label: "Immersive Installations"
-      width: "18%"
-      sub_label: "..."
+      sub_label: "VR headsets and hand controllers"
   rows:
-    - ["Full-body capture", "✅", "❌", "✅", "❌"]
-    - ["Natural eye contact", "✅", "❌", "✅", "✅"]
-    - ["Wearables free", "✅", "✅", "✅", "❌"]
-    - ["AI chatbot integration", "✅", "❌", "❌", "✅ (limited)"]
-    - ["AI-powered summary and insights", "✅", "✅", "❌", "✅ (emerging)"]
-    - ["Video conferencing integration", "✅", "–", "❌", "❌"]
-    - ["Multi-party conferencing", "✅", "✅", "❌", "✅"]
-    - ["Multiple users per device", "❌", "❌", "✅", "❌"]
-    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>"]
+    - ["AI-powered educators", "✅", "❌", "✅ <strong>(limited)</strong>"]
+    - ["Wearables free", "✅", "✅", "❌"]
+    - ["Collaborative learning", "✅", "❌", "✅ <strong>(emerging)</strong>"]
+    - ["Personalized learning", "✅", "❌", "✅ <strong>(emerging)</strong>"]
+    - ["Accessibility", "✅", "✅ <strong>(varies)</strong>", "❌"]
+    - ["Real-world simulations", "✅", "❌", "✅"]
+    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$</strong>"]
 
 section_footer: |
-  Ready for a live demo at your museum?
+  Ready for a live demo at your school or division office?
   <a href='/demo'>Request a Demo</a>.
 ---

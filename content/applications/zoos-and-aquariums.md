@@ -14,42 +14,51 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/zoo_aquarium/aquarium.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: "Lifelike AI for more immersive learning."
+hero_text: "Immersive AI that Inspires Curiosity and Conservation."
 
 scroll_target: "scenarios"
-
-stats:
-  - value: "40%"
-    text: "higher retention with interactive exhibits."
-    source_url: "https://apexglobal.ca/design/the-role-of-interactive-learning-in-museums/"
-  - value: "65%"
-    text: "Of museums say AI exhibits boost visitor engagement."
-    source_url: "https://www.apollotechnical.com/workplace-communication-statistics/"
-  - value: "40%"
-    text: "Boost in visitor satisfaction from personalized, AI-driven tours."
-    source_url: "https://www.gsb.stanford.edu/insights/thinking-inside-box-why-virtual-meetings-generate-fewer-ideas"
-  - value: "34x"
-    text: "Face-to-face meetings are 34 times more effective than email threads."
-    source_url: "https://www.approvedbusinesscommunications.co.uk/blog/2018-01-11-face-to-face-meetings-are-way-more-effective-than-emails-study-suggest"
 
 feature_dropdowns:
   intro: "Click on the tiles below to explore exhibits brought to life with Cilindir."
   tiles:
-    - title: "AI-Powered Learning"
-      imageSrc: "/images/stock/planning_session.png"
-      imageAlt: "Shared virtual spaces"
-      description: "Adaptive AI characters serve as personal, highly knowledgeable mentors, experts, and guides. Users can see, hear, and interact with these AI systems as if they were another person together in the same room. AI educators are trained on vast amounts of information, and designed with strict safety protocols."
+    - title: "AI-Powered Wildlife Guides"
+      imageSrc: "/images/stock/wildlife_guide.png"
+      imageAlt: "AI-Powered Wildlife Guides"
+      description: "AI-powered characters act as expert guides, answering questions about ecosystems, species, and conservation efforts. Visitors can interact with these characters naturally, as if they were together in the same room speaking with a zoologist or marine biologist."
       open: true
 
-    - title: "Powered by Unreal"
-      imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
-      description: "The Rift is built on <a href='https://www.unrealengine.com/' target='_blank' rel='noopener'>Unreal Engine</a>, a leading game development engine known for its stunning graphics and advanced physics. This makes it possible for learners to explore dynamic virtual worlds where AI characters can move naturally and interact with their surroundings."
+    - title: "Sustainable Habitat Exploration"
+      imageSrc: "/images/stock/elephant.png"
+      imageAlt: "Sustainable Habitat Exploration"
+      description: "Step into the Arctic to follow a polar bear’s journey, dive alongside a pod of dolphins, or walk across the African Savannah. Cilindir Rift recreates entire ecosystems where animals move naturally, and visitors gain a deeper understanding of conservation challenges."
 
-    - title: "Wearables-Free Immersion"
-      imageSrc: "/images/stock/three_person_networking.png"
-      imageAlt: "Full Body Capture"
-      description: "The Cilindir Rift provides a fully wearables-free experience—no VR headset required. This eliminates discomfort and fatigue associated with the prolonged use of headsets and hand controllers, reduces hygiene concerns, and avoids barriers for both younger and older learners."
+    - title: "Conservation through Story"
+      imageSrc: "/images/stock/polar_bear.png"
+      imageAlt: "Conservation through Story"
+      description: "Go beyond static signs with immersive storytelling. Users can watch how climate change impacts coral reefs, experience the migration paths of endangered sea turtles, or see the effects of deforestation on orangutan habitats. With visually stunning graphics and realistic physics, it feels as if you were really there."
+
+    - title: "Interactive AI Wildlife"
+      imageSrc: "/images/stock/goat.png"
+      imageAlt: "Interactive AI Wildlife"
+      description: "Visitors can engage directly with AI animals, observing their behaviors and interacting with them up close in a mutually safe virtual environment. Optionally, animals can communicate, sharing insights about their species and ecosystems, fostering empathy and a deeper understanding of wildlife. AI wildlife can appear as stylized cartoon characters in a computationally realistic simulation."
+
+stats:
+  - value: "60%"
+    text: "Of visitors learn more effectively through interactive, multi-sensory exhibits."
+    source_url: "https://apexglobal.ca/design/the-role-of-interactive-learning-in-museums/"
+
+  - value: "70%"
+    text: "Of visitors feel more connected to exhibits featuring interactive elements."
+    source_url: "https://frankfrazettamuseum.com/the-impact-of-interactive-technology-on-visitor-engagement-in-art-museums/"
+
+  - value: "24%"
+    text: "Higher visitor satisfaction with adaptive and personalized learning experiences."
+    source_url: "https://www.nature.com/articles/s41598-025-13408-2/"
+
+  - value: "65%"
+    text: "Of cultural institutions say AI-powered exhibits increase visitor engagement."
+    source_url: "https://wifitalents.com/ai-in-the-museum-industry-statistics/"
+
 
 comparison_table:
   cols:
@@ -59,25 +68,23 @@ comparison_table:
       width: "18%"
     - label: "Static Exhibits"
       width: "18%"
-      sub_label: "..."
-    - label: "Traditional VR Exhibits"
+      sub_label: "Panels, signs, and videos"
+    - label: "Tradition VR Exhibits"
       width: "18%"
-      sub_label: "..."
+      sub_label: "VR headsets and hand controllers"
     - label: "Immersive Installations"
       width: "18%"
-      sub_label: "..."
+      sub_label: "Theaters, video rooms, and mapped projections"
   rows:
-    - ["Full-body capture", "✅", "❌", "✅", "❌"]
-    - ["Natural eye contact", "✅", "❌", "✅", "✅"]
-    - ["Wearables free", "✅", "✅", "✅", "❌"]
-    - ["AI chatbot integration", "✅", "❌", "❌", "✅ (limited)"]
-    - ["AI-powered summary and insights", "✅", "✅", "❌", "✅ (emerging)"]
-    - ["Video conferencing integration", "✅", "–", "❌", "❌"]
-    - ["Multi-party conferencing", "✅", "✅", "❌", "✅"]
-    - ["Multiple users per device", "❌", "❌", "✅", "❌"]
-    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>"]
+    - ["Interactive storytelling", "✅", "❌", "✅ <strong>(limited)</strong>", "❌"]
+    - ["AI-powered Q&A", "✅", "❌", "✅ <strong>(emerging)</strong>", "❌"]
+    - ["Wearables free", "✅", "❌", "❌", "✅"]
+    - ["Group experiences", "✅", "✅", "❌", "✅"]
+    - ["Personalized experiences", "✅", "❌", "✅ <strong>(emerging)</strong>", "❌"]
+    - ["Accessibility", "✅", "❌", "❌", "✅"]
+    - ["Cost", "<strong>$$</strong>", "<strong>$</strong> - <strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>", "<strong>$$$</strong>"]
 
 section_footer: |
-  Ready for a live demo at your museum?
+  Ready for a live demo at your aquarium or zoo?
   <a href='/demo'>Request a Demo</a>.
 ---

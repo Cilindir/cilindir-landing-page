@@ -8,6 +8,7 @@
     .features-intro {
         margin: 0 auto 1rem auto;
         text-align: center;
+        width: 80%;
     }
 
     .features-intro h2 {
@@ -138,10 +139,10 @@
         }
 
         .features-intro h2 {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             font-size: 1rem;
-            margin-top: 0.5rem;
+            margin-top: 0;
         }
 
         .feature-overview-container details {
