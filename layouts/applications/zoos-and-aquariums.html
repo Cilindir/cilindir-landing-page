@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <main class="page-content">
+        {{ partial "page-header.html" . }}
+
+        {{ partial "hero.html" . }}
+        {{ partial "section-break.html" . }}
+
+        <div id="scenarios">
+            {{ partial "page-header.html" (dict "Title" "Interactive Scenarios") }}
+        </div>
+        {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
+        {{ partial "section-break.html" . }}
+
+        {{ partial "page-header.html" (dict "Title" (print
+        "The Power of "
+        "<span class='line-break-mobile'><br></span>"
+        " Interactive AI"
+        )) }}
+        {{ partial "stat-tile-grid/stat-tile-grid.html" . }}
+        {{ partial "section-break.html" . }}
+
+        {{ partial "page-header.html" (dict "Title" "How We Compare") }}
+        <div class="comparison-note">
+            <h2>
+                Cilindir is designed to complement, not replace, live animal exhibits.
+                It offers new ways to explore ecosystems, conservation, and science
+                without disturbing habitats or wildlife.
+            </h2>
+        </div>
+        {{ partial "comparison-table.html" .Params.comparison_table }}
+
+        {{ with .Params.section_footer }}
+        <div class="section-footer-container">
+            {{ partial "section-footer.html" . }}
+        </div>
+        {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+</body>
+
+</html>

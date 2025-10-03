@@ -1,0 +1,7 @@
+<details {{ if .open }}open{{ end }}>
+    <summary>{{ .title }}</summary>
+    <div class="feature-content">
+        <img src="{{ .imageSrc }}" alt="{{ .imageAlt }}">
+        <p>{{ .description | safeHTML }}</p>
+    </div>
+</details>

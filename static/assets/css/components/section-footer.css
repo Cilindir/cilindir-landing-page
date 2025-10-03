@@ -1,0 +1,45 @@
+@layer components {
+    .section-footer {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 2rem auto 0;
+    }
+
+    .section-footer a {
+        color: var(--color-text-link);
+        transition: color 0.2s ease;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .section-footer a:hover {
+        color: var(--color-text-link-hover);
+    }
+
+    @media (max-width: 1280px) {
+        .section-footer {
+            margin-top: 1rem;
+            width: 55%;
+            line-height: 1.3;
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .section-footer {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .section-footer-container {
+            margin-top: 1.5rem;
+        }
+
+        .section-footer {
+            width: 80%;
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+    }
+}

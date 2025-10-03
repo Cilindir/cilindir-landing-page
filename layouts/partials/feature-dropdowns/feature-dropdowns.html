@@ -1,0 +1,11 @@
+<div class="feature-overview-container">
+    <div class="features-intro">
+        <h2>{{ .intro | safeHTML }}</h2>
+    </div>
+
+    <div class="feature-tile-container">
+        {{ range .tiles }}
+        {{ partial "feature-dropdowns/feature-tile.html" . }}
+        {{ end }}
+    </div>
+</div>

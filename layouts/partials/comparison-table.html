@@ -1,0 +1,28 @@
+<div class="comparison-container">
+    <table class="comparison-table">
+        <colgroup>
+            {{ range .cols }}
+            <col style="width: {{ .width }};">
+            {{ end }}
+        </colgroup>
+        <thead>
+            <tr>
+                {{ range .cols }}
+                <th>
+                    <span class="competitor-label">{{ .label }}</span>
+                    {{ if .sub_label }}<em>{{ .sub_label }}</em>{{ end }}
+                </th>
+                {{ end }}
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $row := .rows }}
+            <tr>
+                {{ range $cell := $row }}
+                <td>{{ $cell | safeHTML }}</td>
+                {{ end }}
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>

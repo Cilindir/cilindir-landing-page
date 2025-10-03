@@ -1,0 +1,110 @@
+@layer components {
+    .book-a-demo-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .demo-text {
+        text-align: center;
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .demo-text h2 {
+        margin-bottom: 0.75rem;
+    }
+
+    .demo-text p {
+        margin: 0.75rem auto;
+    }
+
+    /* Form styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 1.25rem;
+    }
+
+    .input-container {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-family: var(--font-main);
+        font-weight: bold;
+        font-size: 1.2rem;
+        flex: 1;
+        padding: 10px;
+        min-width: 120px;
+    }
+
+    .submit-btn {
+        display: block;
+        padding: 8px 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--color-background);
+        background-color: var(--color-primary);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Titillium Web";
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: 1.25rem;
+        width: 120px;
+    }
+
+    @media (max-width: 768px) {
+
+        .book-a-demo-container {
+            width: 85%;
+            margin: 0 auto;
+            gap: 1.5rem;
+        }
+
+        /* Stack input fields vertically */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+
+        form {
+            margin-top: 1rem;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            font-size: 1.05rem;
+        }
+
+        .submit-btn {
+            padding: 8px 16px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .demo-text h2 {
+            font-weight: normal;
+            margin-bottom: 0.7rem;
+        }
+
+        .demo-text p {
+            margin: 0;
+        }
+    }
+}

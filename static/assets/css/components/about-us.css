@@ -1,0 +1,155 @@
+@layer components {
+    .about-us-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-us-container h2 {
+        text-align: center;
+    }
+
+    .about-mission {
+        margin-bottom: 2rem;
+    }
+
+    .founder-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        /* two equal columns */
+        gap: 40px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        align-items: stretch;
+    }
+
+    .founder-tile {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .founder-summary {
+        align-items: center;
+    }
+
+    .founder-image {
+        max-width: 350px;
+        width: 80%;
+        height: auto;
+        margin: 15px;
+    }
+
+    .founder-summary h2 {
+        margin: 0;
+    }
+
+    .founder-summary h3 {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .founder-tile p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .founder-description {
+        width: 87%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .founder-description p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    .founder-description a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    @media (max-width: 1024px) {
+
+        .about-us-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .founder-container {
+            gap: 2rem;
+        }
+
+        .founder-description p {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .about-us-container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .founder-tile {
+            height: 100%;
+        }
+
+        .about-us-container h2 {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .about-us-container p {
+            margin-top: 15px;
+            text-align: justify;
+            font-size: 0.92rem;
+        }
+
+        .about-mission {
+            margin-bottom: 1.5rem;
+        }
+
+        .founders-heading {
+            padding-bottom: 1rem;
+        }
+
+        .founder-image {
+            max-width: 250px;
+            margin: 5px;
+        }
+
+        .founder-tile {
+            padding: 15px;
+        }
+
+        .founder-tile p {
+            font-size: 0.92rem;
+            margin: 10px 0;
+        }
+
+        .founder-description {
+            text-align: justify;
+        }
+
+        .founder-summary h2 {
+            font-size: 1.4rem;
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .founder-summary h3 {
+            font-size: 1.15rem;
+        }
+    }
+}

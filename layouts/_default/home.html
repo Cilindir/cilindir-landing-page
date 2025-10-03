@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <main class="page-content">
+
+        <!-- Welcome Container-->
+        {{ partial "page-header.html" . }}
+
+        {{ partial "hero.html" . }}
+        {{ partial "section-break.html" . }}
+
+        <!-- Technology Overview -->
+        {{ partial "page-header.html" (dict "Title" "Technology") }}
+        {{ partial "technology.html" . }}
+        {{ partial "feature-dropdowns/feature-dropdowns.html" .Params.feature_dropdowns }}
+        {{ partial "section-break.html" . }}
+
+        <!-- Use cases -->
+        {{ partial "page-header.html" (dict "Title" "Use Cases") }}
+        {{ partial "use-case-tile-grid/use-case-tile-grid.html" . }}
+
+        {{ with .Params.section_footer }}
+        {{ partial "section-footer.html" . }}
+        {{ end }}
+        {{ partial "section-break.html" . }}
+
+        <!-- Ecosystem Section -->
+        {{ partial "page-header.html" (dict "Title" (print
+        "Our Innovation "
+        "<span class='line-break-mobile'><br></span>"
+        " Ecosystem"
+        )) }}
+        {{ partial "innovation-ecosystem.html" . }}
+
+    </main>
+
+    {{ partial "footer.html" . }}
+
+</body>
+
+</html>

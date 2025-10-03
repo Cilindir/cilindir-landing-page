@@ -1,0 +1,26 @@
+<div class="use-cases-container">
+
+    <!-- Desktop grid -->
+    <div class="desktop-only">
+        <div class="use-cases-tile-grid">
+            {{ range .Params.use_cases }}
+            {{ partial "use-case-tile-grid/use-case-tile.html" (dict "icon" .icon "title" .title "description"
+            .description "size" "4x") }}
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- Mobile swiper -->
+    <div class="swiper-container mobile-only" data-pagination=".swiper-pagination">
+        <div class="swiper-wrapper">
+            {{ range .Params.use_cases }}
+            <div class="swiper-slide">
+                {{ partial "use-case-tile-grid/use-case-tile.html" (dict "icon" .icon "title" .title "description"
+                .description "size" "3x") }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div>

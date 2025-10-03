@@ -1,0 +1,44 @@
+@layer components {
+
+    .pricing-note,
+    .comparison-note {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pricing-note {
+        margin-top: 1.5rem;
+    }
+
+    .pricing-note h2,
+    .comparison-note h2 {
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+        font-weight: bold;
+        font-style: italic;
+        color: #5D5F5E;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+
+        .pricing-note,
+        .comparison-note {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .pricing-note {
+            margin-top: 0.5rem;
+        }
+
+        .pricing-note h2,
+        .comparison-note h2 {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}

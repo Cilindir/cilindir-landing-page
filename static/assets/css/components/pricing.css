@@ -1,0 +1,118 @@
+@layer components {
+    .pricing-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .pricing-tile-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px;
+        align-items: stretch;
+    }
+
+    .product-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-column h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .product-image {
+        height: 25vw;
+        max-height: 350px;
+        width: auto;
+        margin: 0.5rem auto;
+    }
+
+    .product-intro {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.35;
+    }
+
+    .product-dimensions {
+        font-size: 1.2rem;
+        color: #666;
+        margin: 10px auto;
+        font-style: italic;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #111;
+        margin: 15px auto;
+    }
+
+    @media (max-width: 1024px) {
+        .pricing-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .pricing-tile-grid {
+            gap: 2rem;
+        }
+
+        .product-column .product-name {
+            font-size: 1.6rem;
+        }
+
+        .product-dimensions {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .pricing-container {
+            gap: 30px;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .product-image {
+            height: 60vw;
+            margin: 0 auto;
+        }
+
+        .product-dimensions,
+        .product-price {
+            text-align: center;
+        }
+
+        .product-column {
+            padding: 10px;
+            height: 100%;
+        }
+
+        .product-column .product-name {
+            font-size: 1.4rem;
+        }
+
+        .product-column .product-dimensions {
+            font-size: 1rem;
+        }
+
+        .product-column .product-description {
+            width: 85%;
+            font-size: 1rem;
+        }
+    }
+}

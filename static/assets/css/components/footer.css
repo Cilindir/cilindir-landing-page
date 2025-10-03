@@ -1,0 +1,25 @@
+@layer components {
+    .site-footer {
+        background-color: var(--color-primary);
+        color: var(--color-background);
+        text-align: center;
+        padding: 0.75rem 0;
+        margin-top: 2.5rem;
+    }
+
+    .site-footer p {
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .copyright-symbol {
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 1280px) {
+        .site-footer {
+            margin-top: 1.5rem;
+        }
+    }
+}

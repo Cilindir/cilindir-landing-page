@@ -1,0 +1,111 @@
+@layer components {
+    .use-cases-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .use-cases-tile-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        max-width: 100%;
+        margin: auto;
+        align-items: stretch;
+    }
+
+    .use-cases-tile {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: left;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .use-cases-tile i {
+        justify-self: center;
+        text-align: center;
+        padding: 25px;
+        padding-right: 35px;
+    }
+
+    .use-cases-tile .use-cases-title {
+        font-size: 1.6rem;
+        line-height: 1.35;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .use-cases-tile .use-cases-description {
+        font-size: 1.3rem;
+        line-height: 1.35;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1280px) {
+        .use-cases-tile-grid {
+            gap: 1.5rem;
+        }
+
+        .use-cases-tile .use-cases-description {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .use-cases-tile {
+            padding: 15px;
+
+        }
+
+        .use-cases-tile i {
+            padding: 15px;
+            padding-right: 30px;
+        }
+
+        .use-cases-tile .use-cases-title {
+            font-size: 1.2rem;
+        }
+
+        .use-cases-tile .use-cases-description {
+            font-size: 1rem;
+        }
+
+        .fa-4x {
+            font-size: 3em !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .use-cases-container {
+            width: 90%;
+        }
+
+        .use-cases-tile {
+            grid-template-columns: 1fr;
+            text-align: center;
+            background-color: var(--color-primary);
+            color: var(--color-background);
+            height: 100%;
+        }
+
+        .use-cases-tile .use-cases-description {
+            font-size: 1rem;
+            width: 90%;
+            margin: auto;
+            margin-top: 8px;
+        }
+
+        .use-cases-tile i {
+            padding: 0;
+            padding: 15px;
+            padding-bottom: 20px;
+            justify-self: center;
+        }
+    }
+}
