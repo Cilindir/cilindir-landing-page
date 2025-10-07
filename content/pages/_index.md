@@ -15,7 +15,7 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/zoo_aquarium/penguins.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: Lifelike AI for More Immersive Learning.
+hero_text: Lifelike AI for More Immersive Learning
 
 scroll_target: "technology"
 
@@ -36,17 +36,17 @@ feature_dropdowns:
     - title: "Wearables-Free Immersion"
       imageSrc: "/images/renders/land_before_time.png"
       imageAlt: "Wearables-Free Immersion"
-      description: "The Cilindir Rift provides a fully wearables-free experience—no VR headset required. This eliminates discomfort and fatigue associated with the prolonged use of headsets and hand controllers, reduces hygiene concerns, and avoids barriers for both younger and older learners."
+      description: "The Cilindir Rift provides a fully wearables-free experience. This eliminates discomfort and fatigue associated with the prolonged use of VR headsets and hand controllers, reduces hygiene concerns, and reduces barriers for both younger and older learners."
 
     - title: "User Tracking"
       imageSrc: "/images/stock/students_pose.png"
       imageAlt: "User Tracking"
-      description: "Integrated cameras track the users' position and facial expression in real time, enabling more natural AI interactions. This tracking data allows AI characters to maintain natural eye contact and better understand the learner's age and level of comprehension. No video data is recorded or stored."
+      description: "Integrated cameras track the users' position and facial expression in real time, enabling more natural interactions. This tracking data allows AI characters to maintain natural eye contact and better understand the learner's age and level of comprehension. No video data is recorded or stored."
 
     - title: "View-Dependent Rendering"
       imageSrc: "/images/stock/perspective_staircase.png"
       imageAlt: "View-Dependent Rendering"
-      description: "This optional feature allows the Rift to render content based on the user’s position and viewing angle. Like looking into a mirror, the view changes naturally as you move your head. This makes the projected image appear spatially consistent and realistic, unlike a traditional flat-screen display."
+      description: "This optional feature allows the Rift to render content based on the user’s position and viewing angle. Like looking into a mirror, the view changes naturally as you move your head. This makes the projected image appear spatially consistent and realistic, unlike traditional flat-screen displays."
 
 use_cases:
   - icon: "fa-user-group"
@@ -57,7 +57,7 @@ use_cases:
     description: "Explore ancient worlds, iconic landmarks, and scientific wonders in full scale."
   - icon: "fa-brain"
     title: "Adaptive Learning"
-    description: "Learn interactively, with safe AI responses tailoring to guest curiosity and comprehension."
+    description: "Learn interactively, with safe AI responses tailored to guest curiosity and comprehension."
   - icon: "fa-scroll"
     title: "Interactive Stories"
     description: "Engage with lessons and concepts through interactive and emotive storytelling."
