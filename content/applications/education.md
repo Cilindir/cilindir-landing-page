@@ -14,7 +14,7 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/education/plant_science.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: "Immersive AI Learning that Improves Retention, Engagement, and Curiosity."
+hero_text: "Immersive AI Learning that Boosts Retention, Engagement, and Curiosity"
 
 scroll_target: "scenarios"
 
@@ -37,10 +37,10 @@ feature_dropdowns:
       imageAlt: "Immersive Language Practice"
       description: "Students learn and practice foreign languages by conversing with AI speakers in realistic settings. Whether ordering food in a Paris café or navigating a busy Tokyo street, learners build confidence and fluency through real-world interactions."
 
-    - title: "Science and Nature at Scale"
-      imageSrc: "/images/stock/circular_system.png"
+    - title: "Exploration Unbound"
+      imageSrc: "/images/stock/rocket_launch.png"
       imageAlt: "Exploration at Scale"
-      description: "Peer inside the human heart, explore the Great Barrier Reef, or study the solar system at true scale. The Cilindir Rift makes abstract concepts tangible and easier to understand."
+      description: "Run chemistry experiments too dangerous for school labs, manipulate DNA strands at magnified scale, or simulate rocket launches. With Cilindir Rift, students can perform experiments, explore complex systems, and engage with science and technology in new and interactive ways."
 
 stats:
   - value: "35%"
@@ -75,7 +75,7 @@ comparison_table:
     - ["Personalized learning", "✅", "❌", "✅ <strong>(emerging)</strong>"]
     - ["Accessibility", "✅", "✅ <strong>(varies)</strong>", "❌"]
     - ["Real-world simulations", "✅", "❌", "✅"]
-    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$</strong>"]
+    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$$</strong>"]
 
 section_footer: |
   Ready for a live demo at your school or division office?

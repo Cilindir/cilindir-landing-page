@@ -14,12 +14,12 @@ mobile_hero_images:
   - src: "/images/renders/hero/mobile/zoo_aquarium/aquarium.png"
     alt: "Cilindir Rift: Penguins"
 
-hero_text: "Immersive AI that Inspires Curiosity and Conservation."
+hero_text: "Immersive AI that Inspires Curiosity and Conservation"
 
 scroll_target: "scenarios"
 
 feature_dropdowns:
-  intro: "Click on the tiles below to explore exhibits brought to life with Cilindir."
+  intro: "Click on the tiles below to explore nature brought to life with Cilindir."
   tiles:
     - title: "AI-Powered Wildlife Guides"
       imageSrc: "/images/stock/wildlife_guide.png"
@@ -30,7 +30,7 @@ feature_dropdowns:
     - title: "Sustainable Habitat Exploration"
       imageSrc: "/images/stock/elephant.png"
       imageAlt: "Sustainable Habitat Exploration"
-      description: "Step into the Arctic to follow a polar bear’s journey, dive alongside a pod of dolphins, or walk across the African Savannah. Cilindir Rift recreates entire ecosystems where animals move naturally, and visitors gain a deeper understanding of conservation challenges."
+      description: "Embark on a life-sized African safari, encountering elephants, lions, and giraffes in their natural habitats. With Cilindir Rift, visitors can explore these ecosystems responsibly to gain a deeper understanding of conservation challenges."
 
     - title: "Conservation through Story"
       imageSrc: "/images/stock/polar_bear.png"
@@ -40,7 +40,7 @@ feature_dropdowns:
     - title: "Interactive AI Wildlife"
       imageSrc: "/images/stock/goat.png"
       imageAlt: "Interactive AI Wildlife"
-      description: "Visitors can engage directly with AI animals, observing their behaviors and interacting with them up close in a mutually safe virtual environment. Optionally, animals can communicate, sharing insights about their species and ecosystems, fostering empathy and a deeper understanding of wildlife. AI wildlife can appear as stylized cartoon characters in a computationally realistic simulation."
+      description: "Visitors can engage directly with AI animals, observing their behaviors and interacting with them up close in a mutually safe virtual environment. Optionally, the animals can speak, sharing insights about their species and ecosystems, fostering empathy and deepening understanding. AI wildlife can appear as stylized cartoon characters or as computationally realistic simulations."
 
 stats:
   - value: "60%"
@@ -78,11 +78,11 @@ comparison_table:
   rows:
     - ["Interactive storytelling", "✅", "❌", "✅ <strong>(limited)</strong>", "❌"]
     - ["AI-powered Q&A", "✅", "❌", "✅ <strong>(emerging)</strong>", "❌"]
-    - ["Wearables free", "✅", "❌", "❌", "✅"]
+    - ["Wearables free", "✅", "✅", "❌", "✅"]
     - ["Group experiences", "✅", "✅", "❌", "✅"]
     - ["Personalized experiences", "✅", "❌", "✅ <strong>(emerging)</strong>", "❌"]
-    - ["Accessibility", "✅", "❌", "❌", "✅"]
-    - ["Cost", "<strong>$$</strong>", "<strong>$</strong> - <strong>$$$</strong>", "<strong>$$</strong> - <strong>$$$</strong>", "<strong>$$$</strong>"]
+    - ["Accessibility", "✅", "✅ <strong>(varies)</strong>", "❌", "✅"]
+    - ["Cost", "<strong>$$</strong>", "<strong>$</strong>", "<strong>$$</strong> - <strong>$$$</strong>", "<strong>$$$</strong>"]
 
 section_footer: |
   Ready for a live demo at your aquarium or zoo?
